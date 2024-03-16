@@ -26,7 +26,7 @@ export default function Overview() {
         <TagTwo />
       </section>
 
-      <section className='flex tab:w-full w-80 tab:flex-row gap-2 mt-4 overflow-y-scroll tab:overflow-x-scroll tab:overflow-y-hidden'>
+      <section className='flex tab:w-full w-[21rem] tab:flex-row gap-2 mt-4 overflow-y-scroll tab:overflow-x-scroll tab:overflow-y-hidden'>
         <ResumeVidoes />
         <ResumeVidoes />
         <ResumeVidoes />
