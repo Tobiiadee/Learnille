@@ -51,7 +51,7 @@ export default function NavBar({ onView }: ViewType) {
         </div>
       </section>
 
-      <menu className='mt-10' id='nav'>
+      <menu className='mt-8' id='nav'>
         <NavLink
           to='/learnille/overview'
           className='flex items-center text-sm text-white font-light active:text-black active:bg-background gap-2 px-4 py-3 cursor-pointer transition-all duration-200'>
@@ -110,7 +110,7 @@ export default function NavBar({ onView }: ViewType) {
         </NavLink>
       </menu>
 
-      <section className='mt-20' id='nav'>
+      <section className='mt-14' id='nav'>
         <NavLink
           to='/learnille/settings'
           className='flex items-center text-sm text-white font-light active:text-black active:bg-background gap-2 px-4 py-3 cursor-pointer transition-all duration-200'>
@@ -129,7 +129,7 @@ export default function NavBar({ onView }: ViewType) {
         </NavLink>
       </section>
 
-      <section className='flex mt-20'>
+      <section className='flex mt-14'>
         <button
           type='button'
           className='bg-white text-xs mx-auto rounded-md shadow-md px-2 py-2 hover:scale-105 transition duration-300'>

@@ -12,7 +12,7 @@ export default function Menu({ closeMenu }: MenuType) {
   return (
     <Modal onClick={closeMenu}>
       <Mobile_Pop>
-        <section className='flex flex-col w-96 h-72 py-4 px-5 bg-white rounded-md'>
+        <section className='flex flex-col w-[22rem] h-72 py-4 px-5 bg-white rounded-md'>
           <main className='flex justify-between items-center w-full pb-4 border-text border-b border-dotted'>
             <div className='w-14 h-14 rounded-full shadow-md'>
               <img src='' alt='' />

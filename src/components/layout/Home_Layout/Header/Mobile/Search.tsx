@@ -11,7 +11,7 @@ export default function Search({closeSearch}: SearchType) {
   return (
     <Modal onClick={closeSearch}>
       <Mobile_Pop>
-        <main className='w-96 h-72 bg-white flex flex-col gap-4 py-4 px-3 rounded-md'>
+        <main className='w-[22rem] h-72 bg-white flex flex-col gap-4 py-4 px-3 rounded-md'>
           <div className="flex gap-2 items-center w-full h-10 border-b border-text border-dotted">
             <span>
               <SearchV />
