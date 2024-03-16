@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background-color: #D6EAF8;
+}
+
+#nav a.active {
+  background: #D6EAF8;
+  color: black;
+}
+
+
