@@ -4,7 +4,7 @@ import Card from "@/components/ui/Card/Card";
 
 export default function ResumeVidoes() {
   return (
-    <Card classNames="min-w-full tab:min-w-60 tab:w-60">
+    <Card classNames="min-w-full tab:min-w-60 tab:w-[17rem]">
       <section className='w-full h-40 shadow rounded'></section>
       <section className='flex justify-between items-center text-xs font-semibold mt-2'>
         <h2>Ongoing Course</h2>

@@ -19,7 +19,7 @@ type ViewType = {
 
 export default function NavBar({ onView }: ViewType) {
   return (
-    <nav onClick={onView} className='fixed top-0 left-0 w-72 z-30 bg-layout-bg rounded-r-lg h-full py-4 flex flex-col'>
+    <nav onClick={onView} className='fixed top-0 left-0 w-64 z-30 bg-layout-bg rounded-r-lg h-full py-4 flex flex-col'>
       <section className='flex w-full justify-around items-center'>
         <div className='flex gap-1 px-4'>
           <span></span>

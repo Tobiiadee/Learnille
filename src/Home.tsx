@@ -4,7 +4,6 @@ import HeaderMobile from "./components/layout/Home_Layout/Header/Mobile/HeaderMo
 import NavBar from "./components/layout/Home_Layout/Navigation/NavBar";
 import NavBarMobile from "./components/layout/Home_Layout/Navigation/NavBarMobile";
 // import Wrapper from "./components/ui/Wrapper/Wrapper";
-import HomeAside from "./components/layout/Home_Layout/Home_Aside/Home_Aside";
 import { useState } from "react";
 import Main from "./pages/Navigation_Pages/Main";
 import { useParams } from "react-router-dom";
@@ -68,10 +67,7 @@ function App() {
       {viewNav && <NavBarMobile onView={navBarHideHandler} />}
       <Header />
       <HeaderMobile />
-
       <Main />
-
-      <HomeAside />
     </main>
   );
 }

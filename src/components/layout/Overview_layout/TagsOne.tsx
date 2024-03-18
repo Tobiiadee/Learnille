@@ -4,70 +4,70 @@ import Card from "@/components/ui/Card/Card";
 
 export default function TagOne() {
   return (
-    <section className='mx-auto w-full grid grid-rows-3 tab:flex  gap-4 mt-4'>
-      <Card classNames='flex items-center gap-4 w-40 tab:w-60'>
+    <section className='w-full grid place-content-center tab:grid-cols-3  gap-4 mt-10 tab:mt-4 tab:pr-1'>
+      <Card classNames='flex items-center gap-6 tab:gap-4 w-80 tab:w-64'>
         <span className='bg-[#AED6F1] p-2 rounded'>
           <svg
-            width='25'
-            height='24'
+            width='20'
+            height='20'
             viewBox='0 0 25 24'
             fill='none'
             xmlns='http://www.w3.org/2000/svg'>
-            <g clip-path='url(#clip0_1316_11670)'>
+            <g clipPath='url(#clip0_1316_11670)'>
               <path
                 d='M8.15112 17.416C7.59884 17.416 7.15112 16.9683 7.15112 16.416V7.58398C7.15112 7.0317 7.59883 6.58399 8.15112 6.58399L17.503 6.58398C18.0553 6.58398 18.503 7.0317 18.503 7.58398V16.416C18.503 16.9683 18.0553 17.416 17.503 17.416H8.15112Z'
                 stroke='#2E86C1'
-                stroke-width='1.5'
-                stroke-linecap='round'
-                stroke-linejoin='round'></path>
+                strokeWidth='1.5'
+                strokeLinecap='round'
+                strokeLinejoin='round'></path>
               <path
                 d='M1.71948 1.16602H23.9343'
                 stroke='#2E86C1'
-                stroke-width='1.5'
-                stroke-linecap='round'
-                stroke-linejoin='round'></path>
+                strokeWidth='1.5'
+                strokeLinecap='round'
+                strokeLinejoin='round'></path>
               <path
                 d='M21.575 6.58398H23.9344'
                 stroke='#2E86C1'
-                stroke-width='1.5'
-                stroke-linecap='round'
-                stroke-linejoin='round'></path>
+                strokeWidth='1.5'
+                strokeLinecap='round'
+                strokeLinejoin='round'></path>
               <path
                 d='M1.71948 6.58398H4.07885'
                 stroke='#2E86C1'
-                stroke-width='1.5'
-                stroke-linecap='round'
-                stroke-linejoin='round'></path>
+                strokeWidth='1.5'
+                strokeLinecap='round'
+                strokeLinejoin='round'></path>
               <path
                 d='M21.575 12.002H23.9344'
                 stroke='#2E86C1'
-                stroke-width='1.5'
-                stroke-linecap='round'
-                stroke-linejoin='round'></path>
+                strokeWidth='1.5'
+                strokeLinecap='round'
+                strokeLinejoin='round'></path>
               <path
                 d='M1.71948 12.002H4.07885'
                 stroke='#2E86C1'
-                stroke-width='1.5'
-                stroke-linecap='round'
-                stroke-linejoin='round'></path>
+                strokeWidth='1.5'
+                strokeLinecap='round'
+                strokeLinejoin='round'></path>
               <path
                 d='M21.575 17.416H23.9344'
                 stroke='#2E86C1'
-                stroke-width='1.5'
-                stroke-linecap='round'
-                stroke-linejoin='round'></path>
+                strokeWidth='1.5'
+                strokeLinecap='round'
+                strokeLinejoin='round'></path>
               <path
                 d='M1.71948 17.416H4.07885'
                 stroke='#2E86C1'
-                stroke-width='1.5'
-                stroke-linecap='round'
-                stroke-linejoin='round'></path>
+                strokeWidth='1.5'
+                strokeLinecap='round'
+                strokeLinejoin='round'></path>
               <path
                 d='M1.71948 22.834H23.9343'
                 stroke='#2E86C1'
-                stroke-width='1.5'
-                stroke-linecap='round'
-                stroke-linejoin='round'></path>
+                strokeWidth='1.5'
+                strokeLinecap='round'
+                strokeLinejoin='round'></path>
             </g>
             <defs>
               <clipPath id='clip0_1316_11670'>
@@ -81,29 +81,29 @@ export default function TagOne() {
           </svg>
         </span>
         <span>
-          <h2 className='text-sm font-normal'>Completed Courses</h2>
-          <p className='text-sm font-bold'>2</p>
+          <h2 className='text-xs tab:text-sm font-normal'>Completed Courses</h2>
+          <p className='text-xs tab:text-sm font-bold'>2</p>
         </span>
       </Card>
 
-      <Card classNames='flex items-center gap-4 w-40 tab:w-60'>
+      <Card classNames='flex items-center gap-6 tab:gap-4 w-80 tab:w-64'>
         <span className='bg-[#E8DAEF] p-2 rounded'>
           <svg width='20px' height='20px' viewBox='0 0 24 24' fill='none'>
             <path
-              fill-rule='evenodd'
-              clip-rule='evenodd'
+              fillRule='evenodd'
+              clipRule='evenodd'
               d='M12.0002 1.25C10.1724 1.25 8.66129 1.41099 7.4984 1.60719L7.36355 1.62983C6.35333 1.79893 5.51366 1.93949 4.85712 2.74808C4.43608 3.26664 4.30023 3.82706 4.26891 4.4531L3.77686 4.61712C3.31373 4.77147 2.90781 4.90675 2.58577 5.05656C2.23762 5.21852 1.91857 5.42714 1.67466 5.76555C1.43076 6.10396 1.33375 6.47262 1.2902 6.85411C1.24992 7.20701 1.24996 7.63488 1.25 8.12304L1.25001 8.26827C1.25 8.67008 1.24999 9.02497 1.27965 9.32179C1.3118 9.64348 1.38299 9.95621 1.56083 10.2584C1.73867 10.5607 1.97748 10.7748 2.24307 10.9591C2.48813 11.1292 2.79836 11.3015 3.14962 11.4966L5.79078 12.964C6.33018 14.0252 7.07115 14.9713 8.09017 15.6548C8.97721 16.2497 10.0418 16.6232 11.3028 16.723C11.2687 16.8087 11.25 16.9022 11.25 17V18.75H9.81981C8.98562 18.75 8.26739 19.3388 8.10379 20.1568L7.88515 21.25H6C5.58579 21.25 5.25 21.5858 5.25 22C5.25 22.4142 5.58579 22.75 6 22.75H18C18.4142 22.75 18.75 22.4142 18.75 22C18.75 21.5858 18.4142 21.25 18 21.25H16.1149L15.8962 20.1568C15.7326 19.3388 15.0144 18.75 14.1802 18.75H12.75V17C12.75 16.9022 12.7313 16.8087 12.6972 16.723C13.9583 16.6233 15.023 16.2498 15.9101 15.6548C16.9292 14.9713 17.6703 14.025 18.2097 12.9637L20.8503 11.4966C21.2016 11.3015 21.5118 11.1292 21.7569 10.9591C22.0225 10.7748 22.2613 10.5607 22.4391 10.2584C22.617 9.95621 22.6882 9.64348 22.7203 9.32179C22.75 9.02499 22.75 8.67012 22.75 8.26834L22.75 8.12306C22.75 7.63488 22.75 7.20701 22.7098 6.85411C22.6662 6.47262 22.5692 6.10396 22.3253 5.76555C22.0814 5.42714 21.7623 5.21852 21.4142 5.05656C21.0921 4.90675 20.6862 4.77147 20.2231 4.61712L19.7314 4.45322C19.7001 3.82713 19.5643 3.26668 19.1432 2.74808C18.4866 1.93949 17.647 1.79893 16.6368 1.62983L16.5019 1.60719C15.339 1.41099 13.8279 1.25 12.0002 1.25ZM14.5852 21.25L14.4253 20.451C14.402 20.3341 14.2994 20.25 14.1802 20.25H9.81981C9.70064 20.25 9.59804 20.3341 9.57467 20.451L9.41486 21.25H14.5852ZM4.28849 6.02772L4.3021 6.02318C4.37367 7.54348 4.5454 9.22376 4.97298 10.7937L3.90729 10.2016C3.51814 9.98542 3.27447 9.84906 3.09829 9.72679C2.93588 9.61407 2.88298 9.54762 2.85363 9.49774C2.82428 9.44786 2.79187 9.36934 2.77221 9.17263C2.75089 8.95925 2.75002 8.68002 2.75001 8.23484L2.75001 8.16231C2.74999 7.62323 2.75111 7.28191 2.78053 7.02422C2.80775 6.7857 2.85231 6.69703 2.89154 6.6426C2.93077 6.58817 3.0008 6.51786 3.21847 6.4166C3.45362 6.3072 3.77708 6.19819 4.28849 6.02772ZM19.6982 6.0233C19.6266 7.54349 19.4549 9.22364 19.0274 10.7935L20.0927 10.2016C20.4818 9.98542 20.7255 9.84906 20.9017 9.72679C21.0641 9.61407 21.117 9.54762 21.1463 9.49774C21.1757 9.44786 21.2081 9.36934 21.2277 9.17263C21.2491 8.95925 21.2499 8.68002 21.25 8.23484L21.25 8.16231C21.25 7.62323 21.2488 7.28191 21.2194 7.02422C21.1922 6.7857 21.1477 6.69703 21.1084 6.6426C21.0692 6.58817 20.9992 6.51786 20.7815 6.4166C20.5463 6.3072 20.2229 6.19819 19.7115 6.02772L19.6982 6.0233ZM7.74796 3.08629C8.83319 2.90319 10.2608 2.75 12.0002 2.75C13.7395 2.75 15.1671 2.90319 16.2524 3.08629C17.4593 3.28992 17.7128 3.3661 17.9787 3.69358C18.2407 4.01632 18.2656 4.32156 18.2118 5.67672C18.1222 7.93537 17.8242 10.3727 16.9015 12.2264C16.446 13.1414 15.8505 13.8887 15.0746 14.409C14.3037 14.9261 13.3092 15.25 12.0002 15.25C10.6911 15.25 9.69656 14.9261 8.92569 14.409C8.14983 13.8887 7.55432 13.1414 7.09884 12.2264C6.1761 10.3727 5.87815 7.93537 5.78848 5.67672C5.73468 4.32156 5.75956 4.01632 6.02161 3.69358C6.28751 3.3661 6.54104 3.28992 7.74796 3.08629Z'
               fill='#8E44AD'
             />
           </svg>
         </span>
         <span>
-          <h2 className='text-sm font-normal'>Total Hours Used</h2>
-          <p className='text-sm font-bold'>2</p>
+          <h2 className='text-xs tab:text-sm font-normal'>Total Hours Used</h2>
+          <p className='text-xs tab:text-sm font-bold'>2</p>
         </span>
       </Card>
 
-      <Card classNames='flex items-center gap-4 w-40 tab:w-60'>
+      <Card classNames='flex items-center gap-6 tab:gap-4 w-80 tab:w-64'>
         <span className='bg-[#ABEBC6] p-2 rounded'>
           <svg
             width='20px'
@@ -114,20 +114,94 @@ export default function TagOne() {
             <path
               d='M21.8382 11.1263C22.0182 9.2137 22.1082 8.25739 21.781 7.86207C21.604 7.64823 21.3633 7.5172 21.106 7.4946C20.6303 7.45282 20.0329 8.1329 18.8381 9.49307C18.2202 10.1965 17.9113 10.5482 17.5666 10.6027C17.3757 10.6328 17.1811 10.6018 17.0047 10.5131C16.6865 10.3529 16.4743 9.91812 16.0499 9.04851L13.8131 4.46485C13.0112 2.82162 12.6102 2 12 2C11.3898 2 10.9888 2.82162 10.1869 4.46486L7.95007 9.04852C7.5257 9.91812 7.31351 10.3529 6.99526 10.5131C6.81892 10.6018 6.62434 10.6328 6.43337 10.6027C6.08872 10.5482 5.77977 10.1965 5.16187 9.49307C3.96708 8.1329 3.36968 7.45282 2.89399 7.4946C2.63666 7.5172 2.39598 7.64823 2.21899 7.86207C1.8918 8.25739 1.9818 9.2137 2.16181 11.1263L2.391 13.5616C2.76865 17.5742 2.95748 19.5805 4.14009 20.7902C5.32271 22 7.09517 22 10.6401 22H13.3599C16.9048 22 18.6773 22 19.8599 20.7902C20.7738 19.8553 21.0942 18.4447 21.367 16'
               stroke='#2ECC71'
-              stroke-width='1.5'
-              stroke-linecap='round'
+              strokeWidth='1.5'
+              strokeLinecap='round'
             />
             <path
               d='M9 18H15'
               stroke='#2ECC71'
-              stroke-width='1.5'
-              stroke-linecap='round'
+              strokeWidth='1.5'
+              strokeLinecap='round'
             />
           </svg>
         </span>
         <span>
-          <h2 className='text-sm font-normal'>On Going Courses</h2>
-          <p className='text-sm font-bold'>2</p>
+          <h2 className='text-xs tab:text-sm font-normal'>On Going Courses</h2>
+          <p className='text-xs tab:text-sm font-bold'>2</p>
+        </span>
+      </Card>
+
+      <Card classNames='flex items-center gap-6 tab:gap-4 w-80 tab:w-64'>
+        <span className='bg-[#D2B4DE] p-2 rounded'>
+          <svg
+            fill='#7D3C98'
+            width='20px'
+            height='20px'
+            viewBox='0 0 32 32'
+            version='1.1'
+            xmlns='http://www.w3.org/2000/svg'>
+            <path d='M23.313 26.102l-6.296-3.488c2.34-1.841 2.976-5.459 2.976-7.488v-4.223c0-2.796-3.715-5.91-7.447-5.91-3.73 0-7.544 3.114-7.544 5.91v4.223c0 1.845 0.78 5.576 3.144 7.472l-6.458 3.503s-1.688 0.752-1.688 1.689v2.534c0 0.933 0.757 1.689 1.688 1.689h21.625c0.931 0 1.688-0.757 1.688-1.689v-2.534c0-0.994-1.689-1.689-1.689-1.689zM23.001 30.015h-21.001v-1.788c0.143-0.105 0.344-0.226 0.502-0.298 0.047-0.021 0.094-0.044 0.139-0.070l6.459-3.503c0.589-0.32 0.979-0.912 1.039-1.579s-0.219-1.32-0.741-1.739c-1.677-1.345-2.396-4.322-2.396-5.911v-4.223c0-1.437 2.708-3.91 5.544-3.91 2.889 0 5.447 2.44 5.447 3.91v4.223c0 1.566-0.486 4.557-2.212 5.915-0.528 0.416-0.813 1.070-0.757 1.739s0.446 1.267 1.035 1.589l6.296 3.488c0.055 0.030 0.126 0.063 0.184 0.089 0.148 0.063 0.329 0.167 0.462 0.259v1.809zM30.312 21.123l-6.39-3.488c2.34-1.841 3.070-5.459 3.070-7.488v-4.223c0-2.796-3.808-5.941-7.54-5.941-2.425 0-4.904 1.319-6.347 3.007 0.823 0.051 1.73 0.052 2.514 0.302 1.054-0.821 2.386-1.308 3.833-1.308 2.889 0 5.54 2.47 5.54 3.941v4.223c0 1.566-0.58 4.557-2.305 5.915-0.529 0.416-0.813 1.070-0.757 1.739 0.056 0.67 0.445 1.267 1.035 1.589l6.39 3.488c0.055 0.030 0.126 0.063 0.184 0.089 0.148 0.063 0.329 0.167 0.462 0.259v1.779h-4.037c0.61 0.46 0.794 1.118 1.031 2h3.319c0.931 0 1.688-0.757 1.688-1.689v-2.503c-0.001-0.995-1.689-1.691-1.689-1.691z'></path>
+          </svg>
+        </span>
+        <span>
+          <h2 className='text-xs tab:text-sm font-normal'>
+            Ongoing Consultation
+          </h2>
+          <p className='text-xs tab:text-sm font-bold'>2</p>
+        </span>
+      </Card>
+
+      <Card classNames='flex items-center gap-6 tab:gap-4 w-80 tab:w-64'>
+        <span className='bg-[#ABEBC6] p-2 rounded'>
+          <svg
+            width='20px'
+            height='20px'
+            viewBox='0 0 24 24'
+            fill='none'
+            xmlns='http://www.w3.org/2000/svg'>
+            <path
+              d='M21.8382 11.1263C22.0182 9.2137 22.1082 8.25739 21.781 7.86207C21.604 7.64823 21.3633 7.5172 21.106 7.4946C20.6303 7.45282 20.0329 8.1329 18.8381 9.49307C18.2202 10.1965 17.9113 10.5482 17.5666 10.6027C17.3757 10.6328 17.1811 10.6018 17.0047 10.5131C16.6865 10.3529 16.4743 9.91812 16.0499 9.04851L13.8131 4.46485C13.0112 2.82162 12.6102 2 12 2C11.3898 2 10.9888 2.82162 10.1869 4.46486L7.95007 9.04852C7.5257 9.91812 7.31351 10.3529 6.99526 10.5131C6.81892 10.6018 6.62434 10.6328 6.43337 10.6027C6.08872 10.5482 5.77977 10.1965 5.16187 9.49307C3.96708 8.1329 3.36968 7.45282 2.89399 7.4946C2.63666 7.5172 2.39598 7.64823 2.21899 7.86207C1.8918 8.25739 1.9818 9.2137 2.16181 11.1263L2.391 13.5616C2.76865 17.5742 2.95748 19.5805 4.14009 20.7902C5.32271 22 7.09517 22 10.6401 22H13.3599C16.9048 22 18.6773 22 19.8599 20.7902C20.7738 19.8553 21.0942 18.4447 21.367 16'
+              stroke='#2ECC71'
+              strokeWidth='1.5'
+              strokeLinecap='round'
+            />
+            <path
+              d='M9 18H15'
+              stroke='#2ECC71'
+              strokeWidth='1.5'
+              strokeLinecap='round'
+            />
+          </svg>
+        </span>
+        <span>
+          <h2 className='text-xs tab:text-sm font-normal'>
+            Finished Consultation
+          </h2>
+          <p className='text-xs tab:text-sm font-bold'>2</p>
+        </span>
+      </Card>
+
+      <Card classNames='flex items-center gap-6 tab:gap-4 w-80 tab:w-64'>
+        <span className='bg-[#F5B7B1] p-2 rounded'>
+          <svg
+            xmlns='http://www.w3.org/2000/svg'
+            fill='none'
+            viewBox='0 0 24 24'
+            strokeWidth={1.5}
+            stroke='#CD6155'
+            className='w-6 h-6'>
+            <path
+              strokeLinecap='round'
+              strokeLinejoin='round'
+              d='M2.25 8.25h19.5M2.25 9h19.5m-16.5 5.25h6m-6 2.25h3m-3.75 3h15a2.25 2.25 0 0 0 2.25-2.25V6.75A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25v10.5A2.25 2.25 0 0 0 4.5 19.5Z'
+            />
+          </svg>
+        </span>
+        <span>
+          <h2 className='text-xs tab:text-sm font-normal'>
+            Total Revenue Spent
+          </h2>
+          <p className='text-xs tab:text-sm font-bold'>2</p>
         </span>
       </Card>
     </section>
