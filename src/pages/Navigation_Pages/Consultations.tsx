@@ -1,25 +1,30 @@
 /** @format */
 
-import Consultant_Tips from "@/components/layout/Consultant_Layout/Consultant_Tips";
-import Header from "@/components/layout/Consultant_Layout/Header";
 import Consultation_Home from "@/components/layout/Consultant_Layout/Consultant_Pages/Consultation_Home";
+import { NavLink, useParams } from "react-router-dom";
+import Consultation_Meeting from "@/components/layout/Consultant_Layout/Consultant_Pages/Consultation_Meeting/Consultation_Metting";
 
 export default function Consultations() {
+  const { consultation_id } = useParams();
+
+  let consultationPage;
+
+  switch (consultation_id) {
+    case "consultation_meeting":
+      consultationPage = <Consultation_Meeting />;
+      break;
+
+    default:
+      consultationPage = <Consultation_Home />;
+      break;
+  }
+
   return (
-    <main className='tab:grid tab:grid-cols-3 gap-4 pr-2 pb-4'>
-      <main className='col-span-2'>
-        <Header />
-        <Consultation_Home />
-      </main>
+    <main className='pb-6 flex flex-col'>
+      <main className=''>{consultationPage}</main>
 
-      <main className='hidden tab:flex flex-col gap-2'>
-        <Consultant_Tips />
-        <Consultant_Tips />
-        <Consultant_Tips />
-      </main>
-
-      <main className='mt-4 flex gap-1 items-center justify-center col-span-2 '>
-        <button type='button' >
+      <main className='mt-4 flex gap-1 items-center justify-center'>
+        <NavLink to='/learnille/consultation/completed_consultations'>
           {""}
           <span>
             <svg
@@ -34,11 +39,11 @@ export default function Consultations() {
               />
             </svg>
           </span>
-        </button>
+        </NavLink>
         <div className='w-4 h-4 rounded-full shadow text-xs flex items-center justify-center bg-layout-bg text-white'>
           1
         </div>
-        <button type='button'>
+        <NavLink to='/learnille/consultation/consultation_meeting'>
           {""}
           <span>
             <svg
@@ -53,7 +58,7 @@ export default function Consultations() {
               />
             </svg>
           </span>
-        </button>
+        </NavLink>
       </main>
     </main>
   );

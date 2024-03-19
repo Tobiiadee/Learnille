@@ -15,7 +15,7 @@ export default function Completed_Consultation_List() {
   return (
     <Card>
       <section className='bg-white px-1'>
-        <main className='mt-4 flex gap-4 w-full'>
+        <main className='flex gap-4 w-full'>
           <div className='min-w-20 h-20 tab:min-w-28 tab:h-28 rounded-md shadow'>
             <img src='' alt='' />
           </div>
@@ -34,7 +34,7 @@ export default function Completed_Consultation_List() {
               </div>
             </section>
 
-            <section className='mt-2 tab:mt-4 flex gap-2 tab:gap-5'>
+            <section className='mt-2  flex gap-2 tab:gap-5'>
               <div className='flex items-center gap-1'>
                 <span>
                   <svg
@@ -93,7 +93,7 @@ export default function Completed_Consultation_List() {
               </div>
             </section>
 
-            <section className='mt-2 flex flex-col gap-2 tab:gap-0 tab:flex-row w-full tab:justify-between tab:items-center '>
+            <section className='mt-1 flex flex-col gap-2 tab:gap-0 tab:flex-row w-full tab:justify-between tab:items-center'>
               <div className='flex gap-2 tab:gap-2  items-center w-full tab:w-3/6'>
                 <div className='text-xs text-text flex gap-2 items-center'>
                   <span className='w-6 h-6 rounded-full shadow'>
@@ -125,15 +125,15 @@ export default function Completed_Consultation_List() {
                 </span>
               </div>
 
-              <div className='flex gap-2 tab:gap-4 text-xs'>
+              <div className='flex gap-2 tab:gap-4 text-xs tab:w-3/6 '>
                 <button
                   type='button'
-                  className='px-4 py-1 tab:px-4 tab:py-1 rounded bg-[#AED6F1] text-layout-bg font-semibold hover:scale-110 transition duration-300'>
+                  className='px-4 py-1 tab:px-6 tab:py-1 rounded-sm bg-[#AED6F1] text-layout-bg font-semibold hover:scale-110 transition duration-300'>
                   Repurchase
                 </button>
                 <button
                   type='button'
-                  className='px-4 py-1 tab:px-2 tab:py-1 rounded border text-text font-semibold hover:scale-110 transition duration-300'>
+                  className='px-4 py-1 tab:px-4 tab:py-1 rounded-sm border text-text font-semibold hover:scale-110 transition duration-300'>
                   Send Message
                 </button>
               </div>

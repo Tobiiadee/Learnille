@@ -25,7 +25,7 @@ export default function Header() {
           </p>
         </main>
 
-        <main className='flex items-center gap-2 mr-4'>
+        <main className='flex items-center gap-2 mr-1'>
           <section>
             <button type='button' className="flex items-center justify-center active:border rounded-full w-10 h-10 active:bg-text" onClick={searchHandler}>
               {""}

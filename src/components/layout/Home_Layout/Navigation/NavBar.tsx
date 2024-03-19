@@ -22,43 +22,43 @@ export default function NavBar() {
       </div>
 
       <menu className='mt-8' id="nav">
-        <NavLink to="/learnille/overview" className='flex items-center text-sm text-white font-light hover:text-black hover:bg-background gap-2 px-4 py-2 cursor-pointer transition-all duration-200'>
+        <NavLink to="/learnille/overview" className='flex items-center text-sm text-white font-light hover:text-black hover:bg-background gap-2 px-6 py-2 cursor-pointer transition-all duration-200'>
           <span>
             <Overview />
           </span>
           <h2>Overview</h2>
         </NavLink>
-        <NavLink to="/learnille/consultation" className='flex items-center text-sm text-white font-light hover:text-black hover:bg-background gap-2 px-4 py-2 cursor-pointer transition-all duration-200'>
+        <NavLink to="/learnille/consultation" className='flex items-center text-sm text-white font-light hover:text-black hover:bg-background gap-2 px-6 py-2 cursor-pointer transition-all duration-200'>
           <span>
             <Consultations />
           </span>
           <h2>Consultation</h2>
         </NavLink>
-        <NavLink to="/learnille/chat" className='flex items-center text-sm text-white font-light hover:text-black hover:bg-background gap-2 px-4 py-2 cursor-pointer transition-all duration-200'>
+        <NavLink to="/learnille/chat" className='flex items-center text-sm text-white font-light hover:text-black hover:bg-background gap-2 px-6 py-2 cursor-pointer transition-all duration-200'>
           <span>
             <Chat />
           </span>
           <h2>Chat</h2>
         </NavLink>
-        <NavLink to="/learnille/my certificate" className='flex items-center text-sm text-white font-light hover:text-black hover:bg-background gap-2 px-4 py-2 cursor-pointer transition-all duration-200'>
+        <NavLink to="/learnille/my certificate" className='flex items-center text-sm text-white font-light hover:text-black hover:bg-background gap-2 px-6 py-2 cursor-pointer transition-all duration-200'>
           <span>
             <Certificate />
           </span>
           <h2>My Certificate</h2>
         </NavLink>
-        <NavLink to="/learnille/my courses" className='flex items-center text-sm text-white font-light hover:text-black hover:bg-background gap-2 px-4 py-2 cursor-pointer transition-all duration-200'>
+        <NavLink to="/learnille/my courses" className='flex items-center text-sm text-white font-light hover:text-black hover:bg-background gap-2 px-6 py-2 cursor-pointer transition-all duration-200'>
           <span>
             <Courses />
           </span>
           <h2>My Courses</h2>
         </NavLink>
-        <NavLink to="/learnille/purchase history" className='flex items-center text-sm text-white font-light hover:text-black hover:bg-background gap-2 px-4 py-2 cursor-pointer transition-all duration-200'>
+        <NavLink to="/learnille/purchase history" className='flex items-center text-sm text-white font-light hover:text-black hover:bg-background gap-2 px-6 py-2 cursor-pointer transition-all duration-200'>
           <span>
             <PurchaseHistory />
           </span>
           <h2>Purchase History</h2>
         </NavLink>
-        <NavLink to="/learnille/market place" className='flex items-center text-sm text-white font-light hover:text-black hover:bg-background gap-2 px-4 py-2 cursor-pointer transition-all duration-200'>
+        <NavLink to="/learnille/market place" className='flex items-center text-sm text-white font-light hover:text-black hover:bg-background gap-2 px-6 py-2 cursor-pointer transition-all duration-200'>
           <span>
             <MarketPlace />
           </span>
