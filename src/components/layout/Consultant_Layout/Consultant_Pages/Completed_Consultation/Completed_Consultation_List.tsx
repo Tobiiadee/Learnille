@@ -1,5 +1,4 @@
-
-
+/** @format */
 
 // type Completed_ConsultationType = {
 //   consultationTitle?: string,
@@ -13,7 +12,7 @@
 
 export default function Completed_Consultation_List() {
   return (
-    <section className='border-b pb-6 '>
+    <section className='border-b pb-4 '>
       <main className='mt-4 flex gap-4 w-full'>
         <div className='min-w-28 h-28 rounded-md shadow'>
           <img src='' alt='' />
@@ -21,12 +20,14 @@ export default function Completed_Consultation_List() {
 
         <div className='w-full'>
           <section className='flex flex-col tab:flex-row justify-between'>
-            <h2 className='text-xs text-text capitalize font-semibold w-64 tab:w-52'>
+            <h2 className='text-xs text-text capitalize font-semibold w-60 tab:w-52'>
               How to make your first millions as a frontent developer
             </h2>
 
             <div className='flex gap-1 items-center tab:mr-32'>
-              <h2 className='text-lg font-semibold text-layout-bg'>$32.00</h2>
+              <h2 className='text-sm tab:text-lg font-semibold text-layout-bg'>
+                $32.00
+              </h2>
               <h2 className='text-xs text-text font-normal'>$39.00</h2>
             </div>
           </section>
@@ -90,7 +91,7 @@ export default function Completed_Consultation_List() {
             </div>
           </section>
 
-          <section className='mt-2 flex flex-col gap-4 tab:gap-0 tab:flex-row w-full tab:justify-between tab:items-center '>
+          <section className='mt-2 flex flex-col gap-2 tab:gap-0 tab:flex-row w-full tab:justify-between tab:items-center '>
             <div className='flex gap-2 tab:gap-2  items-center w-full tab:w-3/6'>
               <div className='text-xs text-text flex gap-2 items-center'>
                 <span className='w-6 h-6 rounded-full shadow'>
@@ -125,12 +126,12 @@ export default function Completed_Consultation_List() {
             <div className='flex gap-4 text-xs'>
               <button
                 type='button'
-                className='px-4 py-1 tab:px-8 tab:py-2 rounded bg-[#AED6F1] text-layout-bg font-semibold hover:scale-110 transition duration-300'>
+                className='px-4 py-1 tab:px-4 tab:py-1 rounded bg-[#AED6F1] text-layout-bg font-semibold hover:scale-110 transition duration-300'>
                 Repurchase
               </button>
               <button
                 type='button'
-                className='px-4 py-1 tab:px-2 tab:py-2 rounded border text-text font-semibold hover:scale-110 transition duration-300'>
+                className='px-4 py-1 tab:px-2 tab:py-1 rounded border text-text font-semibold hover:scale-110 transition duration-300'>
                 Send Message
               </button>
             </div>
@@ -138,6 +139,5 @@ export default function Completed_Consultation_List() {
         </div>
       </main>
     </section>
-
-  )
+  );
 }
