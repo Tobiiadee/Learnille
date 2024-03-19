@@ -3,12 +3,19 @@
 @tailwind utilities;
 
 body {
-  background-color: #D6EAF8;
+  background-color:   #eef8ff ;
 }
 
 #nav a.active {
-  background: #D6EAF8;
+  background: #eef8ff ;
   color: black;
+}
+
+#consultant_id a.active {
+  background: #fff;
+  font-weight: 600;
+  color: #2f53f5;
+  border-bottom: 1px solid #2f53f5;
 }
 
 

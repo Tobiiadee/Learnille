@@ -10,12 +10,10 @@ export default function Header() {
   const [openMenu, setOpenMenu] = useState(false);
 
   //Search Handler
-  const onSearchHandler = () => setOnSearch(true);
-  const onCloseSearchHandler = () => setTimeout(() => setOnSearch(false), 300);
+  const searchHandler = () => setTimeout(() => setOnSearch(prev => !prev), 300);
 
   //Menu Handler
-  const onOpenMenuHandler = () => setOpenMenu(true);
-  const onCloseMenuHandler = () => setTimeout(() => setOpenMenu(false), 300);
+  const menuHandler = () => setTimeout(() => setOpenMenu(prev => !prev), 300);
 
   return (
     <>
@@ -29,7 +27,7 @@ export default function Header() {
 
         <main className='flex items-center gap-6 mr-4'>
           <section>
-            <button type='button' onClick={onSearchHandler}>
+            <button type='button' onClick={searchHandler}>
               {""}
               <span className=''>
                 <SearchV />
@@ -38,7 +36,7 @@ export default function Header() {
           </section>
 
           <section>
-            <button type='button' onClick={onOpenMenuHandler}>
+            <button type='button' onClick={menuHandler}>
               {""}
               <span>
                 <svg
@@ -54,11 +52,11 @@ export default function Header() {
         </main>
       </div>
       <section className='tab:hidden'>
-        {onSearch && <Search closeSearch={onCloseSearchHandler} />}
+        {onSearch && <Search openMenu={onSearch} closeSearch={searchHandler} />}
       </section>
 
       <section className='tab:hidden'>
-        {openMenu && <Menu closeMenu={onCloseMenuHandler} />}
+        {openMenu && <Menu openMenu={openMenu} closeMenu={menuHandler} />}
       </section>
     </>
   );

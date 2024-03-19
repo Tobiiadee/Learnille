@@ -11,6 +11,7 @@ import "./index.css";
 
 import Error from "./pages/Error/Error.tsx";
 import Main from "./pages/Navigation_Pages/Main.tsx";
+import Consultation_Home from "./components/layout/Consultant_Layout/Consultant_Pages/Consultation_Home.tsx";
 
 const router = createBrowserRouter([
   {
@@ -21,6 +22,12 @@ const router = createBrowserRouter([
       {
         path: "/learnille/:navId",
         element: <Main />,
+        children: [
+          {
+            path: `/learnille/:navId/:consultation_id`,
+            element: <Consultation_Home />,
+          },
+        ],
       },
     ],
   },

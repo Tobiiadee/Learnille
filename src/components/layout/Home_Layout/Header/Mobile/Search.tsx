@@ -3,16 +3,34 @@ import { SearchV } from "@/assets/svg/HeaderSVG";
 import Mobile_Pop from "@/components/ui/Mobile_Pop/Mobile_Pop";
 import Modal from "@/components/ui/Modal/Modal";
 
+import { motion } from "framer-motion";
+
 type SearchType = {
   closeSearch: () => void;
+  openMenu: boolean,
 }
 
-export default function Search({closeSearch}: SearchType) {
+export default function Search({closeSearch, openMenu}: SearchType) {
+
+  const SlideInVariant = {
+    in: {
+      y: -300,
+    },
+    out: {
+      y: 0,
+    },
+  };
+
   return (
     <Modal onClick={closeSearch}>
       <Mobile_Pop>
-        <main className='w-[21rem] h-72 bg-white flex flex-col gap-4 py-4 px-3 rounded-md'>
-          <div className="flex gap-2 items-center w-full h-10 border-b border-text border-dotted">
+        <motion.main
+        variants={SlideInVariant}
+        initial={openMenu ? "in" : "out"}
+        animate={openMenu ? "out" : "in"}
+        transition={{ duration: 0.5 }} 
+        className='w-screen h-80 bg-white flex flex-col gap-4 py-4 px-3 rounded-md'>
+          <div className="mt-6 flex gap-2 items-center w-full h-10 border-b border-text border-dotted">
             <span>
               <SearchV />
             </span>
@@ -33,7 +51,7 @@ export default function Search({closeSearch}: SearchType) {
           <div className="w-full h-40 border-b border-text border-dotted">
             <h2>Recent Search</h2>
           </div>
-        </main>
+        </motion.main>
       </Mobile_Pop>
     </Modal>
   );

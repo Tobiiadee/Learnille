@@ -4,16 +4,36 @@ import { Message, Bell } from "@/assets/svg/HeaderSVG";
 import Mobile_Pop from "@/components/ui/Mobile_Pop/Mobile_Pop";
 import Modal from "@/components/ui/Modal/Modal";
 
+import { motion } from "framer-motion";
+
 type MenuType = {
   closeMenu: () => void;
+  openMenu: boolean,
 };
 
-export default function Menu({ closeMenu }: MenuType) {
+export default function Menu({ closeMenu, openMenu }: MenuType) {
+  const SlideInVariant = {
+    in: {
+      y: -300,
+    },
+    out: {
+      y: 0,
+    },
+  };
+
+  // console.log(openMenu);
+  
+
   return (
     <Modal onClick={closeMenu}>
       <Mobile_Pop>
-        <section className='flex flex-col w-[21rem] h-72 py-4 px-5 bg-white rounded-md'>
-          <main className='flex justify-between items-center w-full pb-4 border-text border-b border-dotted'>
+        <motion.section 
+        variants={SlideInVariant}
+        initial={openMenu ? "in" : "out"}
+        animate={openMenu ? "out" : "in"}
+        transition={{ duration: 0.5 }}
+        className='flex flex-col w-screen h-80 py-4 px-5 bg-white rounded-md'>
+          <main className='flex justify-between items-center w-full pb-4 border-b border-dotted'>
             <div className='w-14 h-14 rounded-full shadow-md'>
               <img src='' alt='' />
             </div>
@@ -39,8 +59,8 @@ export default function Menu({ closeMenu }: MenuType) {
             </div>
           </main>
 
-          <menu className='mt-4 flex flex-col font-semibold'>
-            <li className='py-3 px-4 flex gap-4 items-center'>
+          <menu className='mt-4 flex flex-col text-sm font-semibold'>
+            <li className='py-3 px-4 flex gap-4 items-center border-b border-dotted pb-4'>
               <span>
                 <svg
                   xmlns='http://www.w3.org/2000/svg'
@@ -61,7 +81,7 @@ export default function Menu({ closeMenu }: MenuType) {
               </span>
             </li>
 
-            <li className='py-3 px-4 flex gap-4 items-center'>
+            <li className='py-3 px-4 flex gap-4 items-center border-b border-dotted pb-4'>
               <span>
                 <Message />
               </span>
@@ -71,7 +91,7 @@ export default function Menu({ closeMenu }: MenuType) {
               </span>
             </li>
 
-            <li className='py-3 px-4 flex gap-4 items-center'>
+            <li className='py-3 px-4 flex gap-4 items-center border-b border-dotted pb-4'>
               <span>
                 <Bell />
               </span>
@@ -79,8 +99,29 @@ export default function Menu({ closeMenu }: MenuType) {
                 <h2>Notification</h2>
               </span>
             </li>
+
+            <li className='py-3 px-4 flex gap-4 items-center border-b border-dotted pb-4'>
+              <span>
+                <svg
+                  xmlns='http://www.w3.org/2000/svg'
+                  fill='none'
+                  viewBox='0 0 24 24'
+                  strokeWidth={1.5}
+                  stroke='currentColor'
+                  className='w-4 h-4 text-layout-bg'>
+                  <path
+                    strokeLinecap='round'
+                    strokeLinejoin='round'
+                    d='m16.862 4.487 1.687-1.688a1.875 1.875 0 1 1 2.652 2.652L10.582 16.07a4.5 4.5 0 0 1-1.897 1.13L6 18l.8-2.685a4.5 4.5 0 0 1 1.13-1.897l8.932-8.931Zm0 0L19.5 7.125M18 14v4.75A2.25 2.25 0 0 1 15.75 21H5.25A2.25 2.25 0 0 1 3 18.75V8.25A2.25 2.25 0 0 1 5.25 6H10'
+                  />
+                </svg>
+              </span>
+              <span>
+                <h2>Tips</h2>
+              </span>
+            </li>
           </menu>
-        </section>
+        </motion.section>
       </Mobile_Pop>
     </Modal>
   );
