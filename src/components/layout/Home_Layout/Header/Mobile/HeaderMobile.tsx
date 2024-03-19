@@ -25,9 +25,9 @@ export default function Header() {
           </p>
         </main>
 
-        <main className='flex items-center gap-6 mr-4'>
+        <main className='flex items-center gap-2 mr-4'>
           <section>
-            <button type='button' onClick={searchHandler}>
+            <button type='button' className="flex items-center justify-center active:border rounded-full w-10 h-10 active:bg-text" onClick={searchHandler}>
               {""}
               <span className=''>
                 <SearchV />
@@ -36,7 +36,7 @@ export default function Header() {
           </section>
 
           <section>
-            <button type='button' onClick={menuHandler}>
+            <button type='button' className="flex items-center justify-center active:border rounded-full w-10 h-10 active:bg-text" onClick={menuHandler}>
               {""}
               <span>
                 <svg

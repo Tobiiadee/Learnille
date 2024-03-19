@@ -38,7 +38,7 @@ export default function Menu({ closeMenu, openMenu }: MenuType) {
               <img src='' alt='' />
             </div>
             <div>
-              <button type='button' onClick={closeMenu}>
+              <button type='button' className="flex items-center justify-center active:border rounded-full w-10 h-10 active:bg-text" onClick={closeMenu}>
                 {""}
                 <span>
                   <svg

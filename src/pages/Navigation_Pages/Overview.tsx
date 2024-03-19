@@ -10,7 +10,7 @@ export default function Overview() {
   return (
     <div className='pb-10 tab:grid tab:grid-cols-3 tab:gap-4 overflow-hidden'>
       <section className='col-span-2 '>
-        <main className='mt-14 tab:mt-0 flex flex-col items-center tab:grid tab:grid-cols-2 gap-4'>
+        <main className='mt-4 tab:mt-0 flex flex-col items-center tab:grid tab:grid-cols-2 gap-4'>
           <section className='text-sm font-semibold flex flex-col gap-2'>
             <h2>Hours Spent</h2>
             <HoursSpent />

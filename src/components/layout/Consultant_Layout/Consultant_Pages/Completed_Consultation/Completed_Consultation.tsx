@@ -14,7 +14,7 @@ export default function Completed_Consultation() {
         </h2>
       </main>
       
-      <section className='flex flex-col gap-2'>
+      <section className='mt-4 flex flex-col gap-2'>
         <Completed_Consultation_List />
         <Completed_Consultation_List />
         <Completed_Consultation_List />
