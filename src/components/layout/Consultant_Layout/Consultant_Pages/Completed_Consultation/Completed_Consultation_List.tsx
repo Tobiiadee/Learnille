@@ -14,9 +14,9 @@ import Card from "@/components/ui/Card/Card";
 export default function Completed_Consultation_List() {
   return (
     <Card>
-      <section className='bg-white'>
+      <section className='bg-white px-1'>
         <main className='mt-4 flex gap-4 w-full'>
-          <div className='min-w-28 h-28 rounded-md shadow'>
+          <div className='min-w-20 h-20 tab:min-w-28 tab:h-28 rounded-md shadow'>
             <img src='' alt='' />
           </div>
 
@@ -125,7 +125,7 @@ export default function Completed_Consultation_List() {
                 </span>
               </div>
 
-              <div className='flex gap-4 text-xs'>
+              <div className='flex gap-2 tab:gap-4 text-xs'>
                 <button
                   type='button'
                   className='px-4 py-1 tab:px-4 tab:py-1 rounded bg-[#AED6F1] text-layout-bg font-semibold hover:scale-110 transition duration-300'>
