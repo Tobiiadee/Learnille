@@ -87,7 +87,7 @@ export default function Consultation_List() {
             </section>
           )}
 
-          <div className='flex gap-2 text-xs tab:text-sm'>
+          <div className='flex gap-2 text-xs'>
             <button
               type='button'
               className='px-1 tab:px-2 py-1 rounded-md bg-layout-bg text-white font-semibold hover:scale-105 transition duration-300'>

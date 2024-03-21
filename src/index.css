@@ -19,3 +19,25 @@ body {
 }
 
 
+/* Add this CSS to your stylesheet */
+/* This is just a basic example. Customize it according to your needs */
+
+/* Track */
+::-webkit-scrollbar {
+  width: 5px;
+  
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background:  #d4d4d4 ;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background:   #c7c7c7 ;
+}
+
+
+

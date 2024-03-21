@@ -29,7 +29,7 @@ export default function Overview() {
           <h2 className='text-sm mx-auto tab:mx-0 font-semibold mb-2'>
             Continue from where you stopped!
           </h2>
-          <main className='flex mx-auto tab:w-full w-[21rem] tab:flex-row gap-2 rounded-md overflow-y-scroll tab:overflow-x-scroll tab:overflow-y-hidden'>
+          <main className='flex mx-auto tab:w-full w-[21rem] tab:flex-row gap-2 rounded-md overflow-y-scroll pb-2 tab:overflow-x-scroll tab:overflow-y-hidden'>
             <ResumeVidoes />
             <ResumeVidoes />
             <ResumeVidoes />

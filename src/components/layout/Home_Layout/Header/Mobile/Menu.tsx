@@ -8,7 +8,7 @@ import { motion } from "framer-motion";
 
 type MenuType = {
   closeMenu: () => void;
-  openMenu: boolean,
+  openMenu: boolean;
 };
 
 export default function Menu({ closeMenu, openMenu }: MenuType) {
@@ -22,23 +22,25 @@ export default function Menu({ closeMenu, openMenu }: MenuType) {
   };
 
   // console.log(openMenu);
-  
 
   return (
     <Modal onClick={closeMenu}>
       <Mobile_Pop>
-        <motion.section 
-        variants={SlideInVariant}
-        initial={openMenu ? "in" : "out"}
-        animate={openMenu ? "out" : "in"}
-        transition={{ duration: 0.5 }}
-        className='flex flex-col w-screen h-80 py-4 px-5 bg-white rounded-md'>
+        <motion.section
+          variants={SlideInVariant}
+          initial={openMenu ? "in" : "out"}
+          animate={openMenu ? "out" : "in"}
+          transition={{ duration: 0.5 }}
+          className='flex flex-col w-screen h-80 py-4 px-5 bg-white rounded-md'>
           <main className='flex justify-between items-center w-full pb-4 border-b border-dotted'>
             <div className='w-14 h-14 rounded-full shadow-md'>
               <img src='' alt='' />
             </div>
             <div>
-              <button type='button' className="flex items-center justify-center active:border rounded-full w-10 h-10 active:bg-text" onClick={closeMenu}>
+              <button
+                type='button'
+                className='flex items-center justify-center active:border rounded-full w-10 h-10 active:bg-text'
+                onClick={closeMenu}>
                 {""}
                 <span>
                   <svg
@@ -47,11 +49,11 @@ export default function Menu({ closeMenu, openMenu }: MenuType) {
                     viewBox='0 0 24 24'
                     strokeWidth={1.5}
                     stroke='currentColor'
-                    className='w-8 h-8'>
+                    className='w-6 h-6'>
                     <path
                       strokeLinecap='round'
                       strokeLinejoin='round'
-                      d='M6 18 18 6M6 6l12 12'
+                      d='M3 16.5v2.25A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75V16.5m-13.5-9L12 3m0 0 4.5 4.5M12 3v13.5'
                     />
                   </svg>
                 </span>

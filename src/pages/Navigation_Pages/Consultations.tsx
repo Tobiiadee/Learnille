@@ -4,11 +4,11 @@ import Consultation_Home from "@/components/layout/Consultant_Layout/Consultant_
 import { NavLink, useParams } from "react-router-dom";
 import Consultation_Meeting from "@/components/layout/Consultant_Layout/Consultant_Pages/Consultation_Meeting/Consultation_Metting";
 
+
 export default function Consultations() {
   const { consultation_id } = useParams();
 
   let consultationPage;
-
   switch (consultation_id) {
     case "consultation_meeting":
       consultationPage = <Consultation_Meeting />;
@@ -23,7 +23,7 @@ export default function Consultations() {
     <main className='pb-6 flex flex-col'>
       <main className=''>{consultationPage}</main>
 
-      <main className='mt-4 flex gap-1 items-center justify-center'>
+      <main className='mt-8 flex gap-1 items-center justify-center tab:w-8/12'>
         <NavLink to='/learnille/consultation/completed_consultations'>
           {""}
           <span>
@@ -43,7 +43,7 @@ export default function Consultations() {
         <div className='w-4 h-4 rounded-full shadow text-xs flex items-center justify-center bg-layout-bg text-white'>
           1
         </div>
-        <NavLink to='/learnille/consultation/consultation_meeting'>
+        <NavLink  to='/learnille/consultation/consultation_meeting'>
           {""}
           <span>
             <svg
