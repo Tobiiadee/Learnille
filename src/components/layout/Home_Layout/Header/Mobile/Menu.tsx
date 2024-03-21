@@ -31,7 +31,7 @@ export default function Menu({ closeMenu, openMenu }: MenuType) {
           initial={openMenu ? "in" : "out"}
           animate={openMenu ? "out" : "in"}
           transition={{ duration: 0.5 }}
-          className='flex flex-col w-screen h-80 py-4 px-5 bg-white rounded-md'>
+          className='flex flex-col w-screen h-80 py-4 px-5 bg-white rounded-b rounded-md'>
           <main className='flex justify-between items-center w-full pb-4 border-b border-dotted'>
             <div className='w-14 h-14 rounded-full shadow-md'>
               <img src='' alt='' />

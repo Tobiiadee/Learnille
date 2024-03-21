@@ -83,7 +83,7 @@ export default function Chat() {
         </main>
       </Card>
 
-      <Card classNames='col-span-1'>
+      <Card classNames='col-span-1 mt-2'>
         <section className="flex flex-col w-full gap-2">
           <h2 className='text-sm font-bold'>Messages</h2>
 
