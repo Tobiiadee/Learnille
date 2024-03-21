@@ -2,9 +2,9 @@
 
 import { useParams } from "react-router-dom";
 import Header from "../Header";
-import Consultant_Tips from "../Consultant_Tips";
 import Completed_Consultation from "./Completed_Consultation/Completed_Consultation";
 import Ongoing_Consultation from "./Ongoing_Consultation/Ongoing_Consultation";
+import Consultation_Tips_List from "./Tips/Consultation_Tips_List";
 
 export default function Consultation_Home() {
   const { consultation_id } = useParams();
@@ -28,10 +28,8 @@ export default function Consultation_Home() {
         <main>{consultationPages} </main>
       </main>
 
-      <main className='hidden tab:flex flex-col gap-2'>
-        <Consultant_Tips />
-        <Consultant_Tips />
-        <Consultant_Tips />
+      <main className='hidden tab:block'>
+        <Consultation_Tips_List />
       </main>
     </section>
   );

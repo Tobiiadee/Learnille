@@ -6,7 +6,7 @@ import Card from "@/components/ui/Card/Card";
 
 export default function Chat() {
   return (
-    <section className='tab:grid tab:grid-cols-3 gap-4 pr-2 pb-4'>
+    <section className='tab:grid tab:grid-cols-3 gap-4 pr-2 tab:pb-4'>
       <Card classNames='col-span-2 flex flex-col'>
         <main className='flex justify-between w-full border-b pb-4'>
           <section className='flex gap-2'>
@@ -53,7 +53,7 @@ export default function Chat() {
           </section>
         </main>
 
-        <main className='h-[20rem] border-b pb-4'></main>
+        <main className='h-[39rem] tab:h-[20rem] border-b pb-4'></main>
 
         <main className='w-full flex items-center gap-2 mt-3  px-4'>
           <input
@@ -83,7 +83,7 @@ export default function Chat() {
         </main>
       </Card>
 
-      <Card classNames='col-span-1 mt-2'>
+      <Card classNames='hidden tab:block col-span-1 mt-2'>
         <section className="flex flex-col w-full gap-2">
           <h2 className='text-sm font-bold'>Messages</h2>
 

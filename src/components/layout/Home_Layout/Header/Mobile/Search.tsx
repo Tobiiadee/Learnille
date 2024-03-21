@@ -21,7 +21,7 @@ export default function Search({ closeSearch, openMenu }: SearchType) {
   };
 
   return (
-    <Modal onClick={closeSearch}>
+    <Modal onClick={closeSearch} className="bg-black opacity-90">
       <Mobile_Pop>
         <motion.main
           variants={SlideInVariant}

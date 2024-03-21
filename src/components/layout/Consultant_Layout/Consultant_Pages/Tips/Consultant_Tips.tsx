@@ -2,7 +2,7 @@
 
 import Card from "@/components/ui/Card/Card";
 
-export default function Consultant_Tips() {
+export default function Consultation_Tips() {
   const text =
     "Plan ahead! Prepare the questions and topics you'll like to discuss. Get a stable network connection, convinience space free from any distraction.";
   const title = "How to prepare for your next meeting";

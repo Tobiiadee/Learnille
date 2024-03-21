@@ -1,5 +1,7 @@
 /** @format */
 
+import { NavLink } from "react-router-dom";
+
 import { Message, Bell } from "@/assets/svg/HeaderSVG";
 import Mobile_Pop from "@/components/ui/Mobile_Pop/Mobile_Pop";
 import Modal from "@/components/ui/Modal/Modal";
@@ -24,13 +26,14 @@ export default function Menu({ closeMenu, openMenu }: MenuType) {
   // console.log(openMenu);
 
   return (
-    <Modal onClick={closeMenu}>
+    <Modal className="bg-black opacity-90" onClick={closeMenu}>
       <Mobile_Pop>
         <motion.section
           variants={SlideInVariant}
           initial={openMenu ? "in" : "out"}
           animate={openMenu ? "out" : "in"}
           transition={{ duration: 0.5 }}
+          onClick={closeMenu}
           className='flex flex-col w-screen h-80 py-4 px-5 bg-white rounded-b rounded-md'>
           <main className='flex justify-between items-center w-full pb-4 border-b border-dotted'>
             <div className='w-14 h-14 rounded-full shadow-md'>
@@ -102,7 +105,7 @@ export default function Menu({ closeMenu, openMenu }: MenuType) {
               </span>
             </li>
 
-            <li className='py-3 px-4 flex gap-4 items-center border-b border-dotted pb-4'>
+            <NavLink to="/learnille/consultation/consultation_tips" className='py-3 px-4 flex gap-4 items-center border-b border-dotted pb-4'>
               <span>
                 <svg
                   xmlns='http://www.w3.org/2000/svg'
@@ -121,7 +124,7 @@ export default function Menu({ closeMenu, openMenu }: MenuType) {
               <span>
                 <h2>Tips</h2>
               </span>
-            </li>
+            </NavLink>
           </menu>
         </motion.section>
       </Mobile_Pop>

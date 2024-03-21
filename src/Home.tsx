@@ -64,7 +64,7 @@ function App() {
         </section>
       </section>
       <NavBar />
-      {viewNav && <NavBarMobile onView={navBarHideHandler} />}
+      {viewNav && <NavBarMobile viewNav={viewNav} onView={navBarHideHandler} />}
       <Header />
       <HeaderMobile />
       <Main />
