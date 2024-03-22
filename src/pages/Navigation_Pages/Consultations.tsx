@@ -27,7 +27,7 @@ export default function Consultations() {
     <main className='pb-6 flex flex-col'>
       <main className=''>{consultationPage}</main>
 
-      <main className='mt-8 flex gap-1 items-center justify-center tab:w-8/12'>
+      <main className='mt-8 flex gap-1 items-center justify-center nb:w-8/12'>
         <NavLink to='/learnille/consultation/completed_consultations'>
           {""}
           <span>

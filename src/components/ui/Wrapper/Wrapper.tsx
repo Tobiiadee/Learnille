@@ -5,5 +5,5 @@ export interface WrapperType {
 }
 
 export default function Wrapper({ children }: WrapperType) {
-  return <section className="w-screen tab:w-full mt-32 tab:ml-60 tab:mt-20">{children}</section>;
+  return <section className="w-screen nb:w-full mt-32 nb:ml-60 nb:mt-20">{children}</section>;
 }

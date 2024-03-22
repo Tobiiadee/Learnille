@@ -8,7 +8,7 @@ import HomeAside from "@/components/layout/Home_Layout/Home_Aside/Home_Aside";
 
 export default function Overview() {
   return (
-    <div className='pb-10 tab:grid tab:grid-cols-3 tab:gap-4 overflow-hidden'>
+    <div className='pb-10 tab:grid tab:grid-cols-2 nb:grid-cols-3 nb:gap-4 overflow-hidden tab:pr-4'>
       <section className='col-span-2 '>
         <main className='mt-4 tab:mt-0 flex flex-col items-center tab:grid tab:grid-cols-2 gap-4'>
           <section className='text-sm font-semibold flex flex-col gap-2'>

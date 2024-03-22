@@ -22,13 +22,13 @@ export default function Consultation_Home() {
   }
 
   return (
-    <section className='tab:grid tab:grid-cols-3 gap-4 pr-2 pb-4'>
+    <section className='nb:grid nb:grid-cols-3 gap-4 pr-2 pb-4'>
       <main className='col-span-2'>
         <Header />
         <main>{consultationPages} </main>
       </main>
 
-      <main className='hidden tab:block'>
+      <main className='hidden nb:block'>
         <Consultation_Tips_List />
       </main>
     </section>

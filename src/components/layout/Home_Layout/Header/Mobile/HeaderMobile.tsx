@@ -17,7 +17,7 @@ export default function Header() {
 
   return (
     <>
-      <div className='fixed top-0 left-0 w-full h-14 flex items-center justify-between shadow bg-white px-2 py-2 tab:hidden'>
+      <div className='fixed top-0 left-0 w-full h-14 flex items-center justify-between shadow bg-white px-2 py-2 nb:hidden'>
         <main className='flex flex-col gap-0'>
           <h2 className='text-layout-bg font-bold'>Hi Username</h2>
           <p className='text-xs text-text font-normal -mt-1'>
@@ -51,11 +51,11 @@ export default function Header() {
           </section>
         </main>
       </div>
-      <section className='tab:hidden'>
+      <section className='nb:hidden'>
         {onSearch && <Search openMenu={onSearch} closeSearch={searchHandler} />}
       </section>
 
-      <section className='tab:hidden'>
+      <section className='nb:hidden'>
         {openMenu && <Menu openMenu={openMenu} closeMenu={menuHandler} />}
       </section>
     </>

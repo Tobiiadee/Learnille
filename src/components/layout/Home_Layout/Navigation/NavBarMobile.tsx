@@ -80,7 +80,7 @@ export default function NavBar({ onView, viewNav }: ViewType) {
             <h2>Overview</h2>
           </NavLink>
           <NavLink
-            to='/learnille/consultation'
+            to='/learnille/consultation/ongoing_consultations'
             className='flex items-center text-sm text-white font-light active:text-black active:bg-background gap-2 px-4 py-3 cursor-pointer transition-all duration-200'>
             <span>
               <Consultations />

@@ -20,7 +20,7 @@ export default function Consultation_Metting() {
             <h2 className='font-semibold text-lg text-black capitalize'>
               UI/UX Design Consultation meeting
             </h2>
-            <div className='relative -z-10 mt-1 w-full border h-max tab:h-[26rem] shadow rounded-lg overflow-hidden'>
+            <div className='relative -z-10 mt-1 w-full border h-max nb:h-[26rem] shadow rounded-lg overflow-hidden'>
               <img src={img} alt='' />
 
               <div className='absolute top-6 right-5 rounded-md w-28 tab:w-36 bg-[#ccccf1] h-28 tab:h-36 p-3 shadow flex flex-col justify-between'>
@@ -135,7 +135,7 @@ export default function Consultation_Metting() {
           </Card>
         </section>
 
-        <section className='flex flex-col col-span-3 tab:col-span-1  gap-4'>
+        <section className='flex flex-col col-span-3 tab:col-span-1 gap-4'>
           <Card>
             <h2 className='text-sm font-semibold'>Consultation Details</h2>
             <div className='flex justify-between items-center text-xs text-layout-bg font-bold mt-2'>

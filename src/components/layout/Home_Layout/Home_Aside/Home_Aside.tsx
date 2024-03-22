@@ -6,7 +6,7 @@ import UpcomingEvents from "./Upcoming_Events/Upcoming_Events";
 
 export default function HomeAside() {
   return (
-    <section className='text-sm font-semibold hidden tab:w-80 tab:flex flex-col gap-4'>
+    <section className='text-sm font-semibold hidden tab:w-80 nb:flex flex-col gap-4'>
       <div className="flex flex-col gap-2">
         <h2 className='text-sm'>Calendar</h2>
         <Card>

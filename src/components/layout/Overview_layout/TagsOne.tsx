@@ -4,8 +4,8 @@ import Card from "@/components/ui/Card/Card";
 
 export default function TagOne() {
   return (
-    <section className='w-full grid place-content-center tab:grid-cols-3  gap-4 mt-10 tab:mt-4 tab:pr-1'>
-      <Card classNames='flex items-center gap-6 tab:gap-4 w-80 tab:w-56'>
+    <section className='w-full grid place-content-center tab:grid-cols-2 nb:grid-cols-3 gap-4 mt-10 tab:mt-4 tab:pr-1'>
+      <Card classNames='flex items-center gap-6 tab:gap-4 w-80 tab:w-full nb:w-56'>
         <span className='bg-[#AED6F1] p-2 rounded'>
           <svg
             width='20'
@@ -86,7 +86,7 @@ export default function TagOne() {
         </span>
       </Card>
 
-      <Card classNames='flex items-center gap-6 tab:gap-4 w-80 tab:w-56'>
+      <Card classNames='flex items-center gap-6 tab:gap-4 w-80 tab:w-full nb:w-56'>
         <span className='bg-[#E8DAEF] p-2 rounded'>
           <svg width='20px' height='20px' viewBox='0 0 24 24' fill='none'>
             <path
@@ -103,7 +103,7 @@ export default function TagOne() {
         </span>
       </Card>
 
-      <Card classNames='flex items-center gap-6 tab:gap-4 w-80 tab:w-56'>
+      <Card classNames='flex items-center gap-6 tab:gap-4 w-80 tab:w-full nb:w-56'>
         <span className='bg-[#ABEBC6] p-2 rounded'>
           <svg
             width='20px'
@@ -131,7 +131,7 @@ export default function TagOne() {
         </span>
       </Card>
 
-      <Card classNames='flex items-center gap-6 tab:gap-4 w-80 tab:w-56'>
+      <Card classNames='flex items-center gap-6 tab:gap-4 w-80 tab:w-full nb:w-56'>
         <span className='bg-[#D2B4DE] p-2 rounded'>
           <svg
             fill='#7D3C98'
@@ -151,7 +151,7 @@ export default function TagOne() {
         </span>
       </Card>
 
-      <Card classNames='flex items-center gap-6 tab:gap-4 w-80 tab:w-56'>
+      <Card classNames='flex items-center gap-6 tab:gap-4 w-80 tab:w-full nb:w-56'>
         <span className='bg-[#ABEBC6] p-2 rounded'>
           <svg
             width='20px'
@@ -181,7 +181,7 @@ export default function TagOne() {
         </span>
       </Card>
 
-      <Card classNames='flex items-center gap-6 tab:gap-4 w-80 tab:w-56'>
+      <Card classNames='flex items-center gap-6 tab:gap-4 w-80 tab:w-full nb:w-56'>
         <span className='bg-[#F5B7B1] p-2 rounded'>
           <svg
             xmlns='http://www.w3.org/2000/svg'

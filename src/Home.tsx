@@ -21,7 +21,7 @@ function App() {
 
   return (
     <main className='w-full pl-1 tab:p-0 tab:w-full tab:flex tab:items-start gap-4 overflow-hidden'>
-      <section className='fixed top-14 left-0 flex gap-4 pl-2 w-full h-14 shadow bg-white py-1 tab:hidden'>
+      <section className='fixed top-14 left-0 flex gap-4 pl-2 w-full h-14 shadow bg-white py-1 nb:hidden'>
         <button type='button' onClick={navBarViewHandler} className=''>
           {""}
           <span>

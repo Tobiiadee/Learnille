@@ -26,15 +26,15 @@ export default function Menu({ closeMenu, openMenu }: MenuType) {
   // console.log(openMenu);
 
   return (
-    <Modal className="bg-black opacity-90" onClick={closeMenu}>
-      <Mobile_Pop>
+    <Modal className="" onClick={closeMenu}>
+      <Mobile_Pop classNames="right-4 top-14">
         <motion.section
           variants={SlideInVariant}
           initial={openMenu ? "in" : "out"}
           animate={openMenu ? "out" : "in"}
           transition={{ duration: 0.5 }}
           onClick={closeMenu}
-          className='flex flex-col w-screen h-80 py-4 px-5 bg-white rounded-b rounded-md'>
+          className='flex flex-col w-52 tab:w-72 h-80 py-4 px-5 bg-layout-bg text-white rounded-b-md'>
           <main className='flex justify-between items-center w-full pb-4 border-b border-dotted'>
             <div className='w-14 h-14 rounded-full shadow-md'>
               <img src='' alt='' />

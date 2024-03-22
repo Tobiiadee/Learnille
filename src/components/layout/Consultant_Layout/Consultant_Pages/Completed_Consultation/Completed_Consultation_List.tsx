@@ -16,7 +16,7 @@ export default function Completed_Consultation_List() {
     <Card>
       <section className='bg-white px-1'>
         <main className='flex gap-4 w-full'>
-          <div className='min-w-20 h-20 tab:min-w-28 tab:h-28 rounded-md shadow'>
+          <div className='min-w-20 h-20 nb:min-w-28 nb:h-28 rounded-md shadow'>
             <img src='' alt='' />
           </div>
 
