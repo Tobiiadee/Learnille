@@ -19,12 +19,12 @@ export default function My_Certificate() {
       <main className='text-xs flex gap-4'>
         <button
           type='button'
-          className='px-8 py-2 rounded-sm bg-[#d4d4d4] active:bg-[#afaeae] text-black font-normal'>
+          className='px-4 py-2 rounded-sm bg-[#d4d4d4] active:bg-[#afaeae] text-black font-normal'>
           View Certificate
         </button>
         <button
           type='button'
-          className='px-6 py-2 rounded-sm bg-layout-bg active:bg-[#2846cf]  font-normal text-white'>
+          className='px-4 py-2 rounded-sm bg-layout-bg active:bg-[#2846cf]  font-normal text-white'>
           Download Certificate
         </button>
       </main>

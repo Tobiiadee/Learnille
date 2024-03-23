@@ -13,7 +13,11 @@ export default function Header() {
   const searchHandler = () => setTimeout(() => setOnSearch(prev => !prev), 300);
 
   //Menu Handler
-  const menuHandler = () => setTimeout(() => setOpenMenu(prev => !prev), 300);
+  const menuHandler = () => {
+    setTimeout(() => setOpenMenu(prev => !prev), 300)
+    console.log("Closed menu");
+    
+  };
 
   return (
     <>

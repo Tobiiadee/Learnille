@@ -9,7 +9,7 @@ export default function Recieve_Chat() {
       </div>
 
       <main className='w-max max-w-72 tab:max-w-96 h-max bg-[#AED6F1] rounded-md p-2'>
-        <p className='text-xs text-white'>
+        <p className='text-xs text-black'>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque,
           fugiat omnis alias error nemo cupiditate.
         </p>

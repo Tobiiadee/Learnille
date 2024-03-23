@@ -5,18 +5,19 @@ import Chat_List from "@/components/layout/Chat_Layout/Chat_List";
 import Recieve_Chat from "@/components/layout/Chat_Layout/Chat_Sender_Reciever/Recieve_Chat";
 import Send_Chat from "@/components/layout/Chat_Layout/Chat_Sender_Reciever/Send_Chat";
 import Card from "@/components/ui/Card/Card";
-import { useRef } from "react";
 
 // type InputType = string | null;
 
 export default function Chat() {
-  const sendTextRef = useRef<HTMLTextAreaElement>(null);
 
-  // const chatHeight = `h-screen-10rem`
+  const onSendChat = () => {
+    console.log("Chat Sent");
+    
+  }
 
   return (
     <section className='nb:grid nb:grid-cols-3 gap-4 pr-2 tab:pr-4 tab:pb-4 overflow-hidden'>
-      <aside className='relative -z-10 col-span-2 flex flex-col h-screen nb:h-max'>
+      <aside className='-z-10 col-span-2 flex flex-col h-screen nb:h-max'>
         <Card classNames='flex justify-between w- border-b pb-4'>
           <section className='flex gap-2'>
             <span className='w-8 h-8 rounded-full shadow'>
@@ -62,7 +63,7 @@ export default function Chat() {
           </section>
         </Card>
 
-        <Card classNames="h-max">
+        <Card classNames='h-max'>
           <main className='nb:h-[20rem] border-b pb-4 flex flex-col gap-4 pt-4 overflow-y-scroll'>
             <Recieve_Chat />
             <Send_Chat />
@@ -70,14 +71,14 @@ export default function Chat() {
 
           <main className='w-full flex items-center gap-2 mt-3  px-4'>
             <textarea
-              ref={sendTextRef}
               placeholder='Type your message'
               className='w-11/12 h-8 py-2 px-2 outline-none border-none text-xs rounded-sm bg-[#e4e4e4] placeholder:text-xs placeholder:font-normal placeholder:text-black'
             />
 
             <button
               type='button'
-              className='py-2 px-3 bg-layout-bg rounded-sm shadow'>
+              onClick={onSendChat}
+              className='py-2 px-3 bg-layout-bg active:bg-[#2a49d1] cursor-pointer rounded-sm shadow'>
               {""}
               <svg
                 xmlns='http://www.w3.org/2000/svg'

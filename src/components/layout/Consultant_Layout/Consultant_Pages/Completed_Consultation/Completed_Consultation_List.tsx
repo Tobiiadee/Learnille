@@ -128,12 +128,12 @@ export default function Completed_Consultation_List() {
               <div className='flex gap-2 tab:gap-4 text-xs tab:w-3/6 '>
                 <button
                   type='button'
-                  className='px-4 py-1 tab:px-6 tab:py-1 rounded-sm bg-[#AED6F1] text-layout-bg font-semibold hover:scale-110 transition duration-300'>
+                  className='px-4 py-1 tab:px-6 tab:py-1 rounded-sm bg-[#AED6F1] text-layout-bg font-semibold active:bg-[#9ebacc] transition duration-300'>
                   Repurchase
                 </button>
                 <button
                   type='button'
-                  className='px-4 py-1 tab:px-4 tab:py-1 rounded-sm border text-text font-semibold hover:scale-110 transition duration-300'>
+                  className='px-4 py-1 tab:px-4 tab:py-1 rounded-sm border text-text font-semibold active:bg-[#eee] transition duration-300'>
                   Send Message
                 </button>
               </div>

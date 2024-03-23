@@ -23,27 +23,21 @@ export default function Menu({ closeMenu, openMenu }: MenuType) {
     },
   };
 
-  // console.log(openMenu);
-
   return (
-    <Modal className="" onClick={closeMenu}>
-      <Mobile_Pop classNames="right-4 top-14">
+    <Modal className='' onClick={closeMenu}>
+      <Mobile_Pop classNames='right-4 top-14'>
         <motion.section
           variants={SlideInVariant}
           initial={openMenu ? "in" : "out"}
           animate={openMenu ? "out" : "in"}
           transition={{ duration: 0.5 }}
           onClick={closeMenu}
-          className='flex flex-col w-52 tab:w-72 h-80 py-4 px-5 bg-layout-bg text-white rounded-b-md'>
-          <main className='flex justify-between items-center w-full pb-4 border-b border-dotted'>
-            <div className='w-14 h-14 rounded-full shadow-md'>
-              <img src='' alt='' />
-            </div>
+          className='flex flex-col w-52 tab:w-72 h-max py-4 px-5 bg-layout-bg text-white rounded-b-md'>
+          <main className='flex justify-end items-center w-full'>
             <div>
               <button
                 type='button'
-                className='flex items-center justify-center active:border rounded-full w-10 h-10 active:bg-text'
-                onClick={closeMenu}>
+                className='flex items-center justify-center active:rounded-full w-6 h-6 active:bg-text'>
                 {""}
                 <span>
                   <svg
@@ -52,7 +46,7 @@ export default function Menu({ closeMenu, openMenu }: MenuType) {
                     viewBox='0 0 24 24'
                     strokeWidth={1.5}
                     stroke='currentColor'
-                    className='w-6 h-6'>
+                    className='w-4 h-4'>
                     <path
                       strokeLinecap='round'
                       strokeLinejoin='round'
@@ -64,8 +58,8 @@ export default function Menu({ closeMenu, openMenu }: MenuType) {
             </div>
           </main>
 
-          <menu className='mt-4 flex flex-col text-sm font-semibold'>
-            <li className='py-3 px-4 flex gap-4 items-center border-b border-dotted pb-4'>
+          <menu className='flex flex-col text-sm font-semibold'>
+            <li className='py-1 tab:py-2 px-4 flex gap-4 items-center border-b border-dotted pb-4active:bg-[#d1ecff]'>
               <span>
                 <svg
                   xmlns='http://www.w3.org/2000/svg'
@@ -86,7 +80,7 @@ export default function Menu({ closeMenu, openMenu }: MenuType) {
               </span>
             </li>
 
-            <li className='py-3 px-4 flex gap-4 items-center border-b border-dotted pb-4'>
+            <li className='py-1 tab:py-2 px-4 flex gap-4 items-center border-b border-dotted pb-4active:bg-[#d1ecff]'>
               <span>
                 <Message />
               </span>
@@ -96,7 +90,7 @@ export default function Menu({ closeMenu, openMenu }: MenuType) {
               </span>
             </li>
 
-            <li className='py-3 px-4 flex gap-4 items-center border-b border-dotted pb-4'>
+            <li className='py-1 tab:py-2 px-4 flex gap-4 items-center border-b border-dotted pb-4active:bg-[#d1ecff]'>
               <span>
                 <Bell />
               </span>
@@ -105,7 +99,9 @@ export default function Menu({ closeMenu, openMenu }: MenuType) {
               </span>
             </li>
 
-            <NavLink to="/learnille/consultation/consultation_tips" className='py-3 px-4 flex gap-4 items-center border-b border-dotted pb-4'>
+            <NavLink
+              to='/learnille/consultation/consultation_tips'
+              className='py-1 tab:py-2 px-4 flex gap-4 items-center active:bg-[#d1ecff]'>
               <span>
                 <svg
                   xmlns='http://www.w3.org/2000/svg'

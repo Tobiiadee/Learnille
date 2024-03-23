@@ -90,22 +90,22 @@ export default function Consultation_List() {
           <div className='flex gap-2 text-xs'>
             <button
               type='button'
-              className='px-1 tab:px-2 py-1 rounded-md bg-layout-bg text-white font-semibold hover:scale-105 transition duration-300'>
+              className='px-1 tab:px-2 py-1 rounded-md bg-layout-bg text-white font-semibold active:bg-[#2a49d1] transition duration-300'>
               Join Meeting
             </button>
             <button
               type='button'
-              className='px-1 tab:px-2 py-1 border border-[#6f3b30] text-[#6f3b30] rounded-md hover:scale-105 transition duration-300'>
+              className='px-1 tab:px-2 py-1 border border-[#6f3b30] text-[#6f3b30] rounded-md active:bg-[#eee] transition duration-300'>
               Send Message
             </button>
             <button
               type='button'
-              className='px-2 py-1 border border-[#6f3b30] text-[#6f3b30] rounded-md hover:scale-105 transition duration-300'>
+              className='px-2 py-1 border border-[#6f3b30] text-[#6f3b30] rounded-md active:bg-[#eee] transition duration-300'>
               Reschedule
             </button>
             <button
               type='button'
-              className='px-2 py-1 border border-[#d0593f] text-[#d0593f] rounded-md hover:scale-105 transition duration-300'>
+              className='px-2 py-1 border border-[#d0593f] text-[#d0593f] rounded-md active:bg-[#eee] transition duration-300'>
               Cancel
             </button>
           </div>
