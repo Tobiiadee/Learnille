@@ -10,14 +10,11 @@ export default function Header() {
   const [openMenu, setOpenMenu] = useState(false);
 
   //Search Handler
-  const searchHandler = () => setTimeout(() => setOnSearch(prev => !prev), 300);
+  const searchHandler = () =>
+    setTimeout(() => setOnSearch((prev) => !prev), 300);
 
   //Menu Handler
-  const menuHandler = () => {
-    setTimeout(() => setOpenMenu(prev => !prev), 300)
-    console.log("Closed menu");
-    
-  };
+  const menuHandler = () => setTimeout(() => setOpenMenu((prev) => !prev), 300);
 
   return (
     <>
@@ -31,7 +28,10 @@ export default function Header() {
 
         <main className='flex items-center gap-2 mr-1'>
           <section>
-            <button type='button' className="flex items-center justify-center active:border rounded-full w-10 h-10 active:bg-text" onClick={searchHandler}>
+            <button
+              type='button'
+              className='flex items-center justify-center active:border rounded-full w-10 h-10 active:bg-text'
+              onClick={searchHandler}>
               {""}
               <span className=''>
                 <SearchV />
@@ -40,7 +40,10 @@ export default function Header() {
           </section>
 
           <section>
-            <button type='button' className="flex items-center justify-center active:border rounded-full w-10 h-10 active:bg-text" onClick={menuHandler}>
+            <button
+              type='button'
+              className='flex items-center justify-center active:border rounded-full w-10 h-10 active:bg-text'
+              onClick={menuHandler}>
               {""}
               <span>
                 <svg

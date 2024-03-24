@@ -15,7 +15,7 @@ export default function Events({onView, view}: ViewType) {
       <section className="flex justify-between items-center text-xs w-full font-medium">
         <h2>{event_title}</h2>
         <button type='button' onClick={onView} className="flex gap-1 items-center">
-          <p>view more</p>
+          <p>{view ? "view less" : "view more"}</p>
           <div>
             <ArrowD onRotate={view} />
           </div>

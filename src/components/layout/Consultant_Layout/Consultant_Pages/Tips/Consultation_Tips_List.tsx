@@ -8,7 +8,7 @@ export default function Consultation_Tips_List() {
       <div>
         <h2 className='font-semibold text-sm nb:hidden'>#Tips</h2>
       </div>
-      <main className=" flex flex-col gap-2">
+      <main className=" flex flex-col gap-2 nb:max-h-[500px] nb:pr-2 nb:overflow-y-scroll">
         <Consultation_Tips />
         <Consultation_Tips />
         <Consultation_Tips />

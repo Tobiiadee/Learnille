@@ -2,14 +2,17 @@
 
 import Card from "@/components/ui/Card/Card";
 
-export default function ResumeVidoes() {
+export default function Ongoing_Courses_Item() {
   return (
-    <Card classNames='min-w-full tab:min-w-60 tab:w-[17rem]'>
-      <section className='w-full h-40 shadow rounded'></section>
-      <section className='flex flex-col gap-2 text-xs font-semibold mt-2'>
-        <h2>Ongoing Course</h2>
-        <section className="flex flex-col gap-1">
+    <Card classNames='min-w-full tab:w-[12rem]'>
+      <section className='w-full h-32 shadow rounded'></section>
+      <section className='flex flex-col text-xs font-semibold mt-2'>
+        <section className="flex w-full justify-between -mb-1">
+          <h2>Ongoing Course</h2>
           <p className='text-layout-bg'>15% completed</p>
+        </section>
+
+        <section>
           <progress
             value={15}
             max={100}

@@ -9,11 +9,7 @@ import Card from "@/components/ui/Card/Card";
 // type InputType = string | null;
 
 export default function Chat() {
-
-  const onSendChat = () => {
-    console.log("Chat Sent");
-    
-  }
+  const onSendChat = () => {};
 
   return (
     <section className='nb:grid nb:grid-cols-3 gap-4 pr-2 tab:pr-4 tab:pb-4 overflow-hidden'>

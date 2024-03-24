@@ -11,7 +11,7 @@ export default function Consultation_List() {
   const onViewLess = () => setViewLess((prev) => !prev);
 
   return (
-    <Card classNames={`${veiwLess ? "border border-text" : ""}`}>
+    <Card classNames={`${veiwLess ? "border" : ""}`}>
       <section>
         <main className='flex justify-between items-center'>
           <div>
@@ -40,7 +40,7 @@ export default function Consultation_List() {
           </div>
 
           {veiwLess && (
-            <section className='flex flex-col gap-4 border-t border-text pt-6'>
+            <section className='flex flex-col gap-4 border-t pt-6'>
               <main>
                 <h2 className='text-sm font-semibold'>Mentor:</h2>
                 <div className='flex gap-4 mt-2'>
