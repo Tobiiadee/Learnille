@@ -8,7 +8,7 @@ export default function Section_Item() {
     <Card classNames='p-0 flex flex-col gap-2'>
       <div className='font-bold text-xs text-black flex gap-1 items-center'>
         <h2>Section 01</h2>
-        {/* <div className='text-[7px] font-normal flex gap-1'>
+        <div className='text-[7px] font-normal flex gap-1'>
           <span className='flex items-center gap-1'>
             <svg
               xmlns='http://www.w3.org/2000/svg'
@@ -16,7 +16,7 @@ export default function Section_Item() {
               viewBox='0 0 24 24'
               strokeWidth={1.5}
               stroke='currentColor'
-              className='w-3 h-3'>
+              className='w-3 h-3 text-layout-text'>
               <path
                 strokeLinecap='round'
                 strokeLinejoin='round'
@@ -32,7 +32,7 @@ export default function Section_Item() {
               viewBox='0 0 24 24'
               strokeWidth={1.5}
               stroke='currentColor'
-              className='w-3 h-3'>
+              className='w-3 h-3 text-layout-text'>
               <path
                 strokeLinecap='round'
                 strokeLinejoin='round'
@@ -53,7 +53,7 @@ export default function Section_Item() {
               viewBox='0 0 24 24'
               strokeWidth={1.5}
               stroke='currentColor'
-              className='w-3 h-3'>
+              className='w-3 h-3 text-layout-text'>
               <path
                 strokeLinecap='round'
                 strokeLinejoin='round'
@@ -90,7 +90,7 @@ export default function Section_Item() {
               />
             </svg>
           </span>
-        </div> */}
+        </div>
       </div>
 
       <div className='flex flex-col gap-0'>
@@ -116,6 +116,13 @@ export default function Section_Item() {
         <Course_Section />
         <Course_Section />
         <Course_Section />
+      </div>
+
+      <div className="mt-1 flex justify-between items-center w-full text-sm">
+        <h2>To access the section</h2>
+        <button type="button" className=" bg-[#dddff4] active:bg-[#c9cbdd] text-layout-bg font-semibold rounded-sm px-4 py-1 transition duration-300">
+          Buy Now
+        </button>
       </div>
     </Card>
   );

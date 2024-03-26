@@ -3,7 +3,8 @@
 type SVGType = {
   className?: string;
   onRotate?: boolean;
-}
+  bgText?: true | false;
+};
 
 export function SearchV() {
   return (
@@ -23,7 +24,7 @@ export function SearchV() {
   );
 }
 
-export function ArrowD({className, onRotate}: SVGType) {
+export function ArrowD({ className, onRotate }: SVGType) {
   return (
     <svg
       xmlns='http://www.w3.org/2000/svg'
@@ -41,7 +42,7 @@ export function ArrowD({className, onRotate}: SVGType) {
   );
 }
 
-export function Message() {
+export function Message({ bgText, className }: SVGType) {
   return (
     <svg
       xmlns='http://www.w3.org/2000/svg'
@@ -49,7 +50,7 @@ export function Message() {
       viewBox='0 0 24 24'
       strokeWidth={1.5}
       stroke='currentColor'
-      className='w-4 h-4 text-layout-bg'>
+      className={`w-4 h-4 ${bgText ? `${className}` : "text-layout-bg"} `}>
       <path
         strokeLinecap='round'
         strokeLinejoin='round'
@@ -59,7 +60,7 @@ export function Message() {
   );
 }
 
-export function Bell() {
+export function Bell({ bgText, className }: SVGType) {
   return (
     <svg
       xmlns='http://www.w3.org/2000/svg'
@@ -67,7 +68,7 @@ export function Bell() {
       viewBox='0 0 24 24'
       strokeWidth={1.5}
       stroke='currentColor'
-      className='w-4 h-4 text-layout-bg'>
+      className={`w-4 h-4 ${bgText ? `${className}` : "text-layout-bg"} `}>
       <path
         strokeLinecap='round'
         strokeLinejoin='round'
