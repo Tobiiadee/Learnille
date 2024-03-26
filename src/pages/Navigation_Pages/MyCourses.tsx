@@ -22,7 +22,7 @@ export default function MyCourses() {
 
   return (
     <section className='pb-6 flex flex-col'>
-      <main className=''>{coursesPage}</main>
+      <main className='pr-4'>{coursesPage}</main>
 
       <main className='mt-8 flex gap-1 items-center justify-center nb:w-8/12'>
         <NavLink to='/learnille/my courses/courses/completed_courses'>

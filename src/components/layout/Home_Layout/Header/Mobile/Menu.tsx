@@ -17,9 +17,11 @@ export default function Menu({ closeMenu, openMenu }: MenuType) {
   const SlideInVariant = {
     in: {
       scale: 0.9,
+      x: 100,
     },
     out: {
       scale: 1,
+      x: 0,
     },
   };
 

@@ -1,12 +1,13 @@
 /** @format */
-import Course_Video_Header from "./Course_Video_Header";
-import Course_Video_Home from "./Course_Video_Home";
+import Course_Video_Section from "./Aside_Section/Course_Video_Section";
+import Course_Video_Header from "./Header/Course_Video_Header";
+import Course_Video_Home from "./Home/Course_Video_Home";
 
 export default function Courses_Video() {
 
   return (
-    <section className='grid grid-cols-3 gap-4'>
-      <section className='col-span-3 px-2 nb:px-0 nb:col-span-2 flex flex-col gap-2'>
+    <main className='grid nb:grid-cols-3 gap-4'>
+      <section className='col-span-2 px-2 nb:px-0 nb:col-span-2 flex flex-col gap-2'>
         <div className='text-xs text-text'>
           <h2>
             My Courses / <span>How To Make Your First Million /</span> Play
@@ -37,6 +38,10 @@ export default function Courses_Video() {
             <Course_Video_Home/>
         </main>
       </section>
-    </section>
+
+      <aside className="hidden nb:block">
+        <Course_Video_Section/>
+      </aside>
+    </main>
   );
 }

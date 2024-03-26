@@ -53,7 +53,7 @@ export default function Comment_Item() {
           </button>
 
           {reply && (
-            <section className='flex gap-2 items-center px-2 mt-2'>
+            <section className='flex gap-2 px-2 mt-2'>
               <div className='flex gap-2 items-center py-1 px-2 bg-white'>
                 <svg
                   xmlns='http://www.w3.org/2000/svg'
@@ -72,15 +72,15 @@ export default function Comment_Item() {
                 <input
                   type='text'
                   placeholder='Write your reply'
-                  className='w-96 appearance-none outline-none border-none py-1 px-2 text-xs placeholder:text-xs'
+                  className='w-40 tab:w-96 appearance-none outline-none border-none py-1 px-2 text-xs placeholder:text-xs'
                 />
               </div>
 
               <div>
                 <button
                   type='button'
-                  className='flex justify-between bg-[#edf1ff] pl-2 active:bg-[#ced5ee] transition duration-300'>
-                  <span className='text-xs text-layout-bg font-semibold py-2 px-2'>
+                  className='flex justify-between bg-[#edf1ff]  active:bg-[#ced5ee] transition duration-300'>
+                  <span className='text-[10px] tab:text-xs text-layout-bg font-semibold py-2 px-1 tab:px-2'>
                     Post Reply
                   </span>
                   <span className='text-white py-2 px-2  bg-layout-bg rounded-r-md '>
