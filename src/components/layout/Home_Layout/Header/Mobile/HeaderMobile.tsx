@@ -18,7 +18,7 @@ export default function Header() {
 
   return (
     <>
-      <div className='fixed top-0 left-0 w-full h-14 flex items-center justify-between shadow bg-white px-2 py-2 nb:hidden'>
+      <div className='fixed top-0 left-0 w-full h-14 flex items-center justify-between shadow bg-white px-2 py-2 nb:hidden z-50'>
         <main className='flex flex-col gap-0'>
           <h2 className='text-layout-bg font-bold'>Hi Username</h2>
           <p className='text-xs text-text font-normal -mt-1'>
