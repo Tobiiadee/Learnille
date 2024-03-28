@@ -3,6 +3,7 @@
 import Card from "@/components/ui/Card/Card";
 import img from "../../../../../assets/mk-s-Mm5AlahnRcE-unsplash.jpg";
 import UpcomingEvents from "@/components/layout/Home_Layout/Home_Aside/Upcoming_Events/Upcoming_Events";
+import Progress from "@/components/ui/Cosultation_Progress/Progress";
 
 export default function Consultation_Metting() {
   return (
@@ -193,7 +194,7 @@ export default function Consultation_Metting() {
             </div>
 
             <div>
-              <span>CC</span>
+              <Progress/>
             </div>
           </main>
 

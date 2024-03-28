@@ -11,6 +11,7 @@ import MarketPlace from "./MarketPlace";
 import Settings from "./Settings";
 import Support from "./Support";
 import Wrapper from "@/components/ui/Wrapper/Wrapper";
+import WishList from "./WishList";
 
 export default function Main() {
   const { navId } = useParams();
@@ -44,6 +45,10 @@ export default function Main() {
 
     case "settings":
       page = <Settings />;
+      break;
+
+    case "wishlist":
+      page = <WishList/>;
       break;
 
     case "support":

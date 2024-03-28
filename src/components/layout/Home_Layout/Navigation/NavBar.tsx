@@ -11,6 +11,7 @@ import {
   PurchaseHistory,
   Setting,
   Support,
+  WhishList,
 } from "../../../../assets/svg/HeaderSVG";
 
 export default function NavBar() {
@@ -63,6 +64,14 @@ export default function NavBar() {
           <h2>My Courses</h2>
         </NavLink>
         <NavLink
+          to='/learnille/wishlist'
+          className='flex items-center text-sm text-white font-light hover:text-black hover:bg-background gap-2 px-6 py-2 cursor-pointer transition-all duration-200'>
+          <span>
+            <WhishList/>
+          </span>
+          <h2>Wishlist</h2>
+        </NavLink>
+        <NavLink
           to='/learnille/purchase history'
           className='flex items-center text-sm text-white font-light hover:text-black hover:bg-background gap-2 px-6 py-2 cursor-pointer transition-all duration-200'>
           <span>
@@ -80,7 +89,7 @@ export default function NavBar() {
         </NavLink>
       </menu>
 
-      <section className='mt-8'>
+      <section className='mt-6'>
         <NavLink
           to='/learnille/settings'
           className='flex items-center text-sm text-white font-light hover:text-black hover:bg-background gap-2 px-4 py-2 cursor-pointer transition-all duration-200'>
@@ -99,7 +108,7 @@ export default function NavBar() {
         </NavLink>
       </section>
 
-      <section className='flex mt-8'>
+      <section className='flex mt-6'>
         <button
           type='button'
           className='bg-white text-xs mx-auto rounded-md shadow-md px-2 py-2 hover:scale-105 transition duration-300'>
@@ -107,7 +116,7 @@ export default function NavBar() {
         </button>
       </section>
 
-      <section className='flex gap-3 items-center border-t border-dotted pt-2 text-sm text-white w-full mt-10'>
+      <section className='flex gap-3 items-center border-t border-dotted pt-2 text-sm text-white w-full mt-6'>
         <div className='w-8 h-8 shadow-md ml-2 rounded-full overflow-hidden'>
           <img src='' alt='' />
         </div>

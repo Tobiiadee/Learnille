@@ -1,8 +1,17 @@
+/** @format */
+
+import Header from "@/components/layout/Market_Place_Layout/Header/Header";
+import Home from "@/components/layout/Market_Place_Layout/Home/Home";
+import Navigation from "@/components/layout/Market_Place_Layout/Navigation/Navigation";
 
 export default function MarketPlace() {
   return (
-    <div>
-      <h2>Market Place</h2>
-    </div>
-  )
+    <main className='nb:pr-32 flex flex-col gap-4'>
+      <Header />
+      <Navigation />
+      <section>
+        <Home />
+      </section>
+    </main>
+  );
 }

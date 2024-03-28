@@ -3,8 +3,15 @@ import Course_Video_Section from "./Aside_Section/Course_Video_Section";
 import Course_Video_Header from "./Header/Course_Video_Header";
 import Course_Video_Home from "./Home/Course_Video_Home";
 import img from "../../../../assets/mk-s-Mm5AlahnRcE-unsplash.jpg";
+import { useState } from "react";
 
 export default function Courses_Video() {
+  const [playVideo, setPlayVideo] = useState(false);
+  const [fullscreen, setfullscreen] = useState(false);
+
+  const playVideohandler = () => setPlayVideo((prev) => !prev);
+  const fullscreenhandler = () => setfullscreen((prev) => !prev);
+
   return (
     <main className='grid nb:grid-cols-3 gap-4'>
       <section className='col-span-2 px-2 nb:px-0 nb:col-span-2 flex flex-col gap-2'>
@@ -16,44 +23,80 @@ export default function Courses_Video() {
           </h2>
         </div>
 
-        <main className='relative w-full border h-max tab:h-[20rem] nb:h-[26rem] shadow rounded-lg overflow-hidden z-0'>
+        <main className='relative w-full border h-max tab:h-[20rem] nb:h-[26rem] shadow rounded-xl overflow-hidden z-0'>
           <div>
-            <img src={img} alt='test img'/>
+            <img src={img} alt='test img' />
           </div>
           <section className='absolute top-0 left-0 w-full h-full  backdrop'>
             <div className='absolute top-[45%] w-full flex justify-center'>
               <button
                 type='button'
+                onClick={playVideohandler}
                 className='flex items-center justify-center w-11 h-11 rounded-full bg-layout-bg cursor-pointer'>
                 {""}
-                <svg
-                  xmlns='http://www.w3.org/2000/svg'
-                  viewBox='0 0 24 24'
-                  fill='#fff'
-                  className='w-6 h-6'>
-                  <path
-                    fillRule='evenodd'
-                    d='M4.5 5.653c0-1.427 1.529-2.33 2.779-1.643l11.54 6.347c1.295.712 1.295 2.573 0 3.286L7.28 19.99c-1.25.687-2.779-.217-2.779-1.643V5.653Z'
-                    clipRule='evenodd'
-                  />
-                </svg>
+                {playVideo ? (
+                  <svg
+                    xmlns='http://www.w3.org/2000/svg'
+                    viewBox='0 0 24 24'
+                    fill='#fff'
+                    className='w-6 h-6'>
+                    <path
+                      fillRule='evenodd'
+                      d='M4.5 5.653c0-1.427 1.529-2.33 2.779-1.643l11.54 6.347c1.295.712 1.295 2.573 0 3.286L7.28 19.99c-1.25.687-2.779-.217-2.779-1.643V5.653Z'
+                      clipRule='evenodd'
+                    />
+                  </svg>
+                ) : (
+                  <svg
+                    xmlns='http://www.w3.org/2000/svg'
+                    fill='#fff'
+                    viewBox='0 0 24 24'
+                    strokeWidth={2.5}
+                    stroke='#fff'
+                    className='w-6 h-6'>
+                    <path
+                      strokeLinecap='round'
+                      strokeLinejoin='round'
+                      d='M15.75 5.25v13.5m-7.5-13.5v13.5'
+                    />
+                  </svg>
+                )}
               </button>
             </div>
 
-            <div className="absolute left-0 bottom-8 flex justify-between px-6 w-full text-white">
-              <button type='button' className="cursor-pointer">
+            <div className='absolute left-0 bottom-4 flex justify-between px-6 w-full text-white'>
+              <button
+                type='button'
+                onClick={playVideohandler}
+                className='cursor-pointer'>
                 {""}
-                <svg
-                  xmlns='http://www.w3.org/2000/svg'
-                  viewBox='0 0 20 20'
-                  fill='currentColor'
-                  className='w-4 h-4'>
-                  <path d='M6.3 2.84A1.5 1.5 0 0 0 4 4.11v11.78a1.5 1.5 0 0 0 2.3 1.27l9.344-5.891a1.5 1.5 0 0 0 0-2.538L6.3 2.841Z' />
-                </svg>
+                {playVideo ? (
+                  <svg
+                    xmlns='http://www.w3.org/2000/svg'
+                    viewBox='0 0 20 20'
+                    fill='currentColor'
+                    className='w-4 h-4'>
+                    <path d='M6.3 2.84A1.5 1.5 0 0 0 4 4.11v11.78a1.5 1.5 0 0 0 2.3 1.27l9.344-5.891a1.5 1.5 0 0 0 0-2.538L6.3 2.841Z' />
+                  </svg>
+                ) : (
+                  <svg
+                    xmlns='http://www.w3.org/2000/svg'
+                    fill='none'
+                    viewBox='0 0 24 24'
+                    strokeWidth={2.5}
+                    stroke='#fff'
+                    className='w-4 h-4'>
+                    <path
+                      strokeLinecap='round'
+                      strokeLinejoin='round'
+                      d='M15.75 5.25v13.5m-7.5-13.5v13.5'
+                    />
+                  </svg>
+                )}
               </button>
 
-              <section className="flex gap-4">
-                <button type='button' className="cursor-pointer">
+              <section className='flex gap-4'>
+                <button type='button' className='cursor-pointer'>
                   {""}
                   <svg
                     xmlns='http://www.w3.org/2000/svg'
@@ -65,7 +108,7 @@ export default function Courses_Video() {
                   </svg>
                 </button>
 
-                <button type='button' className="cursor-pointer">
+                <button type='button' className='cursor-pointer'>
                   {""}
                   <svg
                     xmlns='http://www.w3.org/2000/svg'
@@ -86,21 +129,40 @@ export default function Courses_Video() {
                     />
                   </svg>
                 </button>
-                <button type='button' className="cursor-pointer">
+                <button
+                  type='button'
+                  onClick={fullscreenhandler}
+                  className='cursor-pointer'>
                   {""}
-                  <svg
-                    xmlns='http://www.w3.org/2000/svg'
-                    fill='none'
-                    viewBox='0 0 24 24'
-                    strokeWidth={1.5}
-                    stroke='currentColor'
-                    className='w-4 h-4'>
-                    <path
-                      strokeLinecap='round'
-                      strokeLinejoin='round'
-                      d='M3.75 3.75v4.5m0-4.5h4.5m-4.5 0L9 9M3.75 20.25v-4.5m0 4.5h4.5m-4.5 0L9 15M20.25 3.75h-4.5m4.5 0v4.5m0-4.5L15 9m5.25 11.25h-4.5m4.5 0v-4.5m0 4.5L15 15'
-                    />
-                  </svg>
+                  {fullscreen ? (
+                    <svg
+                      xmlns='http://www.w3.org/2000/svg'
+                      fill='none'
+                      viewBox='0 0 24 24'
+                      strokeWidth={1.5}
+                      stroke='currentColor'
+                      className='w-4 h-4'>
+                      <path
+                        strokeLinecap='round'
+                        strokeLinejoin='round'
+                        d='M9 9V4.5M9 9H4.5M9 9 3.75 3.75M9 15v4.5M9 15H4.5M9 15l-5.25 5.25M15 9h4.5M15 9V4.5M15 9l5.25-5.25M15 15h4.5M15 15v4.5m0-4.5 5.25 5.25'
+                      />
+                    </svg>
+                  ) : (
+                    <svg
+                      xmlns='http://www.w3.org/2000/svg'
+                      fill='none'
+                      viewBox='0 0 24 24'
+                      strokeWidth={1.5}
+                      stroke='currentColor'
+                      className='w-4 h-4'>
+                      <path
+                        strokeLinecap='round'
+                        strokeLinejoin='round'
+                        d='M3.75 3.75v4.5m0-4.5h4.5m-4.5 0L9 9M3.75 20.25v-4.5m0 4.5h4.5m-4.5 0L9 15M20.25 3.75h-4.5m4.5 0v4.5m0-4.5L15 9m5.25 11.25h-4.5m4.5 0v-4.5m0 4.5L15 15'
+                      />
+                    </svg>
+                  )}
                 </button>
               </section>
             </div>
