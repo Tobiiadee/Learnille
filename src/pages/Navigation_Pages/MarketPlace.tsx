@@ -6,7 +6,7 @@ import Navigation from "@/components/layout/Market_Place_Layout/Navigation/Navig
 
 export default function MarketPlace() {
   return (
-    <main className='nb:pr-32 flex flex-col gap-4'>
+    <main className='nb:pr-60 flex flex-col gap-4'>
       <Header />
       <Navigation />
       <section>

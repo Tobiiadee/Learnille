@@ -31,7 +31,7 @@ export default function Ongoing_Courses_Item() {
       <section className='mt-2 w-full flex'>
         <button
           type='button'
-          className='text-sm font-semibold text-layout-bg px-10 py-1 mx-auto rounded-sm outline-none active:bg-[#d8e1e7] bg-background transition duration-300'>
+          className='text-xs font-semibold text-layout-bg px-10 py-1 mx-auto rounded-sm outline-none active:bg-[#d8e1e7] bg-background transition duration-300'>
           Resume Course
         </button>
       </section>

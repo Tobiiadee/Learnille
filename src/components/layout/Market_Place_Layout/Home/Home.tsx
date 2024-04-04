@@ -1,9 +1,9 @@
 /** @format */
 
 import { useParams } from "react-router-dom";
-import Avaliable_Consultations from "../Nav_pages/Avaliable_Consultations";
-import Reviews from "../Nav_pages/Reviews";
-import Overview from "../Nav_pages/Overview/Overview";
+import Avaliable_Consultations from "../Nav_pages/Available_Consultations/Main/Avaliable_Consultations";
+import Reviews from "../Nav_pages/Reviews/Reviews";
+import Overview from "../Nav_pages/Overview/Main/Overview";
 
 export default function Home() {
   const { market_place_id } = useParams();
@@ -24,5 +24,5 @@ export default function Home() {
     default:
       page = <Overview />;
   }
-  return <main>{page}</main>;
+  return <main className="pb-8">{page}</main>;
 }

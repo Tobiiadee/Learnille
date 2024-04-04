@@ -1,5 +1,5 @@
 /** @format */
-import { NavLink } from "react-router-dom";
+import { NavLink, Navigate } from "react-router-dom";
 import {
   ArrowLeft,
   Certificate,
@@ -85,6 +85,7 @@ export default function NavBar() {
           <span>
             <MarketPlace />
           </span>
+          <Navigate to="/learnille/market place/marketplace/overview"/>
           <h2>Market Place</h2>
         </NavLink>
       </menu>
