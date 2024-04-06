@@ -3,7 +3,7 @@ import Course_Wishlist_Item from "./Course_Wishlist_Item";
 export default function Course_Wishlist() {
   return (
     <main>
-      <section className='grid grid-cols-2 bg-white text-sm font-semibold uppercase border-[0.5px] border-[#dae1e6] px-4 py-2'>
+      <section className='grid grid-cols-2 bg-white text-black text-sm font-normal tab:font-semibold uppercase border-[0.5px] border-[#dae1e6] px-4 py-2'>
         <div className="">
           <h2>Consultation</h2>
         </div>

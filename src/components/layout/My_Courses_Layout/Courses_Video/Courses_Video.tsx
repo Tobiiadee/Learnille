@@ -13,7 +13,7 @@ export default function Courses_Video() {
   const fullscreenhandler = () => setfullscreen((prev) => !prev);
 
   return (
-    <main className='grid nb:grid-cols-3 gap-4'>
+    <main className='grid nb:grid-cols-[280px_280px_420px] gap-4'>
       <section className='col-span-2 px-2 nb:px-0 nb:col-span-2 flex flex-col gap-2'>
         <div className='text-xs text-text'>
           <h2>
@@ -37,18 +37,6 @@ export default function Courses_Video() {
                 {playVideo ? (
                   <svg
                     xmlns='http://www.w3.org/2000/svg'
-                    viewBox='0 0 24 24'
-                    fill='#fff'
-                    className='w-6 h-6'>
-                    <path
-                      fillRule='evenodd'
-                      d='M4.5 5.653c0-1.427 1.529-2.33 2.779-1.643l11.54 6.347c1.295.712 1.295 2.573 0 3.286L7.28 19.99c-1.25.687-2.779-.217-2.779-1.643V5.653Z'
-                      clipRule='evenodd'
-                    />
-                  </svg>
-                ) : (
-                  <svg
-                    xmlns='http://www.w3.org/2000/svg'
                     fill='#fff'
                     viewBox='0 0 24 24'
                     strokeWidth={2.5}
@@ -58,6 +46,18 @@ export default function Courses_Video() {
                       strokeLinecap='round'
                       strokeLinejoin='round'
                       d='M15.75 5.25v13.5m-7.5-13.5v13.5'
+                    />
+                  </svg>
+                ) : (
+                  <svg
+                    xmlns='http://www.w3.org/2000/svg'
+                    viewBox='0 0 24 24'
+                    fill='#fff'
+                    className='w-6 h-6'>
+                    <path
+                      fillRule='evenodd'
+                      d='M4.5 5.653c0-1.427 1.529-2.33 2.779-1.643l11.54 6.347c1.295.712 1.295 2.573 0 3.286L7.28 19.99c-1.25.687-2.779-.217-2.779-1.643V5.653Z'
+                      clipRule='evenodd'
                     />
                   </svg>
                 )}
@@ -73,14 +73,6 @@ export default function Courses_Video() {
                 {playVideo ? (
                   <svg
                     xmlns='http://www.w3.org/2000/svg'
-                    viewBox='0 0 20 20'
-                    fill='currentColor'
-                    className='w-4 h-4'>
-                    <path d='M6.3 2.84A1.5 1.5 0 0 0 4 4.11v11.78a1.5 1.5 0 0 0 2.3 1.27l9.344-5.891a1.5 1.5 0 0 0 0-2.538L6.3 2.841Z' />
-                  </svg>
-                ) : (
-                  <svg
-                    xmlns='http://www.w3.org/2000/svg'
                     fill='none'
                     viewBox='0 0 24 24'
                     strokeWidth={2.5}
@@ -91,6 +83,14 @@ export default function Courses_Video() {
                       strokeLinejoin='round'
                       d='M15.75 5.25v13.5m-7.5-13.5v13.5'
                     />
+                  </svg>
+                ) : (
+                  <svg
+                    xmlns='http://www.w3.org/2000/svg'
+                    viewBox='0 0 20 20'
+                    fill='currentColor'
+                    className='w-4 h-4'>
+                    <path d='M6.3 2.84A1.5 1.5 0 0 0 4 4.11v11.78a1.5 1.5 0 0 0 2.3 1.27l9.344-5.891a1.5 1.5 0 0 0 0-2.538L6.3 2.841Z' />
                   </svg>
                 )}
               </button>

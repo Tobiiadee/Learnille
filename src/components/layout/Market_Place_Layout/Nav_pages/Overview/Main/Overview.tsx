@@ -16,7 +16,7 @@ export default function Overview() {
         <Experience />
         <Achievements />
       </section>
-      <section>
+      <section className="flex flex-col gap-4">
         <Booked_Consultations />
         <Similar_Consultations />
       </section>

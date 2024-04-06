@@ -1,5 +1,5 @@
 /** @format */
-import { NavLink, Navigate } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import {
   ArrowLeft,
   Certificate,
@@ -85,12 +85,11 @@ export default function NavBar() {
           <span>
             <MarketPlace />
           </span>
-          <Navigate to="/learnille/market place/marketplace/overview"/>
           <h2>Market Place</h2>
         </NavLink>
       </menu>
 
-      <section className='mt-6'>
+      <menu className='mt-6' id="nav">
         <NavLink
           to='/learnille/settings'
           className='flex items-center text-sm text-white font-light hover:text-black hover:bg-background gap-2 px-4 py-2 cursor-pointer transition-all duration-200'>
@@ -107,7 +106,7 @@ export default function NavBar() {
           </span>
           <h2>Support</h2>
         </NavLink>
-      </section>
+      </menu>
 
       <section className='flex mt-6'>
         <button

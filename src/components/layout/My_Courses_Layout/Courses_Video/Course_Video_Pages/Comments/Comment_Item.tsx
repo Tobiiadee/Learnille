@@ -80,7 +80,7 @@ export default function Comment_Item() {
                 <button
                   type='button'
                   className='flex justify-between bg-[#edf1ff]  active:bg-[#ced5ee] transition duration-300'>
-                  <span className='text-[8px] tab:text-xs text-layout-bg font-semibold py-2 px-1 tab:px-2'>
+                  <span className='text-[8px] self-center tab:text-[8px] text-layout-bg font-semibold py-1 px-1 '>
                     Post Reply
                   </span>
                   <span className='text-white py-2 px-2  bg-layout-bg rounded-r-md '>

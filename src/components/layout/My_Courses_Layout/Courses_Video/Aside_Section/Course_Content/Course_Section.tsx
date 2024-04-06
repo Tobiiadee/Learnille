@@ -15,7 +15,7 @@ export default function Course_Section() {
       <div className='-mt-4'>
         <section
           onClick={openContentHandler}
-          className={`text-[7px] flex items-center justify-between p-1 ${openContent ? "border-[0.5px] border-layout-bg" : "border-b"}   cursor-pointer`}>
+          className={`text-[10px] flex items-center justify-between p-1 ${openContent ? "border-[0.5px] border-layout-bg" : "border-b"}   cursor-pointer`}>
           <div className='flex items-center gap-[0.2rem]'>
             <ArrowD className='text-layout-bg' onRotate={openContent}/>
             <h2 className='font-bold mb-1 text-layout-bg'>

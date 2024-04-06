@@ -6,9 +6,9 @@ import Course_Section from "./Course_Section";
 export default function Section_Item() {
   return (
     <Card classNames='p-0 flex flex-col gap-2'>
-      <div className='font-bold text-xs text-black flex gap-1 items-center'>
+      <div className='font-bold text-xs text-black flex justify-between items-center'>
         <h2>Section 01</h2>
-        <div className='text-[7px] font-normal flex gap-1'>
+        <div className='text-[10px] font-normal flex gap-1'>
           <span className='flex items-center gap-1'>
             <svg
               xmlns='http://www.w3.org/2000/svg'

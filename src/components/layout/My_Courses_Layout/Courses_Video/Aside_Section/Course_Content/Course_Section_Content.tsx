@@ -2,7 +2,7 @@
 
 export default function Course_Section_Content() {
   return (
-    <section className='flex justify-between text-[10px] font-normal text-text px-3 py-2 hover:text-black hover:bg-[#AED6F1]'>
+    <section className='flex justify-between text-xs font-normal text-text px-3 py-2 hover:text-black hover:bg-[#AED6F1]'>
       <div className='flex gap-4 items-center '>
         <input
           type='checkbox'

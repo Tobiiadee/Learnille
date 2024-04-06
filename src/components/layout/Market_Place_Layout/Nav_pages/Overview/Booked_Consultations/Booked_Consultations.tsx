@@ -9,13 +9,13 @@ export default function Booked_Consultations() {
         People also book book this consultation
       </h2>
 
-      <main className='flex gap-4 overflow-hidden'>
+      <main className='flex gap-4 overflow-x-scroll tab:overflow-hidden'>
         <Booked_Consultation_Items />
         <Booked_Consultation_Items />
         <Booked_Consultation_Items />
       </main>
 
-      <section className="w-full flex justify-center gap-4">
+      <section className="hidden w-full tab:flex justify-center gap-4">
         <button type='button' className='bg-white text-black shadow-md active:bg-[#ededed] rounded-full p-3 -ml-6 transition duration-300'>
           {""}
           <svg

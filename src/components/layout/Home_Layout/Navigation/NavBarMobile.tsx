@@ -39,7 +39,7 @@ export default function NavBar({ onView, viewNav }: ViewType) {
         animate={viewNav ? "out" : "in"}
         transition={{ duration: 0.5 }}
         onClick={onView}
-        className='fixed top-0 left-0 w-64 bg-layout-bg rounded-r-lg h-lvh py-4 flex flex-col z-50'>
+        className='fixed top-0 left-0 w-64 bg-layout-bg rounded-r-lg h-svh py-4 flex flex-col z-50'>
         <section className='flex w-full justify-around items-center'>
           <div className='flex gap-1 px-4'>
             <span></span>
@@ -71,7 +71,7 @@ export default function NavBar({ onView, viewNav }: ViewType) {
           </div>
         </section>
 
-        <menu className='mt-8' id='nav'>
+        <menu className='mt-8'>
           <NavLink
             to='/learnille/overview'
             className='flex items-center text-sm text-white font-light active:text-black active:bg-background gap-2 px-4 py-3 cursor-pointer transition-all duration-200'>
