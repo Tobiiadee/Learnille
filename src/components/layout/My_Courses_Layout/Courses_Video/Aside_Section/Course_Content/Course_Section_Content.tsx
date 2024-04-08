@@ -8,7 +8,7 @@ export default function Course_Section_Content() {
           type='checkbox'
           id=''
           title='title'
-          className='relative peer appearance-none w-3 h-3 border-[0.5px] focus:bg-layout-bg  border-layout-bg accent-layout-bg '
+          className='relative peer appearance-none w-3 h-3 border-[0.5px] checked:bg-layout-bg  border-layout-bg accent-layout-bg '
         />
         <label htmlFor='course section'>What is webflow?</label>
         <svg

@@ -7,10 +7,10 @@ import Profile_Info from "@/components/layout/Settings_Layout/Profile_Info";
 
 export default function Settings() {
   return (
-    <section className='nb:pr-32 flex flex-col gap-4 pb-8'>
+    <section className='nb:pr-32 flex flex-col items-center tab:items-stretch  gap-4 pb-8'>
       <Profile_Info />
       <Account_Settings />
-      <section className="grid grid-cols-2 gap-4">
+      <section className="grid tab:grid-cols-2 gap-4">
         <Change_Password />
         <Notification />
       </section>

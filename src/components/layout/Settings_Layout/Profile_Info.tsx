@@ -4,9 +4,9 @@ import Button_ from "@/components/ui/Button_/Button_";
 
 export default function Profile_Info() {
   return (
-    <header className='flex flex-col gap-4 tab:gap-0 tab:flex-row tab:justify-between tab:items-center bg-white p-4 rounded-md'>
+    <header className='flex flex-col w-full gap-4 tab:gap-0 tab:flex-row tab:justify-between tab:items-center bg-white p-4 rounded-md'>
       <section className='flex gap-4 items-center'>
-        <div className='w-12 h-12 shadow rounded-full'>
+        <div className='w-12 h-12 shadow rounded-full outline-2 outline-layout-bg outline'>
           <img src='' alt='' />
         </div>
 

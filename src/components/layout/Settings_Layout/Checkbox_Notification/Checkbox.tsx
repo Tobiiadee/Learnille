@@ -10,9 +10,9 @@ export default function Checkbox({label}: Checkbox_Type) {
           type='checkbox'
           id={label}
           title='title'
-          className='relative rounded-sm peer appearance-none w-4 h-4 border-[1px] focus:bg-layout-bg  border-layout-bg accent-layout-bg '
+          className='relative rounded-sm peer appearance-none w-4 h-4 border-[1px] checked:bg-layout-bg  border-layout-bg accent-layout-bg '
         />
-        <label htmlFor='course section' className="text-text peer-checked:text-black">{label}</label>
+        <label htmlFor={label} className="text-text peer-checked:text-black">{label}</label>
         <svg
           xmlns='http://www.w3.org/2000/svg'
           fill='none'

@@ -14,7 +14,9 @@ export default function Notification() {
         <Checkbox label='I want to know who commented/replied my review.' />
       </section>
 
-      <Button_ text="Save Changes" className="self-start"/>
+      <section className=" h-full flex items-end">
+        <Button_ text='Save Changes' className='' />
+      </section>
     </Card>
   );
 }

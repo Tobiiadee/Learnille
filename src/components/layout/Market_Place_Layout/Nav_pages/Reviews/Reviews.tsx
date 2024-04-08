@@ -15,7 +15,7 @@ export default function Reviews() {
         </div>
       </section>
 
-      <section className="w-full pl-8 pr-2">
+      <section className="w-full pl-8 pr-4 tab:pr-2">
         <Reviews_Item />
         <Reviews_Item />
         <Reviews_Item />

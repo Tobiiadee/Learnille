@@ -37,14 +37,14 @@ export default function Password({
                 <path
                   d='M1 12C1 12 5 4 12 4C19 4 23 12 23 12'
                   stroke='#000000'
-                  strokeWidth='1.5'
+                  strokeWidth='1.7'
                   strokeLinecap='round'
                   strokeLinejoin='round'
                 />
                 <path
                   d='M1 12C1 12 5 20 12 20C19 20 23 12 23 12'
                   stroke='#000000'
-                  strokeWidth='1.5'
+                  strokeWidth='1.7'
                   strokeLinecap='round'
                   strokeLinejoin='round'
                 />
@@ -53,7 +53,7 @@ export default function Password({
                   cy='12'
                   r='3'
                   stroke='#000000'
-                  strokeWidth='1.5'
+                  strokeWidth='1.7'
                   strokeLinecap='round'
                   strokeLinejoin='round'
                 />

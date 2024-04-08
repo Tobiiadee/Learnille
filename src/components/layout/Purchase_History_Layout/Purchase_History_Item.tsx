@@ -9,7 +9,7 @@ export default function Purchase_History_Item() {
   const openHistoryHandler = () => setOpenHistory((prev) => !prev);
 
   return (
-    <section>
+    <section className="">
       <main className='bg-white px-4 py-2 flex justify-between items-center'>
         <section>
           <h2 className='text-sm font-semibold text-black'>
@@ -96,7 +96,7 @@ export default function Purchase_History_Item() {
       </main>
 
       {openHistory && (
-        <main className='bg-white flex flex-col nb:flex-row gap-8 px-4 py-2 border-t pt-4 shadow-lg pb-4'>
+        <main className='bg-white flex flex-col nb:flex-row gap-8 px-4 py-2 border-t pt-4 shadow-lg pb-4 '>
           <section className='flex flex-col gap-4 nb:border-r pr-6'>
             <Purchased_Item />
             <Purchased_Item />

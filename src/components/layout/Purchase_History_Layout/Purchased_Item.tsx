@@ -48,7 +48,7 @@ export default function Purchased_Item() {
         </div>
       </div>
 
-      <div className='text-sm flex gap-1 items-center'>
+      <div className='text-sm flex gap-1 items-center pr-8 tab:pr-0'>
         <h2 className='font-semibold text-layout-bg'>$37.00</h2>
         <h2 className='text-xs text-text'>$49.00</h2>
       </div>
