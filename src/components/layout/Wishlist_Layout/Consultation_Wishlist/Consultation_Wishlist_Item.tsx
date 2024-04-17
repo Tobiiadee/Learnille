@@ -1,12 +1,13 @@
 /** @format */
 
+import img from "../../../../assets/images/407331d1457b2db1ee1b6678ba63a9a5.jpg";
 
 export default function Consultation_Wishlist_Item() {
   return (
     <section className='mt-1 border-b pb-4'>
       <main className='flex gap-4 w-full'>
-        <div className='min-w-20 h-20 nb:min-w-24 nb:h-24 rounded-md shadow'>
-          <img src='' alt='' />
+        <div className='max-w-20 h-20 nb:max-w-24 nb:h-24 rounded-md shadow overflow-hidden flex items-center justify-center'>
+          <img src={img} alt='' />
         </div>
 
         <div className='w-full'>
@@ -19,7 +20,9 @@ export default function Consultation_Wishlist_Item() {
               <h2 className='text-sm tab:text-lg font-semibold text-layout-bg'>
                 $32.00
               </h2>
-              <h2 className='text-xs text-text font-normal'>$39.00</h2>
+              <h2 className='text-xs text-text font-normal line-through'>
+                $39.00
+              </h2>
             </div>
           </section>
 
@@ -65,17 +68,12 @@ export default function Consultation_Wishlist_Item() {
             <div className='flex items-center gap-1'>
               <span>
                 <svg
-                  xmlns='http://www.w3.org/2000/svg'
                   fill='#ff7840'
+                  width='18px'
+                  height='18px'
                   viewBox='0 0 24 24'
-                  strokeWidth={1.3}
-                  stroke='#ff7840'
-                  className='w-4 h-4 text-[#ff7840]'>
-                  <path
-                    strokeLinecap='round'
-                    strokeLinejoin='round'
-                    d='M3 13.125C3 12.504 3.504 12 4.125 12h2.25c.621 0 1.125.504 1.125 1.125v6.75C7.5 20.496 6.996 21 6.375 21h-2.25A1.125 1.125 0 0 1 3 19.875v-6.75ZM9.75 8.625c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125v11.25c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 0 1-1.125-1.125V8.625ZM16.5 4.125c0-.621.504-1.125 1.125-1.125h2.25C20.496 3 21 3.504 21 4.125v15.75c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 0 1-1.125-1.125V4.125Z'
-                  />
+                  xmlns='http://www.w3.org/2000/svg'>
+                  <path d='M7,13v6a1,1,0,0,1-2,0V13a1,1,0,0,1,2,0Zm11,7a1,1,0,0,0,1-1V5a1,1,0,0,0-2,0V19A1,1,0,0,0,18,20Zm-6,0a1,1,0,0,0,1-1V9a1,1,0,0,0-2,0V19A1,1,0,0,0,12,20Z' />
                 </svg>
               </span>
               <p className='text-xs text-text'>Bi weekly</p>
@@ -85,8 +83,8 @@ export default function Consultation_Wishlist_Item() {
           <section className='mt-1 flex flex-col gap-2 tab:gap-0 tab:flex-row w-full tab:justify-between tab:items-center'>
             <div className='flex gap-2 tab:gap-2  items-center w-full tab:w-3/6'>
               <div className='text-xs text-text flex gap-2 items-center'>
-                <span className='w-6 h-6 rounded-full shadow'>
-                  <img src='' alt='' />
+                <span className='w-6 h-6 rounded-full shadow overflow-hidden flex items-center justify-center'>
+                  <img src={img} alt='' />
                 </span>
 
                 <p>Paul Gilbert</p>
@@ -126,7 +124,9 @@ export default function Consultation_Wishlist_Item() {
                 Add To Cart
               </button>
 
-              <button type='button' className="px-2 py-1 bg-[#e9eff4] active:bg-[#dae1e6] rounded transition duration-300">
+              <button
+                type='button'
+                className='px-2 py-1 bg-[#e9eff4] active:bg-[#dae1e6] rounded transition duration-300'>
                 {""}
                 <svg
                   xmlns='http://www.w3.org/2000/svg'

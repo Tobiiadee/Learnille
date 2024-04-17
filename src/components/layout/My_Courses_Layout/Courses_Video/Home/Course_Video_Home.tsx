@@ -13,15 +13,15 @@ export default function Course_Video_Home() {
   let courseVideoPage;
 
   switch (play_course_id) {
-    case "course_video_lesson_note":
+    case "lesson_note":
       courseVideoPage = <Course_Lesson_Note />;
       break;
 
-    case "course_video_attached_file":
+    case "attached_file":
       courseVideoPage = <Course_Attached_File />;
       break;
 
-    case "course_video_comments":
+    case "comments":
       courseVideoPage = <Course_Comments/>;
       break;
     default:

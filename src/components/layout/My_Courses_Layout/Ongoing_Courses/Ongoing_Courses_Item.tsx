@@ -1,13 +1,17 @@
 /** @format */
 
 import Card from "@/components/ui/Card/Card";
+import { Link } from "react-router-dom";
+import img from "../../../../assets/images/407331d1457b2db1ee1b6678ba63a9a5.jpg";
 
 export default function Ongoing_Courses_Item() {
   return (
     <Card classNames='min-w-full tab:w-[12rem]'>
-      <section className='w-full h-32 shadow rounded'></section>
+      <section className='w-full h-32 shadow rounded overflow-hidden flex items-center justify-center'>
+        <img src={img} alt='' />
+      </section>
       <section className='flex flex-col text-xs font-semibold mt-2'>
-        <section className="flex w-full justify-between -mb-1">
+        <section className='flex w-full justify-between -mb-1'>
           <h2>Ongoing Course</h2>
           <p className='text-layout-bg'>15% completed</p>
         </section>
@@ -29,11 +33,14 @@ export default function Ongoing_Courses_Item() {
       </section>
 
       <section className='mt-2 w-full flex'>
-        <button
-          type='button'
-          className='text-xs font-semibold text-layout-bg px-10 py-1 mx-auto rounded-sm outline-none active:bg-[#d8e1e7] bg-background transition duration-300'>
-          Resume Course
-        </button>
+        <Link to='/learnille/my%20courses/courses/play_course/description'>
+          {" "}
+          <button
+            type='button'
+            className='text-xs font-semibold text-layout-bg px-10 py-1 mx-auto rounded-sm outline-none active:bg-[#d8e1e7] bg-background transition duration-300'>
+            Resume Course
+          </button>
+        </Link>
       </section>
     </Card>
   );

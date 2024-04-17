@@ -1,0 +1,58 @@
+/** @format */
+
+export const Courses_List = [
+  {
+    category: "Health and fitness",
+    course_title: "How to make ayour first million as a front-end developer",
+    price: 50.99,
+    discount_price: 30.99,
+    courseRating: 4.9,
+    no_of_reviews: 3500,
+    students: 70050,
+  },
+  {
+    category: "commentary",
+    course_title: "Learn everthing you need to know about self growth",
+    price: 20.99,
+    discount_price: 15.99,
+    courseRating: 3.9,
+    no_of_reviews: 100,
+    students: 1000,
+  },
+  {
+    category: "SEO Marketing",
+    course_title: "Learn SEO Analytics",
+    price: 75.99,
+    discount_price: 50.99,
+    courseRating: 4.4,
+    no_of_reviews: 2450,
+    students: 1050,
+  },
+  {
+    category: "Data Analysis",
+    course_title: "How to make ayour first million as a Data Analyst",
+    price: 100.99,
+    discount_price: 75.99,
+    courseRating: 5.0,
+    no_of_reviews: 3500,
+    students: 750,
+  },
+  {
+    category: "Computing",
+    course_title: "Machine learning and robotics",
+    price: 175.0,
+    discount_price: 120.99,
+    courseRating: 4.7,
+    no_of_reviews: 7500,
+    students: 108900,
+  },
+  {
+    category: "Networking",
+    course_title: "Make more connections to your future",
+    price: 15.99,
+    discount_price: 10.99,
+    courseRating: 5.0,
+    no_of_reviews: 600,
+    students: 4050,
+  },
+];

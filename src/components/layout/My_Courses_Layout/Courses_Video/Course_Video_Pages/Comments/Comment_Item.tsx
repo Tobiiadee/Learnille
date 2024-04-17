@@ -1,5 +1,7 @@
 /** @format */
 
+import img from "../../../../../../assets/images/075826d0f7062c2b072efd481ac7837b.jpg";
+
 import { useState } from "react";
 
 export default function Comment_Item() {
@@ -10,7 +12,9 @@ export default function Comment_Item() {
   return (
     <main className='flex gap-4'>
       <section>
-        <div className='w-7 h-7 shadow rounded-full'></div>
+        <div className='w-7 h-7 shadow rounded-full overflow-hidden flex items-center justify-center'>
+          <img src={img} alt='' />
+        </div>
       </section>
 
       <section className='flex flex-col gap-2'>
@@ -49,7 +53,7 @@ export default function Comment_Item() {
                 />
               </svg>
             </div>
-            <div className="font-medium">REPLY</div>
+            <div className='font-medium'>REPLY</div>
           </button>
 
           {reply && (

@@ -35,7 +35,7 @@ export default function Search({ closeSearch, openMenu }: SearchType) {
             </span>
             <div className='w-full'>
               <input
-                type='text'
+                type='search'
                 id='search'
                 className='border-none w-60 outline-none text-sm placeholder:text-sm'
                 placeholder='Search...'

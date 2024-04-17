@@ -28,7 +28,7 @@ export default function Reviews_Item() {
           <span className='text-text'>1 week ago</span>
         </div>
 
-        <div className='flex gap-1 items-center'>
+        <div className='flex gap-[0.5px] items-center'>
           <Rating />
           <Rating />
           <Rating />
@@ -36,7 +36,7 @@ export default function Reviews_Item() {
           <Rating />
         </div>
 
-        <div className='text-xs text-text'>
+        <div className='text-xs text-black'>
           <p>
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ex
             architecto et perferendis iste eum accusamus nobis totam nemo

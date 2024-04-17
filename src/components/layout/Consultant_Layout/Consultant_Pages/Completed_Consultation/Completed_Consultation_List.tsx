@@ -1,6 +1,7 @@
 /** @format */
 
 import Card from "@/components/ui/Card/Card";
+import img from "../../../../../assets/images/407331d1457b2db1ee1b6678ba63a9a5.jpg"
 
 // type Completed_ConsultationType = {
 //   consultationTitle?: string,
@@ -16,8 +17,8 @@ export default function Completed_Consultation_List() {
     <Card>
       <section className='bg-white px-1'>
         <main className='flex gap-4 w-full'>
-          <div className='min-w-20 h-20 nb:min-w-28 nb:h-28 rounded-md shadow'>
-            <img src='' alt='' />
+          <div className='max-w-20 h-20 nb:max-w-28 nb:h-28 rounded-md shadow overflow-hidden flex items-center justify-center'>
+            <img src={img} alt='' />
           </div>
 
           <div className='w-full'>
@@ -30,7 +31,7 @@ export default function Completed_Consultation_List() {
                 <h2 className='text-sm tab:text-lg font-semibold text-layout-bg'>
                   $32.00
                 </h2>
-                <h2 className='text-xs text-text font-normal'>$39.00</h2>
+                <h2 className='text-xs text-text font-normal line-through'>$39.00</h2>
               </div>
             </section>
 
@@ -96,8 +97,8 @@ export default function Completed_Consultation_List() {
             <section className='mt-1 flex flex-col gap-2 tab:gap-0 tab:flex-row w-full tab:justify-between tab:items-center'>
               <div className='flex gap-2 tab:gap-2  items-center w-full tab:w-3/6'>
                 <div className='text-xs text-text flex gap-2 items-center'>
-                  <span className='w-6 h-6 rounded-full shadow'>
-                    <img src='' alt='' />
+                  <span className='w-6 h-6 rounded-full shadow overflow-hidden flex items-center justify-center'>
+                    <img src={img} alt='' />
                   </span>
 
                   <p>Paul Gilbert</p>

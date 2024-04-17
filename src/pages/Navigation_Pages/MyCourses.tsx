@@ -44,7 +44,7 @@ export default function MyCourses() {
         <div className='w-4 h-4 rounded-full shadow text-xs flex items-center justify-center bg-layout-bg text-white'>
           1
         </div>
-        <NavLink to='/learnille/my%20courses/courses/play_course'>
+        <NavLink to='/learnille/my%20courses/courses/play_course/course_video_description'>
           {""}
           <span>
             <svg

@@ -100,6 +100,8 @@ export default function Purchase_History_Item() {
           <section className='flex flex-col gap-4 nb:border-r pr-6'>
             <Purchased_Item />
             <Purchased_Item />
+            <Purchased_Item />
+            <Purchased_Item />
           </section>
 
           <main className='border-t pt-4 nb:border-none nb:pt-0 nb:self-center bg-white flex flex-col gap-4 '>

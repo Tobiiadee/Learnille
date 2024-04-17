@@ -6,7 +6,7 @@ export default function Course_Section_Content() {
       <div className='flex gap-4 items-center '>
         <input
           type='checkbox'
-          id=''
+          id='course section'
           title='title'
           className='relative peer appearance-none w-3 h-3 border-[0.5px] checked:bg-layout-bg  border-layout-bg accent-layout-bg '
         />

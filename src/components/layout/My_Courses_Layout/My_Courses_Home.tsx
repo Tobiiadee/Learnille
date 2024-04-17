@@ -15,7 +15,9 @@ export default function My_Courses_Home() {
     case "completed_courses":
       coursesPages = <Completed_Courses />;
       break;
-
+    case "ongoing_courses":
+      coursesPages = <Ongoing_Courses />;
+      break;
     default:
       coursesPages = <Ongoing_Courses />;
       break;

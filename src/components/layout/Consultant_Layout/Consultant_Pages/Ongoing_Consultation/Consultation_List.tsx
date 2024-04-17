@@ -44,7 +44,7 @@ export default function Consultation_List() {
               <main>
                 <h2 className='text-sm font-semibold'>Mentor:</h2>
                 <div className='flex gap-4 mt-2'>
-                  <span className='w-10 h-10 rounded-full shadow'>
+                  <span className='w-10 h-10 rounded-full shadow overflow-hidden flex items-center justify-center'>
                     <img src='' alt='' />
                   </span>
 

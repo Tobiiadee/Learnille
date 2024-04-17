@@ -5,36 +5,44 @@ import Card from "@/components/ui/Card/Card";
 
 export default function Account_Settings() {
   return (
-    <Card classNames='w-full'>
+    <Card hover={false} classNames='w-full'>
       <h2 className='text-sm font-semibold'>Account Settings</h2>
 
       <form className='mt-4 flex gap-4 flex-col'>
         <div className='flex flex-col tab:flex-col gap-4'>
           <section className='bg-[#edf1ff] self-center tab:self-end tab:-mt-8 rounded-md w-52 px-4 py-8 flex flex-col items-center gap-4'>
-            <div className='shadow-md rounded-full w-20 h-20 '>
+            <div className='shadow-md rounded-full w-20 h-20 overflow-hidden flex items-center justify-center'>
               <img src='' alt='' />
             </div>
-            <button
-              type='button'
-              className='text-xs text-white flex gap-2 items-center rounded px-3 py-2 bg-[#b0b0b0] active:bg-[#8e8e8e] transition duration-300'>
-              {""}
-              <span>
-                <svg
-                  xmlns='http://www.w3.org/2000/svg'
-                  fill='none'
-                  viewBox='0 0 24 24'
-                  strokeWidth={1.5}
-                  stroke='currentColor'
-                  className='w-4 h-4 text-white'>
-                  <path
-                    strokeLinecap='round'
-                    strokeLinejoin='round'
-                    d='M3 16.5v2.25A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75V16.5m-13.5-9L12 3m0 0 4.5 4.5M12 3v13.5'
-                  />
-                </svg>
-              </span>
-              <p>Change Photo</p>
-            </button>
+            <div>
+              <label
+                htmlFor='change photo'
+                className='text-xs text-white flex gap-2 items-center rounded px-3 py-2 bg-[#b0b0b0] active:bg-[#8e8e8e] transition duration-300 cursor-pointer'>
+                <span>
+                  {" "}
+                  <svg
+                    xmlns='http://www.w3.org/2000/svg'
+                    fill='none'
+                    viewBox='0 0 24 24'
+                    strokeWidth={1.5}
+                    stroke='currentColor'
+                    className='w-4 h-4 text-white'>
+                    <path
+                      strokeLinecap='round'
+                      strokeLinejoin='round'
+                      d='M3 16.5v2.25A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75V16.5m-13.5-9L12 3m0 0 4.5 4.5M12 3v13.5'
+                    />
+                  </svg>
+                </span>
+                <span>Change Photo</span>
+              </label>
+              <input
+                type='file'
+                name='change photo'
+                id='change photo'
+                className='hidden'
+              />
+            </div>
             <p className='text-xs text-text text-center'>
               Image size should be under 5MB and should have good lightening
             </p>

@@ -1,5 +1,6 @@
 /** @format */
 import { NavLink } from "react-router-dom";
+import icon from "../../../../assets/learnille/White Icon .png";
 import {
   ArrowLeft,
   Certificate,
@@ -17,9 +18,11 @@ import {
 export default function NavBar() {
   return (
     <nav className='fixed bg-layout-bg rounded-r-lg w-52 h-full py-4 flex flex-col mb:hidden nb:block'>
-      <div className='flex gap-1 px-4'>
-        <span></span>
-        <h2 className='font-semibold text-white'>Learnille</h2>
+      <div className='flex gap-2 px-4'>
+        <span>
+          <img src={icon} alt="" className="w-6 h-8"/>
+        </span>
+        <h2 className='font-semibold text-white text-lg'>Learnille</h2>
       </div>
 
       <menu className='mt-8' id='nav'>

@@ -2,6 +2,7 @@
 import { NavLink } from "react-router-dom";
 import { motion } from "framer-motion";
 import Modal from "@/components/ui/Modal/Modal";
+import icon from "../../../../assets/learnille/White Icon .png";
 import {
   ArrowLeft,
   Certificate,
@@ -41,8 +42,10 @@ export default function NavBar({ onView, viewNav }: ViewType) {
         onClick={onView}
         className='fixed top-0 left-0 w-64 bg-layout-bg rounded-r-lg h-screen overflow-y-scroll py-4 flex flex-col z-50'>
         <section className='flex w-full justify-around items-center'>
-          <div className='flex gap-1 px-4'>
-            <span></span>
+          <div className='flex gap-2 px-4'>
+            <span>
+              <img src={icon} alt="" className="w-4 h-6"/>
+            </span>
             <h2 className='font-semibold text-white'>Learnille</h2>
           </div>
 

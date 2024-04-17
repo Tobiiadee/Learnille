@@ -6,22 +6,22 @@ export default function Course_Video_Header() {
   return (
     <menu className='flex justify-between items-center ' id='course_video_id'>
       <NavLink
-        to='/learnille/my courses/courses/play_course/course_video_description'
+        to='/learnille/my courses/courses/play_course/description'
         className='py-3 text-xs tab:text-sm text-text font-normal flex items-center justify-center hover:border-b hover:bg-white hover:text-black hover:font-semibold hover:border-layout-bg w-3/6 border-b border-text'>
         Description
       </NavLink>
       <NavLink
-        to='/learnille/my courses/courses/play_course/course_video_lesson_note'
+        to='/learnille/my courses/courses/play_course/lesson_note'
         className='py-3 text-xs tab:text-sm text-text font-normal flex items-center justify-center hover:border-b hover:bg-white hover:text-black hover:font-semibold hover:border-layout-bg w-3/6 border-b border-text'>
         Lesson Note
       </NavLink>
       <NavLink
-        to='/learnille/my courses/courses/play_course/course_video_attached_file'
+        to='/learnille/my courses/courses/play_course/attached_file'
         className='py-3 text-xs tab:text-sm text-text font-normal flex items-center justify-center hover:border-b hover:bg-white hover:text-black hover:font-semibold hover:border-layout-bg w-3/6 border-b border-text'>
         Attached File
       </NavLink>
       <NavLink
-        to='/learnille/my courses/courses/play_course/course_video_comments'
+        to='/learnille/my courses/courses/play_course/comments'
         className='py-3 text-xs tab:text-sm text-text font-normal flex items-center justify-center hover:border-b hover:bg-white hover:text-black hover:font-semibold hover:border-layout-bg w-3/6 border-b border-text'>
         Comments
       </NavLink>

@@ -24,5 +24,9 @@ export default function Home() {
     default:
       page = <Overview />;
   }
-  return <main className="pb-8">{page}</main>;
+  return (
+    <main>
+      <section className='pb-8'>{page}</section>
+    </main>
+  );
 }

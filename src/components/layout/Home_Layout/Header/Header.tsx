@@ -14,7 +14,7 @@ export default function Header() {
         <section className='flex items-center border w-72 py-1 px-3 rounded-md overflow-hidden'>
           <div className='w-full'>
             <input
-              type='text'
+              type='search'
               id='search'
               className='border-none w-60 outline-none text-sm placeholder:text-sm'
               placeholder='Search...'

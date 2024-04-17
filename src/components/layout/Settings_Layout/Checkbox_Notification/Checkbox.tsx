@@ -5,7 +5,7 @@ type Checkbox_Type = {
 
 export default function Checkbox({label}: Checkbox_Type) {
   return (
-    <div className=" text-sm flex gap-2 items-center">
+    <div className="text-xs tab:text-sm flex gap-2 items-center">
       <input
           type='checkbox'
           id={label}
