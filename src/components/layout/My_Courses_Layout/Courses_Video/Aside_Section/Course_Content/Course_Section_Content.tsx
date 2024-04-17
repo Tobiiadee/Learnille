@@ -1,7 +1,7 @@
 /** @format */
 
 export type CourseSectionType = {
-  curriculum: boolean;
+  curriculum?: boolean;
 };
 
 export default function Course_Section_Content({
