@@ -8,7 +8,7 @@ import Third_Section from "./Sections/Third_Section";
 
 export default function Course_Pricing() {
   return (
-    <main className='w-[25rem] flex flex-col gap-1'>
+    <main className='w-full tab:w-[25rem] flex flex-col gap-1'>
       <First_Section />
       <Second_Section />
       <Third_Section />

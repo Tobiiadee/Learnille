@@ -25,8 +25,8 @@ export default function Home() {
   }
   return (
     <main className='nb:pr-72 flex flex-col gap-6'>
-      <section>
-        <main className='flex flex-col gap-4'>
+      <section className="flex flex-col justify-center">
+        <main className='flex flex-col gap-4 w-full'>
           <Alt_Navigation />
           <section className='flex gap-4 px-4 tab:px-0'>
             <div className='rounded-md w-[82%] h-9 flex gap-2 items-center px-4 bg-white shadow text-sm'>

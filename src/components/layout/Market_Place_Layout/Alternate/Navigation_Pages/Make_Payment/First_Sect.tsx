@@ -2,11 +2,11 @@
 
 export default function First_Sect() {
   return (
-    <section className='bg-white rounded-t border-b '>
+    <section className='bg-white rounded-t border-b'>
       <main className='flex flex-col p-6 gap-4'>
         <h2 className='font-semibold text-sm'>Payment Method:</h2>
-        <section className='border rounded-md flex gap-20 items-center px-4'>
-          <div className='flex items-center gap-20 w-full'>
+        <section className='border rounded-md flex gap-5 tab:gap-20 items-center px-4'>
+          <div className='flex items-center gap-4 tab:gap-20 w-full'>
             <svg
               width='40px'
               height='40px'
@@ -22,19 +22,19 @@ export default function First_Sect() {
               />
               <path fill='none' d='M0 0h141.732v141.732H0z' />
             </svg>
-            <h2 className='font-bold text-xs'>
+            <h2 className='font-semibold tab:font-bold text-xs'>
               <span>4563</span> **** **** ****
             </h2>
           </div>
 
-          <div className='flex items-center gap-20 w-full text-xs font-bold'>
+          <div className='flex items-center gap-8 tab:gap-20 w-full text-xs font-bold'>
             <span>04/24</span>
             <span>John Pencill</span>
           </div>
         </section>
 
-        <section className='border rounded-md flex gap-20 items-center px-4'>
-          <div className='flex items-center gap-[4.5rem] w-full'>
+        <section className='border rounded-md flex gap-5 tab:gap-20 items-center px-4'>
+          <div className='flex items-center gap-[0.8rem] tab:gap-[4.5rem] w-full'>
             <svg
               width='45px'
               height='42px'
@@ -51,19 +51,19 @@ export default function First_Sect() {
                 />
               </g>
             </svg>
-            <h2 className='font-bold text-xs'>
+            <h2 className='font-semibold tab:font-bold text-xs'>
               <span>4563</span> **** **** ****
             </h2>
           </div>
 
-          <div className='flex items-center gap-20 w-full text-xs font-bold'>
+          <div className='flex items-center gap-8 tab:gap-20 w-full text-xs font-bold'>
             <span>04/24</span>
             <span>John Pencill</span>
           </div>
         </section>
 
-        <section className='border rounded-md flex gap-20 items-center px-4 py-[0.4rem]'>
-          <div className='flex items-center gap-[5.5rem] w-full'>
+        <section className='border rounded-md flex gap-5 tab:gap-20 items-center px-4 py-[0.4rem]'>
+          <div className='flex items-center gap-[1.5rem] tab:gap-[5.5rem] w-full'>
             <svg
               width='30px'
               height='30px'

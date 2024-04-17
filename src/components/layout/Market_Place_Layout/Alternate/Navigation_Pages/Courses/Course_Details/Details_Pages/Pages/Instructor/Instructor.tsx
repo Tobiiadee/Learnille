@@ -1,23 +1,24 @@
 /** @format */
 
 import Card from "@/components/ui/Card/Card";
+import img from "../../../../../../../../../../assets/images/3d96648dc587844fbf3af8e709f856b0.jpg";
 
 export default function Instructor() {
   return (
-    <Card classNames='flex gap-4'>
-      <section>
-        <div className='w-16 h-16 rounded-full shadow-md'>
-          <img src='' alt='' />
+    <Card classNames='flex flex-col tab:flex-row gap-4'>
+      <section className='self-center tab:self-start'>
+        <div className='w-20 h-20 tab:w-16 tab:h-16 rounded-full shadow-md overflow-hidden flex items-center justify-center'>
+          <img src={img} alt='' />
         </div>
       </section>
 
-      <main className='flex flex-col gap-4'>
-        <div className='text-black text-sm'>
+      <main className='flex flex-col gap-4 tab:mt-2'>
+        <div className='self-center text-center tab:self-start tab:text-start text-black text-sm'>
           <h2 className='capitalize font-semibold'>Omotoyosi Aduke James</h2>
           <p className='flex items-center gap-1 text-xs text-text'>
             {" "}
             <span>Entreprenure and Designer</span>
-            <span className="text-black">|</span>
+            <span className='text-black'>|</span>
             <span>Founder of ShiftRide</span>
           </p>
         </div>

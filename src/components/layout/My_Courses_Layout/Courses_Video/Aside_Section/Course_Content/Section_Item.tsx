@@ -2,11 +2,12 @@
 
 import Card from "@/components/ui/Card/Card";
 import Course_Section from "./Course_Section";
+import { CourseSectionType } from "./Course_Section_Content";
 
-export default function Section_Item() {
+export default function Section_Item({ curriculum }: CourseSectionType) {
   return (
     <Card classNames='p-0 flex flex-col gap-2'>
-      <div className='font-bold text-xs text-black flex justify-between items-center'>
+      <div className={`font-bold text-xs text-black flex justify-between items-center ${curriculum ? "mb-2" : ""}`}>
         <h2>Section 01</h2>
         <div className='text-[10px] font-normal flex gap-1'>
           <span className='flex items-center gap-1'>
@@ -62,68 +63,76 @@ export default function Section_Item() {
             </svg>
             <h2>19h 39m</h2>
           </span>
-          <span className='flex gap-1 items-center'>
-            <svg
-              xmlns='http://www.w3.org/2000/svg'
-              viewBox='0 0 24 24'
-              fill='currentColor'
-              className='w-3 h-3'>
-              <path
-                fillRule='evenodd'
-                d='M12 1.5a5.25 5.25 0 0 0-5.25 5.25v3a3 3 0 0 0-3 3v6.75a3 3 0 0 0 3 3h10.5a3 3 0 0 0 3-3v-6.75a3 3 0 0 0-3-3v-3c0-2.9-2.35-5.25-5.25-5.25Zm3.75 8.25v-3a3.75 3.75 0 1 0-7.5 0v3h7.5Z'
-                clipRule='evenodd'
-              />
-            </svg>
+          {!curriculum && (
+            <span className='flex gap-1 items-center'>
+              <svg
+                xmlns='http://www.w3.org/2000/svg'
+                viewBox='0 0 24 24'
+                fill='currentColor'
+                className='w-3 h-3'>
+                <path
+                  fillRule='evenodd'
+                  d='M12 1.5a5.25 5.25 0 0 0-5.25 5.25v3a3 3 0 0 0-3 3v6.75a3 3 0 0 0 3 3h10.5a3 3 0 0 0 3-3v-6.75a3 3 0 0 0-3-3v-3c0-2.9-2.35-5.25-5.25-5.25Zm3.75 8.25v-3a3.75 3.75 0 1 0-7.5 0v3h7.5Z'
+                  clipRule='evenodd'
+                />
+              </svg>
 
-            <h2 className='font-semibold'>Unlock</h2>
-            <svg
-              xmlns='http://www.w3.org/2000/svg'
-              fill='none'
-              viewBox='0 0 24 24'
-              strokeWidth={1.5}
-              stroke='currentColor'
-              className='w-3 h-3'>
-              <path
-                strokeLinecap='round'
-                strokeLinejoin='round'
-                d='m19.5 8.25-7.5 7.5-7.5-7.5'
-              />
-            </svg>
-          </span>
+              <h2 className='font-semibold'>Unlock</h2>
+              <svg
+                xmlns='http://www.w3.org/2000/svg'
+                fill='none'
+                viewBox='0 0 24 24'
+                strokeWidth={1.5}
+                stroke='currentColor'
+                className='w-3 h-3'>
+                <path
+                  strokeLinecap='round'
+                  strokeLinejoin='round'
+                  d='m19.5 8.25-7.5 7.5-7.5-7.5'
+                />
+              </svg>
+            </span>
+          )}
         </div>
       </div>
 
-      <div className='flex flex-col gap-0'>
-        <section>
-          <div className='flex w-full justify-between text-xs'>
-            <h2 className='font-semibold text-sm text-black'>
-              Course Contents
-            </h2>
-            <span className='flex gap-1 text-layout-bg font-medium'>
-              <h2>15%</h2>
-              <h2>Completed</h2>
-            </span>
-          </div>
-        </section>
+      {!curriculum && (
+        <div className={`flex flex-col gap-0`}>
+          <section>
+            <div className='flex w-full justify-between text-xs'>
+              <h2 className='font-semibold text-sm text-black'>
+                Course Contents
+              </h2>
+              <span className='flex gap-1 text-layout-bg font-medium'>
+                <h2>15%</h2>
+                <h2>Completed</h2>
+              </span>
+            </div>
+          </section>
 
-        <section className='-mt-2'>
-          <progress max={100} value={15} className='w-full'></progress>
-        </section>
+          <section className='-mt-2'>
+            <progress max={100} value={15} className='w-full'></progress>
+          </section>
+        </div>
+      )}
+
+      <div className={`mt-2 flex flex-col gap-4`}>
+        <Course_Section curriculum={curriculum} />
+        <Course_Section curriculum={curriculum} />
+        <Course_Section curriculum={curriculum} />
+        <Course_Section curriculum={curriculum} />
       </div>
 
-      <div className='mt-2 flex flex-col gap-4'>
-        <Course_Section />
-        <Course_Section />
-        <Course_Section />
-        <Course_Section />
-      </div>
-
-      <div className="mt-1 flex justify-between items-center w-full text-sm">
-        <h2>To access the section</h2>
-        <button type="button" className=" bg-[#dddff4] active:bg-[#c9cbdd] text-layout-bg font-semibold rounded-sm px-4 py-1 transition duration-300">
-          Buy Now
-        </button>
-      </div>
+      {!curriculum && (
+        <div className='mt-1 flex justify-between items-center w-full text-sm'>
+          <h2>To access the section</h2>
+          <button
+            type='button'
+            className=' bg-[#dddff4] active:bg-[#c9cbdd] text-layout-bg font-semibold rounded-sm px-4 py-1 transition duration-300'>
+            Buy Now
+          </button>
+        </div>
+      )}
     </Card>
   );
 }

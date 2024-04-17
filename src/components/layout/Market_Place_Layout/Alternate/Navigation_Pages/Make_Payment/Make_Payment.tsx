@@ -6,8 +6,8 @@ import Second_Sect from "./Second_Sect";
 
 export default function Make_Payment() {
   return (
-    <section className='flex flex-col gap-2 pr-72'>
-      <section className='text-sm text-black flex flex-col gap-1'>
+    <section className='flex flex-col gap-2 tab:pr-72'>
+      <section className='text-xs tab:text-sm text-black flex flex-col gap-1'>
         <h2>
           Courses / How to make millions... / Add to Cart / Cart /{" "}
           <span className='underline text-layout-bg'>Make Payment</span>

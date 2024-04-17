@@ -29,5 +29,5 @@ export default function MarketPlace() {
       break;
   }
 
-  return <main className=' pb-8'>{page}</main>;
+  return <main className='tab:pr-6 nb:pr-0 pb-8'>{page}</main>;
 }

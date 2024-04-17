@@ -16,7 +16,7 @@ export default function Rate_Item5({ Rate_Percent }: Rate_Percent_Type) {
 
   return (
     <div className='flex items-center gap-10'>
-      <main className='flex items-center gap-4'>
+      <main className='flex items-center gap-2 tab:gap-4'>
         <section className='flex items-center gap-[2px] font-normal'>
           <Star bgText={true} />
           <Star bgText={true} />
@@ -27,8 +27,8 @@ export default function Rate_Item5({ Rate_Percent }: Rate_Percent_Type) {
         <h2 className='text-sm'>5 Star</h2>
       </main>
 
-      <section className='flex items-center gap-8'>
-        <div className='w-[16rem] h-[6px] bg-[#f0f0f0]'>
+      <section className='flex items-center gap-2 tab:gap-8'>
+        <div className='w-[10rem] tab:w-[16rem] h-[6px] bg-[#f0f0f0]'>
           <div
             style={{ width: ratePercentage }}
             className='h-full bg-[#e67e22]'></div>

@@ -3,7 +3,7 @@ import Course_Video_Section from "@/components/layout/My_Courses_Layout/Courses_
 export default function Curriculum() {
   return (
     <section className="flex flex-col gap-2">
-      <Course_Video_Section/>
+      <Course_Video_Section curriculum={true}/>
     </section>
   )
 }

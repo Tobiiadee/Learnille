@@ -4,7 +4,7 @@ import Course_For from "./Course_For";
 
 export default function Overview() {
   return (
-    <main className="flex flex-col gap-4">
+    <main className="flex flex-col gap-4 px-4 tab:px-0">
       <section className='flex flex-col gap-4 text-black'>
         <h2 className='text-sm font-semibold'>Description</h2>
         <p className='text-sm font-normal'>
