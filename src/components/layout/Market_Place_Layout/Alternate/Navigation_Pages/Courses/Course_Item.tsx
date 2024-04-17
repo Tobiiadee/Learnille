@@ -27,9 +27,9 @@ export default function Course_Item({
     <Link to='/learnille/market place/market_place/details/course/overview'>
       <Card
         hover={true}
-        classNames='w-[14.5rem] h-[18rem] active:scale-105 transition duration-300'>
+        classNames='w-full tab:w-[14.5rem] h-[18rem] active:scale-105 transition duration-300'>
         <main className='flex flex-col  gap-2 h-full w-full'>
-          <div className='min-w-20 h-20 nb:w-full nb:min-w-28 nb:h-28 rounded-md shadow overflow-hidden flex items-center justify-center'>
+          <div className='min-w-20  nb:w-full nb:min-w-28 nb:h-28 rounded-md shadow overflow-hidden flex items-center justify-center'>
             <img src={img} alt='' />
           </div>
 

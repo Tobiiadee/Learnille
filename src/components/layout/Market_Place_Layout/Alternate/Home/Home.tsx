@@ -28,7 +28,7 @@ export default function Home() {
       <section>
         <main className='flex flex-col gap-4'>
           <Alt_Navigation />
-          <section className='flex gap-4'>
+          <section className='flex gap-4 px-4 tab:px-0'>
             <div className='rounded-md w-[82%] h-9 flex gap-2 items-center px-4 bg-white shadow text-sm'>
               <SearchV />
               <input
@@ -53,9 +53,10 @@ export default function Home() {
                 </svg>
               </button>
             </div>
+
             <button
               type='button'
-              className='text-sm text-white font-semibold px-2 active:bg-[#2340c1] bg-layout-bg rounded transition duration-300'>
+              className='text-[8px] tab:text-sm text-white font-semibold px-1 tab:px-2 active:bg-[#2340c1] bg-layout-bg rounded transition duration-300'>
               Search Course
             </button>
           </section>
