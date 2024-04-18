@@ -4,8 +4,8 @@ export default function First_Section() {
     <section className='bg-white w-full px-4 py-2 flex flex-col gap-4'>
         <div className='flex justify-between items-center'>
           <h2 className='flex items-center gap-1 text-sm'>
-            <span className='font-bold text-black'>$14.00</span>
-            <span className='font-semibold text-text text-xs'>$26.00</span>
+            <span className='font-semibold text-black text-lg'>$14.00</span>
+            <span className='font-semibold text-text text-xs line-through'>$26.00</span>
           </h2>
 
           <span className='bg-[#AED6F1] rounded-sm px-2 py-1 text-xs text-layout-bg font-semibold uppercase'>

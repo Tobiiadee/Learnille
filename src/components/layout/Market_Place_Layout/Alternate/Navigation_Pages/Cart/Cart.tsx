@@ -20,7 +20,7 @@ export default function Cart() {
         </h2>
       </section>
 
-      <section className='grid tab:grid-cols-[600px_600px_420px] gap-4'>
+      <section className='grid nb:grid-cols-[600px_600px_420px] gap-4'>
         <div className='flex flex-col gap-0'>
           <section className='flex justify-between bg-white text-black text-sm font-normal tab:font-semibold uppercase border-[0.5px] border-[#dae1e6] px-4 py-2'>
             <div className=''>
@@ -37,7 +37,7 @@ export default function Cart() {
             <Cart_Item />
           </section>
         </div>
-        <div className='w-full tab:w-[25rem] bg-white h-max pb-4 border rounded'>
+        <div className='w-full nb:w-[25rem] bg-white h-max pb-4 border rounded'>
             <Cart_Items_OnPayment/>
         </div>
       </section>

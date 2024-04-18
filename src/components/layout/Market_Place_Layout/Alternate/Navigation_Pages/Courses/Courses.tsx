@@ -18,6 +18,6 @@ export default function Courses() {
   ));
 
   return (
-    <section className='grid tab:grid-cols-3 justify-center w-full gap-4 px-4 tab:px-0'>{course_items}</section>
+    <section className='grid tab:grid-cols-2 nb:grid-cols-3 justify-center w-full gap-4 px-4 tab:px-0'>{course_items}</section>
   );
 }

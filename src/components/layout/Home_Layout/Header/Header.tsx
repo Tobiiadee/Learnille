@@ -16,7 +16,7 @@ export default function Header() {
             <input
               type='search'
               id='search'
-              className='border-none w-60 outline-none text-sm placeholder:text-sm'
+              className='border-none  w-60 outline-none text-sm placeholder:text-sm'
               placeholder='Search...'
             />
           </div>

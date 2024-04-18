@@ -25,7 +25,7 @@ export default function Cart_Item() {
           </button>
         </div>
 
-        <div className='max-w-20 h-20 nb:min-w-24 nb:h-24 rounded-md shadow overflow-hidden flex items-center justify-center'>
+        <div className='max-w-20 h-20 nb:min-w-24 nb:h-24 hidden tab:block rounded-md shadow overflow-hidden flex items-center justify-center'>
           <img src={img} alt='' />
         </div>
 
@@ -36,10 +36,10 @@ export default function Cart_Item() {
             </h2>
           </section>
 
-          <section className='mt-1 flex flex-col gap-2 tab:gap-0 tab:flex-row w-full tab:justify-between tab:items-center'>
-            <div className='flex gap-2 tab:gap-2  items-center w-full'>
+          <section className='mt-1 flex flex-col gap-2  tab:gap-0 tab:flex-row w-full tab:justify-between tab:items-center'>
+            <div className='flex gap-2 tab:gap-2 items-center w-full '>
               <section className='flex w-full justify-between'>
-                <h2 className='text-xs text-black font-semibold flex items-center gap-1'>
+                <h2 className='text-xs text-black w-full tab:font-semibold flex items-center gap-1'>
                   <span className='text-text font-normal'>Created by:</span>{" "}
                   <div className='flex items-center gap-[1px]'>
                     {" "}
@@ -58,7 +58,7 @@ export default function Cart_Item() {
                   </div>
                 </h2>
 
-                <div className='flex gap-1 items-center pr-10'>
+                <div className='flex gap-1 items-center tab:pr-10'>
                   <h2 className='text-sm tab:text-lg font-semibold text-layout-bg'>
                     $32.00
                   </h2>

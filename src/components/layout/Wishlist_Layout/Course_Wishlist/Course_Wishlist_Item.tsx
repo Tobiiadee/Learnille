@@ -1,5 +1,7 @@
 /** @format */
 
+import { Link } from "react-router-dom";
+
 import img from "../../../../assets/images/3d96648dc587844fbf3af8e709f856b0.jpg";
 
 export default function Course_Wishlist_Item() {
@@ -113,16 +115,23 @@ export default function Course_Wishlist_Item() {
             </div>
 
             <div className='flex gap-2 tab:gap-2 text-xs tab:w-3/6 '>
-              <button
-                type='button'
-                className='px-4 py-1 tab:px-6 tab:py-1 rounded-sm bg-[#e9eff4] text-black font-semibold active:bg-[#dae1e6] transition duration-300'>
-                Buy Now
-              </button>
-              <button
-                type='button'
-                className='px-4 py-1 tab:px-4 tab:py-1 rounded-sm bg-layout-bg text-white font-semibold active:bg-[#4b52d8] transition duration-300'>
-                Add To Cart
-              </button>
+              <Link to='/learnille/market%20place/market_place/make%20payment'>
+                {" "}
+                <button
+                  type='button'
+                  className='px-4 py-1 tab:px-6 tab:py-1 rounded-sm bg-[#e9eff4] text-black font-semibold active:bg-[#dae1e6] transition duration-300'>
+                  Buy Now
+                </button>
+              </Link>
+
+              <Link to='/learnille/market%20place/market_place/cart'>
+                {" "}
+                <button
+                  type='button'
+                  className='px-4 py-1 tab:px-4 tab:py-1 rounded-sm bg-layout-bg text-white font-semibold active:bg-[#4b52d8] transition duration-300'>
+                  Add To Cart
+                </button>
+              </Link>
 
               <button
                 type='button'

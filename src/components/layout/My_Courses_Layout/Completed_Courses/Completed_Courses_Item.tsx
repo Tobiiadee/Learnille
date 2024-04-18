@@ -8,7 +8,7 @@ import img from "../../../../assets/images/075826d0f7062c2b072efd481ac7837b.jpg"
 export default function Completed_Courses_Item() {
   return (
     <Card classNames='min-w-full tab:w-[12rem]'>
-      <section className='w-full h-32 shadow rounded overflow-hidden flex items-center justify-center'>
+      <section className='w-full h-[14rem] nb:h-32 shadow rounded overflow-hidden flex items-center justify-center'>
         <img src={img} alt='' />
       </section>
       <section className='flex flex-col text-xs font-semibold mt-2'>

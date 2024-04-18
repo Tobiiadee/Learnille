@@ -11,7 +11,7 @@ export default function Details_Home() {
 
   return (
     <>
-      <div className='text-xs tab:text-sm text-black'>
+      <div className='text-xs tab:text-sm text-text'>
         <h2>
           Market Place / Courses / How to make your first... /{" "}
           <span className='underline text-layout-bg '>

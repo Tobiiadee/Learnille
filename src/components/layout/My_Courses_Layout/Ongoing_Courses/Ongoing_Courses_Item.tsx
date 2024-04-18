@@ -4,10 +4,13 @@ import Card from "@/components/ui/Card/Card";
 import { Link } from "react-router-dom";
 import img from "../../../../assets/images/407331d1457b2db1ee1b6678ba63a9a5.jpg";
 
+// min-w-20 h-[14rem] tab:w-full tab:max-w-[20rem]
+// w-full tab:w-max tab:h-[25rem] nb:h-[20rem]
+
 export default function Ongoing_Courses_Item() {
   return (
     <Card classNames='min-w-full tab:w-[12rem]'>
-      <section className='w-full h-32 shadow rounded overflow-hidden flex items-center justify-center'>
+      <section className='w-full h-[14rem] nb:h-32 shadow rounded overflow-hidden flex items-center justify-center'>
         <img src={img} alt='' />
       </section>
       <section className='flex flex-col text-xs font-semibold mt-2'>

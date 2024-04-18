@@ -24,7 +24,7 @@ export default function Home() {
       page = <Courses />;
   }
   return (
-    <main className='nb:pr-72 flex flex-col gap-6'>
+    <main className='nb:pr-[9rem] flex flex-col gap-6'>
       <section className="flex flex-col justify-center">
         <main className='flex flex-col gap-4 w-full'>
           <Alt_Navigation />

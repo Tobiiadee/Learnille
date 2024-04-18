@@ -29,11 +29,15 @@ export default function Third_Section() {
           className='text-sm text-text font-normal border rounded-sm py-2 px-4 active:bg-[#e8e7e7] w-full transition duration-300'>
           Add To Wishlist
         </button>
-        <button
-          type='button'
-          className='text-sm text-text font-normal border rounded-sm py-2 px-4 active:bg-[#e8e7e7] w-full transition duration-300'>
-          Gift Course
-        </button>
+        <Link
+          to='/learnille/market place/market_place/gift course'
+          className='w-full'>
+          <button
+            type='button'
+            className='text-sm text-text font-normal border rounded-sm py-2 px-4 active:bg-[#e8e7e7] w-full transition duration-300'>
+            Gift Course
+          </button>
+        </Link>
       </div>
 
       <div>
