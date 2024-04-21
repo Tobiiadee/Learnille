@@ -50,9 +50,7 @@ const course_Details_Slice = createSlice({
   name: "course_details",
   initialState: courseDetails,
   reducers: {
-    getCourseDetails: (state, actions) => {
-
-    },
+    getCourseDetails: () => {},
   },
 });
 
