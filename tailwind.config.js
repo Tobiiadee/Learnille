@@ -20,6 +20,7 @@ export default {
         },
         background: "#eef8ff",
         text: "#8c8c8c",
+        error: "#e74c3c",
       },
     },
   },

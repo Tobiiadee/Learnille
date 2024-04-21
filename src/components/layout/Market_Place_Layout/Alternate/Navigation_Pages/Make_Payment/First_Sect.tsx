@@ -40,14 +40,14 @@ export default function First_Sect() {
               height='42px'
               viewBox='0 0 24 24'
               xmlns='http://www.w3.org/2000/svg'>
-              <g fill='none' fill-rule='evenodd'>
+              <g fill='none' fillRule='evenodd'>
                 <circle cx='7' cy='12' r='7' fill='#EA001B' />
                 <circle
                   cx='17'
                   cy='12'
                   r='7'
                   fill='#FFA200'
-                  fill-opacity='.8'
+                  fillOpacity='.8'
                 />
               </g>
             </svg>
@@ -91,7 +91,7 @@ export default function First_Sect() {
           </div>
         </section>
 
-        <section className='border-[#2ecc71] border rounded-md flex gap-20 items-center px-4 py-[0.4rem]'>
+        <section className='border-[#2ecc71] border rounded-md flex gap-8 items-center px-4 py-[0.4rem]'>
           <div className='flex items-center gap-[5.5rem] w-full'>
             <svg
               xmlns='http://www.w3.org/2000/svg'

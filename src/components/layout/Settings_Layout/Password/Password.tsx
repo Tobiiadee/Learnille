@@ -4,12 +4,14 @@ type Password_Type = {
   viewPassword?: boolean;
   viewPasswordHandler?: () => void;
   label: string;
+  inputObject: { register(type: string): void;}
 };
 
 export default function Password({
   viewPassword,
   viewPasswordHandler,
   label,
+  inputObject
 }: Password_Type) {
   return (
     <section>
@@ -21,6 +23,7 @@ export default function Password({
           <input
             type={viewPassword ? "text" : "password"}
             name='current password'
+            {...inputObject.register}
             id='current password'
             placeholder='Password'
             className='text-text text-sm w-full outline-none placeholder:font-normal'

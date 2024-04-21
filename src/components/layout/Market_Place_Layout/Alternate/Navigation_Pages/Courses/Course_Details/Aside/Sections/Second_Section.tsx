@@ -1,6 +1,10 @@
 /** @format */
 
-export default function Second_Section() {
+export type SectionType = {
+  consultation?: boolean;
+};
+
+export default function Second_Section({ consultation }: SectionType) {
   return (
     <section className='bg-white w-full px-4 py-2 flex flex-col gap-4'>
       <main className='flex justify-between items-center'>
@@ -18,7 +22,7 @@ export default function Second_Section() {
               d='M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z'
             />
           </svg>
-          <h2>Course Duration</h2>
+          <h2>{consultation ? "Consultation Duration" : "Course Duration"}</h2>
         </div>
 
         <div className='font-normal text-xs text-text capitalize'>
@@ -36,7 +40,7 @@ export default function Second_Section() {
             xmlns='http://www.w3.org/2000/svg'>
             <path d='M7,13v6a1,1,0,0,1-2,0V13a1,1,0,0,1,2,0Zm11,7a1,1,0,0,0,1-1V5a1,1,0,0,0-2,0V19A1,1,0,0,0,18,20Zm-6,0a1,1,0,0,0,1-1V9a1,1,0,0,0-2,0V19A1,1,0,0,0,12,20Z' />
           </svg>
-          <h2>Course Level</h2>
+          <h2>{consultation ? "Consultation Level" : "Course Level"}</h2>
         </div>
 
         <div className='font-normal text-xs text-text capitalize'>
@@ -60,7 +64,7 @@ export default function Second_Section() {
             />
           </svg>
 
-          <h2>Students Enrolled</h2>
+          <h2>{consultation ? "Total Purchased" : "Students Enrolled"}</h2>
         </div>
 
         <div className='font-normal text-xs text-text capitalize'>

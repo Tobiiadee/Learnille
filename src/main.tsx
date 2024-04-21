@@ -18,6 +18,7 @@ import Course_Video_Home from "./components/layout/My_Courses_Layout/Courses_Vid
 import MarketPlace from "./pages/Navigation_Pages/MarketPlace.tsx";
 import Details_Home from "./components/layout/Market_Place_Layout/Alternate/Navigation_Pages/Courses/Course_Details/Home/Details_Home.tsx";
 import Course_Details from "./components/layout/Market_Place_Layout/Alternate/Navigation_Pages/Courses/Course_Details/Details_Pages/Course_Details.tsx";
+import Consultation_Details from "./components/layout/Market_Place_Layout/Alternate/Navigation_Pages/Consultations/Consultation_Details/Details_Pages/Consultation_Details.tsx";
 
 const router = createBrowserRouter([
   {
@@ -59,6 +60,10 @@ const router = createBrowserRouter([
               {
                 path: "/learnille/:navId/market_place/:market_place_id/course/:details_page_id",
                 element: <Course_Details />,
+              },
+              {
+                path: "/learnille/:navId/market_place/:market_place_id/consultation/:consultation_details_page_id",
+                element: <Consultation_Details/>,
               },
             ],
           },

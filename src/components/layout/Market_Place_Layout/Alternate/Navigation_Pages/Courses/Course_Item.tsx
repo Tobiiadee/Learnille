@@ -23,10 +23,19 @@ export default function Course_Item({
   reviews,
   student,
 }: Course_Type) {
+  // const [paramsTitle, setParamsTitle] = useSearchParams();
+
+  // const titleParamsHandler = () => {
+  //   setParamsTitle({ title: `` });
+  // };
+
+  // const linkTitle = paramsTitle.get("title") === ""
+
   return (
-    <Link to='/learnille/market place/market_place/details/course/overview'>
+    <Link to='/learnille/market place/market_place/course_details/course/overview'>
       <Card
         hover={true}
+
         classNames='w-full tab:w-max tab:h-[25rem] nb:w-[18rem] nb:h-[21rem] active:scale-105 transition duration-300'>
         <main className='flex flex-col  gap-2 h-full w-full'>
           <div className='min-w-20 h-[14rem] tab:w-full tab:max-w-[20rem] nb:w-full nb:max-h-[10rem]  nb:min-h-[10rem] rounded-md shadow overflow-hidden flex items-center justify-center'>

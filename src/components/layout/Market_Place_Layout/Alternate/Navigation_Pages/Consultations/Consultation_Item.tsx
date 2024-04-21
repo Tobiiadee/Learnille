@@ -2,6 +2,7 @@
 
 import Card from "@/components/ui/Card/Card";
 import img from "../../../../../../assets/images/075826d0f7062c2b072efd481ac7837b.jpg";
+import { Link } from "react-router-dom";
 
 type Course_Type = {
   category: string;
@@ -120,7 +121,9 @@ export default function Consultation_Item({
               <div className='w-7 h-7 rounded-full shadow flex justify-center items-center overflow-hidden'>
                 <img src='' alt='' />
               </div>
-              <h2 className='text-xs text-black font-semibold capitalize'>{author}</h2>
+              <h2 className='text-xs text-black font-semibold capitalize'>
+                {author}
+              </h2>
             </div>
 
             <span className='flex gap-1 items-center text-xs text-text'>
@@ -154,11 +157,13 @@ export default function Consultation_Item({
               className='w-full text-sm text-white rounded bg-layout-bg active:bg-[#304fd9] py-2 nb:py-1 transition duration-300'>
               Book
             </button>
-            <button
-              type='button'
-              className='w-full text-sm text-layout-bg rounded border border-layout-bg bg-transparent active:bg-[#eaeded] py-2 nb:py-1 transition duration-300'>
-              See Details
-            </button>
+            <Link to='/learnille/market%20place/market_place/consultation_details/consultation/consultation%20overview'>
+              <button
+                type='button'
+                className='w-full text-sm text-layout-bg rounded border border-layout-bg bg-transparent active:bg-[#eaeded] py-2 nb:py-1 transition duration-300'>
+                See Details
+              </button>
+            </Link>
           </section>
         </div>
       </main>

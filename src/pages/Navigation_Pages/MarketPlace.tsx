@@ -2,6 +2,7 @@
 
 import Home from "@/components/layout/Market_Place_Layout/Alternate/Home/Home";
 import Cart from "@/components/layout/Market_Place_Layout/Alternate/Navigation_Pages/Cart/Cart";
+import Consultation_Details from "@/components/layout/Market_Place_Layout/Alternate/Navigation_Pages/Consultations/Consultation_Details/Details_Pages/Consultation_Details";
 import Details_Home from "@/components/layout/Market_Place_Layout/Alternate/Navigation_Pages/Courses/Course_Details/Home/Details_Home";
 import Gift_Course from "@/components/layout/Market_Place_Layout/Alternate/Navigation_Pages/Gift_Course/Gift_Course";
 import Make_Payment from "@/components/layout/Market_Place_Layout/Alternate/Navigation_Pages/Make_Payment/Make_Payment";
@@ -19,8 +20,11 @@ export default function MarketPlace() {
     case "cart":
       page = <Cart />;
       break;
-    case "details":
+    case "course_details":
       page = <Details_Home />;
+      break;
+    case "consultation_details":
+      page = <Consultation_Details />;
       break;
     case "make payment":
       page = <Make_Payment />;

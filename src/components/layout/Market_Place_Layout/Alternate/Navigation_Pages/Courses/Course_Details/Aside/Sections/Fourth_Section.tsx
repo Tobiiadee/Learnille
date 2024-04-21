@@ -1,6 +1,8 @@
 /** @format */
 
-export default function Fourth_Section() {
+import { SectionType } from "./Second_Section";
+
+export default function Fourth_Section({consultation}: SectionType) {
   return (
     <section className='bg-white w-full px-4 py-2 flex flex-col gap-3'>
       <h2 className='font-semibold text-sm'>This course includes:</h2>
@@ -39,7 +41,7 @@ export default function Fourth_Section() {
         <h2>30-days money-back guarantee</h2>
       </div>
 
-      <div className='flex gap-2 items-center text-xs text-text font-normal'>
+      {!consultation && <div className='flex gap-2 items-center text-xs text-text font-normal'>
         <svg
           width='18px'
           height='18px'
@@ -76,7 +78,7 @@ export default function Fourth_Section() {
           />
         </svg>
         <h2>Free exercises file and downloadable resources</h2>
-      </div>
+      </div>}
 
       <div className='flex gap-2 items-center text-xs text-text font-normal'>
         <svg
@@ -129,7 +131,7 @@ export default function Fourth_Section() {
         <h2>Shareable certificate of completion</h2>
       </div>
 
-      <div className='flex gap-2 items-center text-xs text-text font-normal'>
+      {!consultation && <div className='flex gap-2 items-center text-xs text-text font-normal'>
         <svg
           width='18px'
           height='18px'
@@ -145,9 +147,9 @@ export default function Fourth_Section() {
           />
         </svg>
         <h2>English subtitles</h2>
-      </div>
+      </div>}
 
-      <div className='flex gap-2 items-center text-xs text-text font-normal'>
+      {!consultation && <div className='flex gap-2 items-center text-xs text-text font-normal'>
         <svg
           xmlns='http://www.w3.org/2000/svg'
           fill='none'
@@ -163,7 +165,7 @@ export default function Fourth_Section() {
         </svg>
 
         <h2>100% online course</h2>
-      </div>
+      </div>}
     </section>
   );
 }

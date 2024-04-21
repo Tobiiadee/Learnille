@@ -4,12 +4,18 @@ type Button_Type = {
   onClick?: () => void;
   className?: string;
   text?: string;
+  type?: "submit" | "button";
 };
 
-export default function Button_({ onClick, className, text }: Button_Type) {
+export default function Button_({
+  onClick,
+  className,
+  text,
+  type,
+}: Button_Type) {
   return (
     <button
-      type='button'
+      type={type}
       onClick={onClick}
       className={`flex justify-between bg-[#edf1ff]  active:bg-[#ced5ee] transition duration-300 ${className}`}>
       <span className='text-[8px] self-center tab:text-xs text-layout-bg font-semibold py-1 px-2 '>

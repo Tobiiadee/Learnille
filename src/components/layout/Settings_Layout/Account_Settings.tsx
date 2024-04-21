@@ -17,6 +17,7 @@ export default function Account_Settings() {
   //User Title Handler
   //e.currentTarget.innerHTML
   const toogleTitleHandler = () => setToogle((prev) => !prev);
+
   const titleHandler = (e: React.SyntheticEvent) => {
     setTitle((e.target as HTMLLIElement).innerHTML);
     setToogle((prev) => !prev);
@@ -24,9 +25,10 @@ export default function Account_Settings() {
 
   //User Country Code Handler
   const toogleCountryCodeHandler = () => setToogleCountryCode((prev) => !prev);
+
   const countryCodeHandler = (e: React.SyntheticEvent) => {
-    setCountryCode((e.target as HTMLDivElement).innerHTML);
-    setToogleCountryCode(prev => !prev);
+    setCountryCode((e.target as HTMLLIElement).innerHTML);
+    setToogleCountryCode((prev) => !prev);
   };
 
   return (
@@ -34,7 +36,7 @@ export default function Account_Settings() {
       <h2 className='text-sm font-semibold'>Account Settings</h2>
       <form className='mt-4 flex gap-4 flex-col'>
         <div className='flex flex-col tab:flex-col gap-4'>
-          <section className='bg-[#edf1ff] self-center tab:self-end tab:-mt-8 rounded-md w-52 px-4 py-8 flex flex-col items-center gap-4'>
+          <section className='bg-[#edf1ff] self-center tab:self-end tab:-mt-8 rounded-md w-52 px-2 py-4 tab:px-4 tab:py-8 flex flex-col items-center gap-4'>
             <div className='shadow-md rounded-full w-20 h-20 overflow-hidden flex items-center justify-center'>
               <img src='' alt='' />
             </div>
@@ -83,15 +85,15 @@ export default function Account_Settings() {
                 </div>
 
                 {toogleTitle && (
-                  <menu className='absolute left-0 top-16 w-full bg-white rounded shadow-md flex flex-col '>
+                  <menu className='absolute left-0 top-16 w-[30%] tab:w-full bg-white rounded shadow-md flex flex-col overflow-hidden'>
                     <li
                       onClick={titleHandler}
-                      className='w-full hover:bg-layout-bg rounded-t cursor-pointer hover:text-white border-b px-4 py-1'>
+                      className='w-full hover:bg-layout-bg cursor-pointer hover:text-white border-b px-4 py-1'>
                       Mr
                     </li>
                     <li
                       onClick={titleHandler}
-                      className='w-full hover:bg-layout-bg rounded-b cursor-pointer hover:text-white px-4 py-1'>
+                      className='w-full hover:bg-layout-bg cursor-pointer hover:text-white px-4 py-1'>
                       Mrs
                     </li>
                   </menu>
@@ -154,16 +156,26 @@ export default function Account_Settings() {
                       <ArrowD onRotate={toogleCountryCode} />
                     </span>
                     {toogleCountryCode && (
-                      <menu className='absolute left-0 top-10 w-[30%] bg-white text-sm text-black font-normal rounded shadow-md flex flex-col '>
+                      <menu className='absolute left-0 top-10 w-[30%] bg-white text-sm text-black font-normal rounded shadow-md flex flex-col overflow-hidden'>
                         <li
                           onClick={countryCodeHandler}
-                          className='w-full hover:bg-layout-bg rounded-t cursor-pointer hover:text-white border-b px-4 py-1'>
+                          className='w-full hover:bg-layout-bg cursor-pointer hover:text-white border-b px-4 py-1'>
                           +234
                         </li>
                         <li
                           onClick={countryCodeHandler}
-                          className='w-full hover:bg-layout-bg rounded-b cursor-pointer hover:text-white px-4 py-1'>
+                          className='w-full hover:bg-layout-bg cursor-pointer hover:text-white px-4 py-1'>
                           +236
+                        </li>
+                        <li
+                          onClick={countryCodeHandler}
+                          className='w-full hover:bg-layout-bg cursor-pointer hover:text-white px-4 py-1'>
+                          +99
+                        </li>
+                        <li
+                          onClick={countryCodeHandler}
+                          className='w-full hover:bg-layout-bg cursor-pointer hover:text-white px-4 py-1'>
+                          +314
                         </li>
                       </menu>
                     )}
