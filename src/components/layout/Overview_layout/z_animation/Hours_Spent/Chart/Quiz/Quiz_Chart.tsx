@@ -10,7 +10,7 @@ import {
   Tooltip,
   Legend,
 } from "chart.js";
-import { Study_Chart_Data } from "../Chart_Data/Study_Chart_Data";
+import { Quiz_Chart_Data } from "../Chart_Data/Quiz_Chart_Data";
 
 ChartJS.register(
   CategoryScale,
@@ -36,7 +36,7 @@ export default function Quiz_Chart() {
 
   return (
     <div>
-      <Bar options={options} data={Study_Chart_Data} />
+      <Bar options={options} data={Quiz_Chart_Data} />
     </div>
   );
 }
