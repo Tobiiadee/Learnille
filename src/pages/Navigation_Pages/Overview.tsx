@@ -1,8 +1,8 @@
 /** @format */
 
 import TagOne from "@/components/layout/Overview_layout/TagsOne";
-import HoursSpent from "../../components/layout/Overview_layout/Hours_Spent";
-import Performance from "../../components/layout/Overview_layout/Performance";
+import HoursSpent from "../../components/layout/Overview_layout/z_animation/Hours_Spent/Hours_Spent";
+import Performance from "../../components/layout/Overview_layout/z_animation/Performance/Performance";
 import ResumeVidoes from "@/components/layout/Overview_layout/Resume_Vidoes";
 import HomeAside from "@/components/layout/Home_Layout/Home_Aside/Home_Aside";
 

@@ -8,13 +8,13 @@ export default function Course_Wishlist_Item() {
   return (
     <section className='mt-1 border-b pb-4 peer'>
       <main className='flex gap-4 w-full'>
-        <div className='max-w-20 h-20 nb:max-w-24 nb:h-24 rounded-md shadow overflow-hidden flex items-center justify-center'>
+        <div className='hidden max-w-20 h-20 nb:max-w-24 nb:h-24 rounded-md shadow overflow-hidden tab:flex items-center justify-center'>
           <img src={img} alt='' />
         </div>
 
         <div className='w-full'>
-          <section className='flex flex-col tab:flex-row justify-between'>
-            <h2 className='text-xs text-black capitalize font-semibold w-60 tab:w-52'>
+          <section className='flex flex-col tab:flex-row justify-between w-full'>
+            <h2 className='text-xs text-black capitalize font-semibold w-full tab:w-52'>
               How to make your first millions as a frontent developer
             </h2>
 

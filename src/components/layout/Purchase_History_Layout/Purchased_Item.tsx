@@ -1,16 +1,18 @@
 /** @format */
 
-import img from "../../../assets/images/407331d1457b2db1ee1b6678ba63a9a5.jpg"
+import img from "../../../assets/images/407331d1457b2db1ee1b6678ba63a9a5.jpg";
 
 export default function Purchased_Item() {
   return (
-    <section className='flex w-fit tab:gap-4'>
-      <div className='hidden w-28 h-28 shadow rounded-md overflow-hidden tab:flex items-center justify-center'>
-        <img src={img} alt='' />
+    <section className='flex w-full tab:gap-4'>
+      <div>
+        <div className='hidden w-28 h-28 shadow rounded-md overflow-hidden tab:flex items-center justify-center'>
+          <img src={img} alt='' />
+        </div>
       </div>
 
-      <div className='flex flex-col mt-2 gap-2'>
-        <h2 className='capitalize text-sm font-semibold w-64 nb:w-56'>
+      <div className='flex flex-col mt-2 gap-2 w-full'>
+        <h2 className='capitalize text-sm font-normal tab:font-semibold w-64 nb:w-56'>
           The ultimate graphics course for beginner to advanced
         </h2>
         <p className='text-xs flex items-center gap-1'>
@@ -50,7 +52,7 @@ export default function Purchased_Item() {
         </div>
       </div>
 
-      <div className='text-sm flex gap-1 items-center pr-8 tab:pr-0'>
+      <div className='text-sm flex gap-1 items-center w-full'>
         <h2 className='font-semibold text-layout-bg'>$37.00</h2>
         <h2 className='text-xs text-text line-through'>$49.00</h2>
       </div>

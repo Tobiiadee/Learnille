@@ -21,7 +21,7 @@ export default function Checkbox({ label, onChange }: Checkbox_Type) {
       />
       <label
         htmlFor={label}
-        className='-mt-1 tab:mt-0 text-text text-sm peer-checked:text-black cursor-pointer'>
+        className=' text-text text-sm peer-checked:text-black cursor-pointer'>
         {label}
       </label>
       <svg

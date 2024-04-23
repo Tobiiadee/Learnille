@@ -108,7 +108,7 @@ export default function NavBar({ onView, viewNav }: ViewType) {
             <h2>My Certificate</h2>
           </NavLink>
           <NavLink
-            to='/learnille/my courses'
+            to='/learnille/my courses/courses/ongoing_courses'
             className='flex items-center text-sm text-white font-light active:text-black active:bg-background gap-2 px-4 py-3 cursor-pointer transition-all duration-200'>
             <span>
               <Courses />
@@ -116,7 +116,7 @@ export default function NavBar({ onView, viewNav }: ViewType) {
             <h2>My Courses</h2>
           </NavLink>
           <NavLink
-            to='/learnille/wishlist'
+            to='/learnille/wishlist/wishlist/consultation_wishlist'
             className='flex items-center text-sm text-white font-light active:text-black active:bg-background gap-2 px-4 py-3 cursor-pointer transition-all duration-200'>
             <span>
               <WhishList/>
@@ -132,7 +132,7 @@ export default function NavBar({ onView, viewNav }: ViewType) {
             <h2>Purchase History</h2>
           </NavLink>
           <NavLink
-            to='/learnille/market place'
+            to='/learnille/market place/market_place/home/courses'
             className='flex items-center text-sm text-white font-light active:text-black active:bg-background gap-2 px-4 py-3 cursor-pointer transition-all duration-200'>
             <span>
               <MarketPlace />

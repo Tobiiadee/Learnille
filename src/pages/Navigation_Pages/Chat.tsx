@@ -2,23 +2,27 @@
 
 import { SearchV } from "@/assets/svg/HeaderSVG";
 import Chat_List from "@/components/layout/Chat_Layout/Chat_List";
+import Chat_Search from "@/components/layout/Chat_Layout/Chat_Search/Chat_Search";
 import Recieve_Chat from "@/components/layout/Chat_Layout/Chat_Sender_Reciever/Recieve_Chat";
 import Send_Chat from "@/components/layout/Chat_Layout/Chat_Sender_Reciever/Send_Chat";
 import Card from "@/components/ui/Card/Card";
+import { useState } from "react";
 
 // type InputType = string | null;
 
 export default function Chat() {
+  const [viewSearch, setViewSearch] = useState(false);
+
   const onSendChat = () => {};
 
   return (
-    <section className='nb:grid nb:grid-cols-3 gap-4 pr-2 tab:pr-4 tab:pb-4 overflow-hidden'>
-      <aside className='-z-10 col-span-2 flex flex-col h-screen nb:h-max'>
-        <Card classNames='flex justify-between w- border-b pb-4'>
+    <section className='relative nb:grid nb:grid-cols-3 gap-4 pr-2 tab:pr-4 tab:pb-4 overflow-hidden'>
+      <aside className=' col-span-2 flex flex-col h-screen nb:h-max'>
+        <Card classNames='flex justify-between border-b pb-4'>
           <section className='flex gap-2'>
-            <span className='w-8 h-8 rounded-full shadow'>
+            <div className='w-8 h-8 rounded-full shadow flex justify-center items-center overflow-hidden'>
               <img src='' alt='' />
-            </span>
+            </div>
 
             <span className='flex flex-col overflow-hidden'>
               <h2 className='text-sm font-semibold'>John Doe</h2>
@@ -27,20 +31,35 @@ export default function Chat() {
           </section>
 
           <section className='flex gap-2 tab:gap-4 items-center'>
-            <div className='flex items-center border tab:w-72 py-1 px-3 rounded-md overflow-hidden'>
-              <div className='w-full'>
-                <input
-                  type='text'
-                  className='border-none tab:w-60 outline-none text-sm placeholder:text-sm'
-                  placeholder='Search...'
-                />
-              </div>
-              <span>
-                <SearchV />
-              </span>
+            <div className='hidden nb:block'>
+              <Chat_Search />
             </div>
 
-            <button type='button'>
+            <div className='flex items-center nb:hidden'>
+              <button
+                type='button'
+                className='active:bg-activeBtn p-2 rounded-full transition duration-300'
+                onClick={() => setViewSearch((prev) => !prev)}>
+                {""}
+                <svg
+                  xmlns='http://www.w3.org/2000/svg'
+                  fill='none'
+                  viewBox='0 0 24 24'
+                  strokeWidth={1.5}
+                  stroke='currentColor'
+                  className='w-4 h-4'>
+                  <path
+                    strokeLinecap='round'
+                    strokeLinejoin='round'
+                    d='m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z'
+                  />
+                </svg>
+              </button>
+            </div>
+
+            <button
+              type='button'
+              className='active:bg-activeBtn p-2 rounded-full transition duration-300'>
               {""}
               <svg
                 xmlns='http://www.w3.org/2000/svg'
@@ -58,6 +77,11 @@ export default function Chat() {
             </button>
           </section>
         </Card>
+        {viewSearch && (
+          <Card classNames=' mb-2 w-full'>
+            <Chat_Search />
+          </Card>
+        )}
 
         <Card classNames='h-max'>
           <main className='nb:h-[20rem] border-b pb-4 flex flex-col gap-4 pt-4 overflow-y-scroll'>

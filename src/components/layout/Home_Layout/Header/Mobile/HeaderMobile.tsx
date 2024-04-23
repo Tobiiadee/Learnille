@@ -30,7 +30,7 @@ export default function Header() {
           <section>
             <button
               type='button'
-              className='flex items-center justify-center active:border rounded-full w-10 h-10 active:bg-text'
+              className='flex items-center justify-center active:border rounded-full w-10 h-10 active:bg-activeBtn transition duration-300'
               onClick={searchHandler}>
               {""}
               <span className=''>
@@ -42,7 +42,7 @@ export default function Header() {
           <section>
             <button
               type='button'
-              className='flex items-center justify-center active:border rounded-full w-10 h-10 active:bg-text'
+              className='flex items-center justify-center active:border rounded-full w-10 h-10 active:bg-activeBtn transition duration-300'
               onClick={menuHandler}>
               {""}
               <span>

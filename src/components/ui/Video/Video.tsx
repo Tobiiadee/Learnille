@@ -19,7 +19,7 @@ export default function Video({
 }: Video_Type) {
   return (
     <main className='relative w-full border h-max tab:h-[20rem] nb:h-[26rem] shadow rounded-xl overflow-hidden z-0'>
-      <div className="h-[20rem]">
+      <div className="h-max tab:h-[20rem]">
         <img src={img} alt={img_desc} />
       </div>
       <section className='absolute top-0 left-0 w-full h-full  backdrop'>

@@ -13,11 +13,11 @@ export default function Course_Video_Home() {
   let courseVideoPage;
 
   switch (play_course_id) {
-    case "lesson_note":
+    case "lesson note":
       courseVideoPage = <Course_Lesson_Note />;
       break;
 
-    case "attached_file":
+    case "attached file":
       courseVideoPage = <Course_Attached_File />;
       break;
 

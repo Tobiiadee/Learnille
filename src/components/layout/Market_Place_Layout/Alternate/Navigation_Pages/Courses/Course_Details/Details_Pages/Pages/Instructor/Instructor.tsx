@@ -2,8 +2,11 @@
 
 import Card from "@/components/ui/Card/Card";
 import img from "../../../../../../../../../../assets/images/3d96648dc587844fbf3af8e709f856b0.jpg";
+import { useState } from "react";
 
 export default function Instructor() {
+  const [viewMore, setViewMore] = useState(false);
+
   return (
     <Card classNames='flex flex-col tab:flex-row gap-4'>
       <section className='self-center tab:self-start'>
@@ -23,8 +26,8 @@ export default function Instructor() {
           </p>
         </div>
 
-        <section className='flex gap-4 items-center'>
-          <div className='flex gap-1 items-center'>
+        <section className='flex gap-4 justify-center tab:justify-start items-center'>
+          <div className='flex flex-col tab:flex-row gap-1 items-center'>
             <svg
               xmlns='http://www.w3.org/2000/svg'
               fill='#eb984e'
@@ -45,7 +48,7 @@ export default function Instructor() {
             </h2>
           </div>
 
-          <div className='flex gap-1 items-center'>
+          <div className='flex flex-col tab:flex-row gap-1 items-center'>
             <svg
               xmlns='http://www.w3.org/2000/svg'
               fill='none'
@@ -66,7 +69,7 @@ export default function Instructor() {
             </h2>
           </div>
 
-          <div className='flex gap-1 items-center'>
+          <div className='flex flex-col tab:flex-row gap-1 items-center'>
             <svg
               xmlns='http://www.w3.org/2000/svg'
               fill='#eb984e'
@@ -94,20 +97,28 @@ export default function Instructor() {
         </section>
 
         <section className=''>
-          <p className='text-black text-sm'>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
-            doloribus, veritatis assumenda cupiditate quaerat hic fugiat
-            explicabo, placeat asperiores exercitationem laborum reiciendis
-            sunt, quibusdam commodi qui blanditiis dolorem quae sed natus
-            doloremque ipsa? Id obcaecati, praesentium sint ipsam incidunt
-            accusamus at maxime iusto laudantium cumque quaerat officia
-            suscipit? Fuga, dolorem.
-          </p>
-          <button
-            type='button'
-            className='underline text-xs text-black font-semibold'>
-            view more
-          </button>
+          <span className={`relative text-black text-sm `}>
+            <p className={`${viewMore ? "h-max" : "h-16 overflow-hidden"}`}>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
+              doloribus, veritatis assumenda cup iditate quaerat hic fugiat
+              explicabo, placeat asperiores exercitationem laborum reiciendis
+              sunt, quibusdam commodi qui blanditiis dolorem quae sed natus
+              doloremque ipsa? Id obcaecati, praesentium sint ipsam incidunt
+              accusamus at maxime iusto laudantium cumque quaerat officia
+              suscipit? Fuga, dolorem. Lorem ipsum dolor sit amet consectetur
+              adipisicing elit. Dolore, deserunt! flex-col tab:flex-row
+           </p>
+
+            <div className={`${viewMore ? "" : "absolute -bottom-2 right-0"}`}>
+              {!viewMore && <span>...</span>}
+              <button
+                type='button'
+                onClick={() => setViewMore((prev) => !prev)}
+                className='underline text-xs text-black font-semibold'>
+                {viewMore ? "view less" : "view more"}
+              </button>
+            </div>
+          </span>
         </section>
       </main>
     </Card>

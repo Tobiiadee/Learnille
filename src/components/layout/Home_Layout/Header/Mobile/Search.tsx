@@ -45,7 +45,7 @@ export default function Search({ closeSearch, openMenu }: SearchType) {
             <div className='bg-background text-xs rounded-md px-1 py-1 font-normal'>
               <button
                 type='button'
-                className='flex items-center justify-center active:border rounded-full w-6 h-6 active:bg-text'
+                className='flex items-center justify-center active:border rounded-full w-6 h-6 active:bg-activeBtn'
                 onClick={closeSearch}>
                 esc
               </button>
