@@ -26,8 +26,8 @@ export default function Instructor() {
           </p>
         </div>
 
-        <section className='flex gap-4 justify-center tab:justify-start items-center'>
-          <div className='flex flex-col tab:flex-row gap-1 items-center'>
+        <section className='flex gap-2 tab:gap-4 justify-center tab:justify-start items-center w-full'>
+          <div className='flex flex-col tab:flex-row gap-1 items-center w-full'>
             <svg
               xmlns='http://www.w3.org/2000/svg'
               fill='#eb984e'
@@ -48,7 +48,7 @@ export default function Instructor() {
             </h2>
           </div>
 
-          <div className='flex flex-col tab:flex-row gap-1 items-center'>
+          <div className='flex flex-col tab:flex-row gap-1 items-center w-full'>
             <svg
               xmlns='http://www.w3.org/2000/svg'
               fill='none'
@@ -69,7 +69,7 @@ export default function Instructor() {
             </h2>
           </div>
 
-          <div className='flex flex-col tab:flex-row gap-1 items-center'>
+          <div className='flex flex-col tab:flex-row gap-1 items-center w-full'>
             <svg
               xmlns='http://www.w3.org/2000/svg'
               fill='#eb984e'

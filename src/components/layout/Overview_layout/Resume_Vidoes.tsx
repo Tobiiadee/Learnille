@@ -29,7 +29,7 @@ export default function ResumeVidoes() {
         </p>
       </section>
 
-      <section className='mt-2 w-full flex'>
+      <section className='mt-2 w-full flex justify-center'>
         <Link to='/learnille/my%20courses/courses/play_course/description'>
           <button
             type='button'

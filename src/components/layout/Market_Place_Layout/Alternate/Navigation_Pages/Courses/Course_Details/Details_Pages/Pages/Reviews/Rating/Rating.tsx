@@ -23,7 +23,7 @@ export default function Rating() {
       </header>
 
       {loadRating && <section className='bg-white flex flex-col gap-4 p-4'>
-        <main className='grid grid-cols-3 gap-4 '>
+        <main className='grid grid-cols-2 tab:grid-cols-[150px_180px_180px] gap-2 tab:gap-4 w-full'>
           <section className='col-span-1 flex flex-col gap-2 items-center justify-center text-black bg-[#fae5d3] py-10'>
             <h2 className='text-xl tab:text-2xl font-bold'>4.6</h2>
             <div className='flex items-center gap-1'>
@@ -36,7 +36,7 @@ export default function Rating() {
             <h2 className='font-normal text-sm tab:text-lg'>Overall Rating</h2>
           </section>
 
-          <section className='col-span-2 bg-[#fae5d3]'></section>
+          <section className='tab:col-span-2 bg-[#fae5d3]'></section>
         </main>
 
         <main>

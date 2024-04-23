@@ -18,11 +18,11 @@ export default function Video({
   img_desc
 }: Video_Type) {
   return (
-    <main className='relative w-full border h-max tab:h-[20rem] nb:h-[26rem] shadow rounded-xl overflow-hidden z-0'>
+    <main className='relative w-full border h-[15rem] tab:h-[20rem] nb:h-[26rem] shadow rounded-xl overflow-hidden z-0'>
       <div className="h-max tab:h-[20rem]">
         <img src={img} alt={img_desc} />
       </div>
-      <section className='absolute top-0 left-0 w-full h-full  backdrop'>
+      <section className='absolute top-0 left-0 w-full h-full backdrop'>
         <div className='absolute top-[45%] w-full flex justify-center'>
           <button
             type='button'

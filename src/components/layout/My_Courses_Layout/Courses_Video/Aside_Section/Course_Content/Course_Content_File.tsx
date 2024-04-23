@@ -22,7 +22,7 @@ export default function Course_Content_File() {
         <span>Webflow terms and conditions</span>
       </div>
 
-      <div className='flex items-center gap-1'>
+      <div className='flex items-center gap-[1px]'>
         <span>5.3</span>
         <span>MB</span>
       </div>

@@ -19,7 +19,10 @@ export default function Course_Details() {
             nesciunt.
           </p>
         </div>
-        <Video />
+
+        <div className="h-max">
+          <Video />
+        </div>
       </main>
 
       <section>
