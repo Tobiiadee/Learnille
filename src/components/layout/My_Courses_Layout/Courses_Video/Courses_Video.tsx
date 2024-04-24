@@ -5,6 +5,8 @@ import Course_Video_Home from "./Home/Course_Video_Home";
 import Video from "@/components/ui/Video/Video";
 import { useParams } from "react-router-dom";
 
+import videoFile from "../../../ui/Video/Video_File/6786-195986690_medium.mp4"
+
 export default function Courses_Video() {
   const { play_course_id } = useParams();
 
@@ -23,7 +25,7 @@ export default function Courses_Video() {
           </h2>
         </div>
 
-        <Video />
+        <Video videoFile={videoFile}/>
 
         <main className='flex justify-between mt-4'>
           <section className='flex gap-1 text-sm font-semibold'>
