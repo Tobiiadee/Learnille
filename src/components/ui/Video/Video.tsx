@@ -7,7 +7,7 @@ type Video_Type = {
   poster?: string;
 };
 
-export default function Video({ videoFile, poster }: Video_Type) {
+export default function Video({ poster }: Video_Type) {
   return (
     <main className='relative flex items-center w-max h-max overflow-hidden'>
       <video
