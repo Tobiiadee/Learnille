@@ -2,18 +2,11 @@
 import Course_Video_Section from "./Aside_Section/Course_Video_Section";
 import Course_Video_Header from "./Header/Course_Video_Header";
 import Course_Video_Home from "./Home/Course_Video_Home";
-import img from "../../../../assets/mk-s-Mm5AlahnRcE-unsplash.jpg";
-import { useState } from "react";
 import Video from "@/components/ui/Video/Video";
 import { useParams } from "react-router-dom";
 
 export default function Courses_Video() {
-  const {play_course_id} = useParams();
-  const [playVideo, setPlayVideo] = useState(false);
-  const [fullscreen, setfullscreen] = useState(false);
-
-  const playVideohandler = () => setPlayVideo((prev) => !prev);
-  const fullscreenhandler = () => setfullscreen((prev) => !prev);
+  const { play_course_id } = useParams();
 
   return (
     <main className='grid nb:grid-cols-[280px_280px_420px] gap-4'>
@@ -30,13 +23,7 @@ export default function Courses_Video() {
           </h2>
         </div>
 
-        <Video
-          playVideo={playVideo}
-          fullscreen={fullscreen}
-          playVideoHandler={playVideohandler}
-          fullscreenHandler={fullscreenhandler}
-          img={img}
-        />
+        <Video />
 
         <main className='flex justify-between mt-4'>
           <section className='flex gap-1 text-sm font-semibold'>

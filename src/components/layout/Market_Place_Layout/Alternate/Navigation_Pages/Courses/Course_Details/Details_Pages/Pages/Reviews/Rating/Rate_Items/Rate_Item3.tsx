@@ -28,12 +28,12 @@ export default function Rate_Item3({ Rate_Percent }: Rate_Percent_Type) {
       </main>
 
       <section className='flex items-center gap-2 tab:gap-8'>
-        <div className='w-[5rem] tab:w-[16rem] h-[6px] bg-[#f0f0f0]'>
+        <div className='w-[7rem] tab:w-[16rem] h-[6px] bg-[#f0f0f0]'>
           <div
             style={{ width: ratePercentage }}
             className='h-full bg-[#e67e22]'></div>
         </div>
-        <h2 className='text-sm text-balck font-semibold'>{ratePercent}</h2>
+        <h2 className='text-xs tab:text-sm text-black tab:font-semibold'>{ratePercent}</h2>
       </section>
     </div>
   );

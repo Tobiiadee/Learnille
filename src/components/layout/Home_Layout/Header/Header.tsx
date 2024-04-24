@@ -18,7 +18,7 @@ export default function Header() {
       </main>
 
       <main className='flex items-center justify-around w-8/12'>
-        <section className='flex items-center border w-72 py-1 px-3 rounded-md overflow-hidden'>
+        <section className='flex items-center border focus w-72 py-1 px-3 rounded-md overflow-hidden'>
           <div className='w-full'>
             <input
               type='search'
