@@ -1,6 +1,6 @@
 /** @format */
 
-import Rating from "./Rating";
+import Rating from "../../../../../../../Old/Nav_pages/Reviews/Rating";
 
 export default function Reviews_Item() {
   return (

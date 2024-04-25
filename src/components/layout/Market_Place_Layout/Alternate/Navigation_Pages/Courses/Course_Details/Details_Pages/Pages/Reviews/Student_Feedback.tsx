@@ -1,6 +1,6 @@
 /** @format */
 import { ArrowD } from "@/assets/svg/HeaderSVG";
-import Reviews_Item from "@/components/layout/Market_Place_Layout/Nav_pages/Reviews/Reviews_Item";
+import Reviews_Item from "./Reviews_Item";
 import { useState } from "react";
 
 export default function Student_Feedback() {

@@ -20,14 +20,14 @@ export default function HoursSpent() {
 
   return (
     <Card>
-      <main className='flex flex-col gap-4 w-72 tab:w-full h-52'>
+      <main className='flex flex-col gap-4 w-72 tab:w-full h-full'>
         <section className='text-xs flex gap-8 font-normal '>
           <button
             type='button'
             disabled={study}
             onClick={studyHandler}
             className='flex gap-2 cursor-pointer'>
-            <span className='w-4 h-4 rounded bg-layout-bg flex items-center justify-center'>
+            <span className={`w-4 h-4 rounded bg-layout-bg flex items-center justify-center ${study ? "outline-offset-2 outline" : ""}  outline-layout-bg`}>
               {study && (
                 <svg
                   xmlns='http://www.w3.org/2000/svg'
@@ -52,14 +52,14 @@ export default function HoursSpent() {
             disabled={quiz}
             onClick={quizHandler}
             className='flex gap-2 cursor-pointer'>
-            <span className='w-4 h-4 rounded bg-background flex items-center justify-center'>
+            <span className={`w-4 h-4 rounded bg-background flex items-center justify-center ${quiz ? "outline-offset-2 outline" : ""} outline-layout-tip`}>
               {quiz && (
                 <svg
                   xmlns='http://www.w3.org/2000/svg'
                   fill='none'
                   viewBox='0 0 24 24'
                   strokeWidth={3}
-                  stroke='#2f53f5 '
+                  stroke='#85C1E9'
                   className='w-3 h-3 peer-checked:block'>
                   <path
                     strokeLinecap='round'

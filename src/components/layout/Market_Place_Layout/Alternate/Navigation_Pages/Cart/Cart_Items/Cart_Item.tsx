@@ -5,9 +5,9 @@ import img from "../../../../../../../assets/images/3d96648dc587844fbf3af8e709f8
 export default function Cart_Item() {
   return (
     <section className='mt-1 border-b pb-4 peer'>
-      <main className='flex gap-4 w-full px-4'>
-        <div className='self-center'>
-          <button type='button' className='text-text'>
+      <main className='flex gap-4 w-full'>
+        <div className='self-center ml-1'>
+          <button type='button' className='text-text rounded-full p-4 active:bg-activeBtn transition duration-300'>
             {""}
             <svg
               xmlns='http://www.w3.org/2000/svg'
@@ -25,7 +25,7 @@ export default function Cart_Item() {
           </button>
         </div>
 
-        <div className='max-w-20 h-20 nb:min-w-24 nb:h-24 hidden tab:block rounded-md shadow overflow-hidden flex items-center justify-center'>
+        <div className='max-w-20 h-20 nb:min-w-24 nb:h-24 hidden tab:flex rounded-md shadow overflow-hidden items-center justify-center'>
           <img src={img} alt='' />
         </div>
 

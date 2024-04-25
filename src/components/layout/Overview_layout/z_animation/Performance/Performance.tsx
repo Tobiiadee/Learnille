@@ -11,7 +11,7 @@ export default function Performance() {
 
   return (
     <Card>
-      <section className='w-72 tab:w-full text-xs font-normal h-52'>
+      <section className='w-full text-xs font-normal h-52'>
         <div className='flex justify-between'>
           <span className='flex gap-2 items-center'>
             <div className='w-4 h-4 rounded bg-[#2ECC71]'></div>

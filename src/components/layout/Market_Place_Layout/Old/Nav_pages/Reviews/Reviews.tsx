@@ -1,5 +1,5 @@
 import { ArrowD } from "@/assets/svg/HeaderSVG";
-import Reviews_Item from "./Reviews_Item";
+import Reviews_Item from "../../../Alternate/Navigation_Pages/Courses/Course_Details/Details_Pages/Pages/Reviews/Reviews_Item";
 
 export default function Reviews() {
   return (
