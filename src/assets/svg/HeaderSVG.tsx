@@ -50,7 +50,7 @@ export function ArrowD({ className, onRotate }: SVGType) {
       viewBox='0 0 24 24'
       strokeWidth={1.2}
       stroke='currentColor'
-      className={`w-6 h-6 ${className} ${onRotate ? "rotate-180" : ""} tansition duration-300 hover:border p-1 rounded`}>
+      className={`w-6 h-6 ${className} ${onRotate ? "rotate-180" : ""} transition duration-300 hover:border p-1 rounded`}>
       <path
         strokeLinecap='round'
         strokeLinejoin='round'

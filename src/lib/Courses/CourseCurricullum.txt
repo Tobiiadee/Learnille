@@ -1,0 +1,99 @@
+// Generate random data for "Who's the course for?" and "Course Requirements" for 20 courses
+const generateRandomData = () => {
+  const courseForOptions = [
+    "Beginner developers",
+    "Intermediate developers",
+    "Advanced developers",
+    "Data enthusiasts",
+    "Professionals",
+    "Students",
+    "Tech enthusiasts",
+    "Anyone interested",
+    "Web developers",
+    "Software engineers",
+    "Business professionals",
+    "Entrepreneurs",
+    "AI enthusiasts",
+    "Machine learning enthusiasts",
+    "Cybersecurity enthusiasts",
+    "Blockchain enthusiasts",
+    "Cloud computing enthusiasts",
+    "Game developers",
+    "Mobile app developers",
+    "DevOps engineers",
+  ];
+
+  const courseRequirementOptions = [
+    "Basic understanding of programming concepts",
+    "Familiarity with web development technologies",
+    "Knowledge of HTML, CSS, and JavaScript",
+    "Understanding of data structures and algorithms",
+    "Experience with a programming language",
+    "Comfortable with command line interface",
+    "Access to a computer with internet connection",
+    "Willingness to learn and explore",
+    "No prerequisites required",
+    "A laptop or desktop computer",
+    "Basic knowledge of mathematics",
+    "Interest in technology",
+    "Ability to commit time for learning",
+    "Passion for coding",
+    "Desire to build real-world projects",
+    "Enthusiasm to dive deep into the subject",
+    "Curiosity to explore new concepts",
+    "Motivation to succeed",
+    "Problem-solving skills",
+    "Critical thinking abilities",
+  ];
+
+
+
+// Generate random data for course curriculum section for 20 courses
+const generateRandomCurriculum = () => {
+  const sectionTitles = [
+    "Introduction",
+    "Foundations",
+    "Basics",
+    "Fundamentals",
+    "Advanced",
+    "Principles",
+    "Techniques",
+    "Applications",
+    "Exploration",
+    "Deep Dive",
+    "Masterclass",
+    "Essentials",
+    "Overview",
+    "Core Concepts",
+    "Key Topics",
+    "In-depth",
+    "Hands-on",
+    "Practical",
+    "Theoretical",
+    "Specialization",
+  ];
+
+  const lectureTitles = [
+    "Introduction to",
+    "Getting Started with",
+    "Overview of",
+    "Understanding",
+    "Exploring",
+    "Hands-on with",
+    "Deep Dive into",
+    "Mastering",
+    "Advanced Techniques in",
+    "Practical Applications of",
+    "Key Concepts in",
+    "Foundational Principles of",
+    "Essential Skills for",
+    "Core Fundamentals of",
+    "In-depth Analysis of",
+    "Advanced Topics in",
+    "Expert Level",
+    "Comprehensive Guide to",
+    "Principles and Practices of",
+    "Theoretical Foundations of",
+  ];
+
+ 

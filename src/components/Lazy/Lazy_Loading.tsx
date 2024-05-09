@@ -1,12 +1,17 @@
 /** @format */
 
 import React, { Suspense } from "react";
-import LoadingSpinner from "../ui/LoadingSpinner/LoadingSpinner";
+import ErrorBoundary from "../ErrorBoundary/ErrorBoundary";
+import Loading from "../ui/Loading/Loading";
 
 interface ComponentType {
-  childComponent: React.ReactNode;
+  children?: React.ReactNode;
 }
 
-export default function Lazy_Loading({ childComponent }: ComponentType) {
-  return <Suspense fallback={<LoadingSpinner />}>{childComponent}</Suspense>;
+export default function Lazy_Loading({ children }: ComponentType) {
+  return (
+    <ErrorBoundary>
+      <Suspense fallback={<Loading/>}>{children}</Suspense>
+    </ErrorBoundary>
+  );
 }

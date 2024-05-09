@@ -1,5 +1,7 @@
 /** @format */
 
+import video from "../Video/Video_File/6786-195986690_medium.mp4";
+
 type Video_Type = {
   videoFile?: string;
   poster?: string;
@@ -14,7 +16,7 @@ export default function Video({ poster, videoFile }: Video_Type) {
         poster={poster}
         controls
         className='h-[20rem] w-full tab:w-full tab:h-[22rem]rounded-xl'>
-        <source src={videoFile} type='video/mp4' />
+        <source src={videoFile || video} type='video/mp4' />
       </video>
     </main>
   );

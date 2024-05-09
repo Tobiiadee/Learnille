@@ -17,7 +17,7 @@ export default {
         layout: {
           bg: "#4364f7",
           text: "#2E86C1",
-          tip: "#85C1E9"
+          tip: "#D6EAF8"
         },
         background: "#eef8ff",
         text: "#8c8c8c",

@@ -1,11 +1,11 @@
 /** @format */
-import Header from "./components/layout/Home_Layout/Header/Header";
-import HeaderMobile from "./components/layout/Home_Layout/Header/Mobile/HeaderMobile";
-import NavBar from "./components/layout/Home_Layout/Navigation/NavBar";
-import NavBarMobile from "./components/layout/Home_Layout/Navigation/NavBarMobile";
+import Header from "./layout/Home/Header/Header";
+import HeaderMobile from "./layout/Home/Header/Mobile/HeaderMobile";
+import NavBar from "./layout/Home/Navigation/NavBar";
+import NavBarMobile from "./layout/Home/Navigation/NavBarMobile";
 // import Wrapper from "./components/ui/Wrapper/Wrapper";
 import { useState } from "react";
-import Main from "./pages/Navigation_Pages/Main";
+import Main from "./layout/Home/Main/Main";
 import { useParams } from "react-router-dom";
 
 function App() {

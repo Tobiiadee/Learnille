@@ -5,7 +5,8 @@
 @tailwind utilities;
 
 body {
-  background-color: #eef8ff;
+  /* background-color: #eef8ff; */
+  background-color: #EAF2F8;
 }
 
 /* input[type="checkbox"] {
@@ -32,13 +33,13 @@ body {
 #courses_id a.active {
   background: #fff;
   font-weight: 600;
-  color: #000;
+  color: #2f53f5;
   border-bottom: 1px solid #2f53f5;
 }
 #course_video_id a.active {
   background: #fff;
   font-weight: 600;
-  color: #000;
+  color: #2f53f5;
   border-bottom: 1px solid #2f53f5;
 }
 
@@ -46,20 +47,20 @@ body {
 /* This is just a basic example. Customize it according to your needs */
 
 /* Track */
-::-webkit-scrollbar {
+/* ::-webkit-scrollbar {
   width: 5px;
-}
+} */
 
 /* Handle */
-::-webkit-scrollbar-thumb {
+/* ::-webkit-scrollbar-thumb {
   background: #d4d4d4;
   border-radius: 10px;
-}
+} */
 
 /* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
+/* ::-webkit-scrollbar-thumb:hover {
   background: #c7c7c7;
-}
+} */
 
 /* All Progress */
 progress[value] {
@@ -108,7 +109,7 @@ input[type="search"] {
   background: none;
 }
 .focus:focus-within {
-  border: 2px solid #2f53f5;
+  border: 1px solid #2f53f5;
 }
 
 
@@ -143,5 +144,5 @@ input[type="range"] {
 
 
 .testStyle {
-  color: #fefefe;
+  color: #3456ed;
 } 
