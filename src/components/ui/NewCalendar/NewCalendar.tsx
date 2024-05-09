@@ -123,7 +123,7 @@ const EventCalendar = ({ events }: EventCalendarProps) => {
             <button type="button"
               key={index}
               className={clsx(
-                "rounded-full py-1 px-2 flex justify-center items-center text-layout-bg text-[11px] font-normal bg-[#EBF5FB] text-center",
+                "rounded-full py-1 px-2 flex justify-center items-center text-layout-bg text-xs font-normal bg-[#EBF5FB] text-center",
                 {
                   "bg-blue-500": isToday(day),
                   "text-white": isToday(day),

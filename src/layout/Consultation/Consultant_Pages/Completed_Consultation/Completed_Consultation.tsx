@@ -18,7 +18,7 @@ export default function Completed_Consultation() {
                 How to make your first millions as a frontent developer
               </h2>
 
-              <div className='flex gap-1 items-center tab:mr-32'>
+              <div className='self-end flex gap-1 items-center mt-1 tab:mt-0 tab:mr-32'>
                 <h2 className='text-sm tab:text-lg font-semibold text-layout-bg'>
                   $32.00
                 </h2>
@@ -122,7 +122,7 @@ export default function Completed_Consultation() {
                 </button>
                 <button
                   type='button'
-                  className='px-4 py-1 tab:px-4 tab:py-1 rounded-sm border text-text font-semibold active:bg-[#eee] transition duration-300'>
+                  className='px-4 tab:px-2 py-1 tab:py-1 rounded-sm border text-text font-semibold active:bg-[#eee] transition duration-300'>
                   Send Message
                 </button>
               </div>

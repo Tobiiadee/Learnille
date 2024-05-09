@@ -5,7 +5,7 @@ import Modal from "../Modal/Modal";
 
 export default function Loading() {
   return (
-    <Modal className="bg-black/50">
+    <Modal className="bg-black/80">
       <div className="w-full h-full flex justify-center items-center fixed z-40">
         <LoadingSpinner />
       </div>

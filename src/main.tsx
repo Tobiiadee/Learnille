@@ -10,42 +10,19 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Home from "./Home.tsx";
 import "./index.css";
 
-import Not_Found from "./components/ui/Not_Found/Not_Found.tsx";
+import {
+  Main,
+  My_Courses_Home,
+  WishList,
+  Course_Video_Home,
+  MarketPlace,
+  Details_Home,
+  Course_Details,
+  Consultation_Details,
+  Consultation_Home
+} from "./components/Lazy/Lazy_Imports.ts";
 
-const Main = React.lazy(() => import("./layout/Home/Main/Main.tsx"));
-const Consultation_Home = React.lazy(
-  () => import("./layout/Consultation/Main/Consultations.tsx")
-);
-const My_Courses_Home = React.lazy(
-  () => import("./layout/My_Courses/Main/MyCourses.tsx")
-);
-const WishList = React.lazy(
-  () => import("./layout/Wishlist/Main/WishList.tsx")
-);
-const Course_Video_Home = React.lazy(
-  () => import("./layout/My_Courses/Courses_Video/Home/Course_Video_Home.tsx")
-);
-const MarketPlace = React.lazy(
-  () => import("./layout/Market_Place/Main/MarketPlace.tsx")
-);
-const Details_Home = React.lazy(
-  () =>
-    import(
-      "./layout/Market_Place/Alternate/Navigation_Pages/Courses/Course_Details/Home/Details_Home.tsx"
-    )
-);
-const Course_Details = React.lazy(
-  () =>
-    import(
-      "./layout/Market_Place/Alternate/Navigation_Pages/Courses/Course_Details/Home/Details_Home.tsx"
-    )
-);
-const Consultation_Details = React.lazy(
-  () =>
-    import(
-      "./layout/Market_Place/Alternate/Navigation_Pages/Consultations/Consultation_Details/Details_Pages/Consultation_Details.tsx"
-    )
-);
+import Not_Found from "./components/ui/Not_Found/Not_Found.tsx";
 
 const router = createBrowserRouter([
   {

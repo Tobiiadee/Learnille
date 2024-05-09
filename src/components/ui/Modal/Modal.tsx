@@ -10,8 +10,11 @@ export default function Modal({ onClick, children, className }: BackdropType) {
 
   return (
     <Fragment>
-      {ReactDOM.createPortal(<Backdrop className={className}  onClick={onClick} />, portalElement)}
-      {children}
+      {ReactDOM.createPortal(
+        <Backdrop className={className} onClick={onClick} />,
+        portalElement
+      )}
+      <div className="z-40">{children}</div>
     </Fragment>
   );
 }

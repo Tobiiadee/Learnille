@@ -4,6 +4,7 @@ import { ArrowD } from "@/assets/svg/HeaderSVG";
 import Card from "@/components/ui/Card/Card";
 import Time_Date from "@/components/ui/Time&Date/Time_Date";
 import { useState } from "react";
+import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 
 export default function Ongoing_Consultation() {
@@ -35,13 +36,19 @@ export default function Ongoing_Consultation() {
           </div>
         </main>
 
-        <main className='flex flex-col gap-6 pb-1'>
+        <main className='flex flex-col gap-2 pb-1'>
           <div>
             <Time_Date display='flex gap-1' />
           </div>
 
-          {veiwLess && (
-            <section className='flex flex-col gap-4 border-t pt-6'>
+          <motion.section
+            initial={{ height: veiwLess ? "22rem" : "0rem" }}
+            animate={{ height: veiwLess ? "22rem" : "0rem" }}
+            exit={{ height: "10rem" }}
+            transition={{ duration: 0.4 }}
+            className="overflow-y-scroll tab:overflow-hidden"
+            >
+            <div className='flex flex-col gap-4 border-t pt-6 pb-4 tab:pb-0'>
               <main>
                 <h2 className='text-sm font-semibold'>Mentor:</h2>
                 <div className='flex gap-4 mt-2'>
@@ -85,14 +92,14 @@ export default function Ongoing_Consultation() {
                   Created on 27th November, 2023 10:00pm WAT
                 </h2>
               </main>
-            </section>
-          )}
+            </div>
+          </motion.section>
 
           <div className='flex gap-2 text-[10px] tab:text-xs'>
             <Link to='/learnille/consultation/consultation_meeting'>
               <button
                 type='button'
-                className='px-1 tab:px-2 py-1 rounded-md bg-layout-bg text-white font-semibold active:bg-[#2a49d1] transition duration-300'>
+                className='px-1 tab:px-2 py-1 tab:py-2 rounded-md bg-layout-bg text-white font-semibold active:bg-[#2a49d1] transition duration-300'>
                 Join Meeting
               </button>
             </Link>
