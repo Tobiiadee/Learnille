@@ -49,7 +49,7 @@ export default function Courses_Video() {
       </section>
 
       <aside className='hidden nb:block'>
-        <Course_Video_Section isCurriculum />
+        <Course_Video_Section />
       </aside>
     </main>
   );

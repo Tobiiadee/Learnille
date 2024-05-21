@@ -4,7 +4,7 @@ import Course_Wishlist_Item from "./Course_Wishlist_Item";
 export default function Course_Wishlist() {
   return (
     <main>
-      <section className='grid grid-cols-2 bg-white text-black text-sm font-normal tab:font-semibold uppercase border-[0.5px] border-[#dae1e6] px-4 py-2'>
+      <section className='grid grid-cols-2 bg-white text-black text-sm font-normal tab:font-semibold uppercase px-4 py-2'>
         <div className="">
           <h2>Consultation</h2>
         </div>
@@ -16,7 +16,7 @@ export default function Course_Wishlist() {
 
       {/* <Empty_State text="There is no course on your wishlist"/> */}
 
-      <section className="bg-white flex flex-col gap-2 px-4 py-1">
+      <section className="bg-white flex flex-col gap-2 px-4 pt-1 pb-4 divide-y ">
         <Course_Wishlist_Item/>
         <Course_Wishlist_Item/>
         <Course_Wishlist_Item/>

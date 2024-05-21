@@ -32,8 +32,8 @@ export default function Details_Home() {
         </h2>
       </div>
 
-      <main className='mt-2 grid nb:grid-cols-[600px_600px_420px] gap-4'>
-        <section className='flex flex-col gap-4'>
+      <main className='mt-2 grid nb:grid-cols-[600px_600px_420px] gap-2'>
+        <section className='flex flex-col gap-2'>
           <Course_Details />
           <Related_Courses />
         </section>

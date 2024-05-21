@@ -3,15 +3,23 @@
 // import { useParams } from "react-router-dom";
 import Cart_Items_OnPayment from "./Cart_Item_OnPayment/Cart_Items_OnPayment";
 import Cart_Item from "./Cart_Items/Cart_Item";
+import { textShortener } from "@/lib/utils/Format/utils_";
+
+import { useSelector } from "react-redux";
+import { RootStateType } from "@/store/Main/Store";
 
 export default function Cart() {
-  // const {market_place_id} = useParams();
+  // const {details_page_id} = useParams();
+
+  const title = useSelector(
+    (state: RootStateType) => state.course_details.course.title
+  );
 
   return (
     <main className='flex flex-col gap-4 '>
       <section className='text-sm text-black flex flex-col gap-1'>
         <h2>
-          Courses / How to make millions... / Add to Cart /{" "}
+          Courses / {textShortener(title)} / Add to Cart /{" "}
           <span className='underline text-layout-bg'>Cart</span>
         </h2>
 
@@ -31,14 +39,14 @@ export default function Cart() {
             </div>
           </section>
 
-          <section className="bg-white pt-2 flex flex-col gap-2">
+          <section className='bg-white pt-2 flex flex-col gap-2'>
             <Cart_Item />
             <Cart_Item />
             <Cart_Item />
           </section>
         </div>
         <div className='w-full nb:w-[25rem] bg-white h-max pb-4 border rounded'>
-            <Cart_Items_OnPayment/>
+          <Cart_Items_OnPayment />
         </div>
       </section>
     </main>

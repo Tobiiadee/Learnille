@@ -4,7 +4,7 @@ import img from "../../../assets/images/407331d1457b2db1ee1b6678ba63a9a5.jpg";
 
 export default function Consultation_Wishlist_Item() {
   return (
-    <section className='mt-1 border-b pb-4'>
+    <section className='mt-1 pt-4'>
       <main className='flex gap-4 w-full'>
         <div className='hidden max-w-20 h-20 nb:max-w-24 nb:h-24 rounded-md shadow overflow-hidden tab:flex items-center justify-center'>
           <img src={img} alt='' />

@@ -14,7 +14,7 @@ export default function Modal({ onClick, children, className }: BackdropType) {
         <Backdrop className={className} onClick={onClick} />,
         portalElement
       )}
-      <div className="z-40">{children}</div>
+      <div className="z-40 shadow-md w-max">{children}</div>
     </Fragment>
   );
 }

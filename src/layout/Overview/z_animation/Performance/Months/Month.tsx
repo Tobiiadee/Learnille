@@ -26,7 +26,7 @@ export default function Month({
     <div
       key={month}
       onClick={() => show(false)}
-      className='text-sm text-black hover:bg-layout-bg hover:text-white py-2 tab:py-1 px-12 tab:px-8 cursor-pointer'>
+      className='text-sm text-black hover:bg-layout-bg hover:text-white py-2 tab:py-1 px-12 tab:px-8 cursor-pointer '>
       {month}
     </div>
   ));

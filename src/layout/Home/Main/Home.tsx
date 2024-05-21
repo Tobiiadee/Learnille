@@ -1,12 +1,15 @@
 /** @format */
-import Header from "./layout/Home/Header/Header";
-import HeaderMobile from "./layout/Home/Header/Mobile/HeaderMobile";
-import NavBar from "./layout/Home/Navigation/NavBar";
-import NavBarMobile from "./layout/Home/Navigation/NavBarMobile";
+import Header from "../Header/Header";
+import HeaderMobile from "../Header/Mobile/HeaderMobile";
+import NavBar from "../Navigation/NavBar";
+import NavBarMobile from "../Navigation/NavBarMobile";
+
+import { motion, AnimatePresence } from "framer-motion";
 // import Wrapper from "./components/ui/Wrapper/Wrapper";
 import { useState } from "react";
-import Main from "./layout/Home/Main/Main";
+import Main from "../../../../Main";
 import { useParams } from "react-router-dom";
+import Modal from "@/components/ui/Modal/Modal";
 
 function App() {
   const [viewNav, setViewNav] = useState(false);
@@ -16,12 +19,12 @@ function App() {
     setViewNav(true);
   };
   const navBarHideHandler = () => {
-    setTimeout(() => setViewNav(false), 300);
+    setViewNav(false);
   };
 
   return (
     <main className='w-full pl-1 tab:p-0 tab:w-full tab:flex tab:items-start gap-4 overflow-hidden'>
-      <section className='fixed top-14 left-0 flex gap-4 pl-2 w-full h-14 shadow bg-white py-1 nb:hidden z-40'>
+      <section className='fixed top-14 left-0 flex gap-4 pl-2 w-full h-14 shadow bg-white py-1 nb:hidden z-30'>
         <button type='button' onClick={navBarViewHandler} className=''>
           {""}
           <span>
@@ -64,7 +67,22 @@ function App() {
         </section>
       </section>
       <NavBar />
-      {viewNav && <NavBarMobile viewNav={viewNav} onView={navBarHideHandler} />}
+
+      <AnimatePresence>
+        {viewNav && (
+          <Modal onClick={navBarHideHandler} className='bg-black/50'>
+            <motion.div
+              initial={{ x: -300 }}
+              animate={{ x:  0 }}
+              exit={{ x: -300 }}
+              transition={{ duration: 0.5 }}
+              className='fixed top-0 left-0 z-50'>
+              <NavBarMobile onView={navBarHideHandler} />
+            </motion.div>
+          </Modal>
+        )}
+      </AnimatePresence>
+
       <Header />
       <HeaderMobile />
       <Main />

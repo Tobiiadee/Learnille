@@ -4,7 +4,7 @@ import Rating from "../../../../../../../Old/Nav_pages/Reviews/Rating";
 
 export default function Reviews_Item() {
   return (
-    <main className='flex gap-4 justify-between w-full border-b pb-4 mt-2'>
+    <main className='flex gap-4 justify-between w-full pt-4 mt-2'>
       <section>
         <div className='w-8 h-8 flex items-center rounded-full shadow'>
           <img src='' alt='' />
@@ -29,11 +29,9 @@ export default function Reviews_Item() {
         </div>
 
         <div className='flex gap-[0.5px] items-center'>
-          <Rating />
-          <Rating />
-          <Rating />
-          <Rating />
-          <Rating />
+          {Array.from({ length: 5 }).map((_, i) => (
+            <Rating key={i} />
+          ))}
         </div>
 
         <div className='text-xs text-black'>

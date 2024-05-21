@@ -14,6 +14,11 @@ export default function Account_Settings() {
   const [toogleCountryCode, setToogleCountryCode] = useState(false);
   const [countryCode, setCountryCode] = useState<string>("+234");
 
+  //Profile image value
+  const [profileImage, setProfileImage] = useState<string | ArrayBuffer | null>(
+    null
+  );
+
   //User Title Handler
   //e.currentTarget.innerHTML
   const toogleTitleHandler = () => setToogle((prev) => !prev);
@@ -31,6 +36,24 @@ export default function Account_Settings() {
     setToogleCountryCode((prev) => !prev);
   };
 
+  //Set Profile Image
+  const imageUploadHandler = (e: React.ChangeEvent<HTMLInputElement>) => {
+    const file = e.target.files && e.target.files[0];
+
+    if (file) {
+      const reader = new FileReader();
+
+      reader.onloadend = () => {
+        // Set the selected image to the result of FileReader
+        setProfileImage(reader.result);
+      };
+
+      // Read the selected file as a data URL
+      reader.readAsDataURL(file);
+    }
+  };
+
+
   return (
     <Card hover={false} classNames='w-full'>
       <h2 className='text-sm font-semibold'>Account Settings</h2>
@@ -38,7 +61,7 @@ export default function Account_Settings() {
         <div className='flex flex-col tab:flex-col gap-4'>
           <section className='bg-[#edf1ff] self-center tab:self-end tab:-mt-8 rounded-md w-52 px-2 py-4 tab:px-4 tab:py-8 flex flex-col items-center gap-4'>
             <div className='shadow-md rounded-full w-20 h-20 overflow-hidden flex items-center justify-center'>
-              <img src='' alt='' />
+              <img src={profileImage?.toString()} alt='profile image' />
             </div>
             <div>
               <label
@@ -64,6 +87,8 @@ export default function Account_Settings() {
               </label>
               <input
                 type='file'
+                accept='image/*'
+                onChange={imageUploadHandler}
                 name='change photo'
                 id='change photo'
                 className='hidden'

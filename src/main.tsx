@@ -7,7 +7,7 @@ import Lazy_Loading from "./components/Lazy/Lazy_Loading.tsx";
 import { Provider } from "react-redux";
 import store from "./store/Main/Store.ts";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import Home from "./Home.tsx";
+import Home from "./layout/Home/Main/Home.tsx";
 import "./index.css";
 
 import {
@@ -23,6 +23,7 @@ import {
 } from "./components/Lazy/Lazy_Imports.ts";
 
 import Not_Found from "./components/ui/Not_Found/Not_Found.tsx";
+// import Select_Section from "./components/ui/Select_Section/Select_Section.tsx";
 
 const router = createBrowserRouter([
   {
@@ -84,6 +85,7 @@ const router = createBrowserRouter([
 ReactDOM.createRoot(document.getElementById("root")!).render(
   <React.StrictMode>
     <Provider store={store}>
+      {/* <Select_Section/> */}
       <RouterProvider router={router} />
     </Provider>
   </React.StrictMode>

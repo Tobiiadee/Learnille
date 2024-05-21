@@ -1,7 +1,7 @@
 import React from "react";
 
 
-export const Main = React.lazy(() => import("../../layout/Home/Main/Main.tsx"));
+export const Main = React.lazy(() => import("../../../Main.tsx"));
 
 export const Consultation_Home = React.lazy(
   () => import("../../layout/Consultation/Main/Consultations.tsx")

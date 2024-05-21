@@ -9,7 +9,7 @@ export default function PurchaseHistory() {
         <h2>Purchase History</h2>
       </section>
 
-      <section className="flex flex-col gap-4 mt-6 pr-2 tab:pr-6 nb:pr-32">
+      <section className="flex flex-col gap-2 mt-6 pr-2 tab:pr-6 nb:pr-32">
         <Purchase_History_Item/>
         <Purchase_History_Item/>
         <Purchase_History_Item/>

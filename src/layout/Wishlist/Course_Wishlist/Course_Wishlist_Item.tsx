@@ -6,7 +6,7 @@ import img from "../../../assets/images/3d96648dc587844fbf3af8e709f856b0.jpg";
 
 export default function Course_Wishlist_Item() {
   return (
-    <section className='mt-1 border-b pb-4 peer'>
+    <section className='mt-1 pt-4 peer'>
       <main className='flex gap-4 w-full'>
         <div className='hidden max-w-20 h-20 nb:max-w-24 nb:h-24 rounded-md shadow overflow-hidden tab:flex items-center justify-center'>
           <img src={img} alt='' />

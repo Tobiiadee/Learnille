@@ -49,38 +49,38 @@ export const textShortener = (text: string) => {
   return shortenedText;
 };
 
-export function startWebcam() {
-  const video: HTMLVideoElement = document.getElementById("webcam-video")!;
-  if (!video) {
-    console.error("Video element not found");
-    return;
-  }
-  if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
-    navigator.mediaDevices
-      .getUserMedia({ video: true })
-      .then((stream: MediaStream) => {
-        video.srcObject = stream;
-      })
-      .catch((error: Error) => {
-        console.error("Error accessing webcam:", error);
-        alert("Failed to access webcam. Please check your permissions.");
-      });
-  } else {
-    console.error("getUserMedia is not supported");
-    alert("Your browser does not support webcam access.");
-  }
-}
+// export function startWebcam() {
+//   const video: HTMLVideoElement = document.getElementById("webcam-video")!;
+//   if (!video) {
+//     console.error("Video element not found");
+//     return;
+//   }
+//   if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
+//     navigator.mediaDevices
+//       .getUserMedia({ video: true })
+//       .then((stream: MediaStream) => {
+//         video.srcObject = stream;
+//       })
+//       .catch((error: Error) => {
+//         console.error("Error accessing webcam:", error);
+//         alert("Failed to access webcam. Please check your permissions.");
+//       });
+//   } else {
+//     console.error("getUserMedia is not supported");
+//     alert("Your browser does not support webcam access.");
+//   }
+// }
 
-export function stopWebcam() {
-  const video: HTMLVideoElement = document.getElementById("webcam-video")!;
-  if (!video) {
-    console.error("Video element not found");
-    return;
-  }
-  const stream: MediaStream = video.srcObject as MediaStream;
-  if (stream) {
-    const tracks = stream.getTracks();
-    tracks.forEach((track: MediaStreamTrack) => track.stop());
-    video.srcObject = null;
-  }
-}
+// export function stopWebcam() {
+//   const video: HTMLVideoElement = document.getElementById("webcam-video")!;
+//   if (!video) {
+//     console.error("Video element not found");
+//     return;
+//   }
+//   const stream: MediaStream = video.srcObject as MediaStream;
+//   if (stream) {
+//     const tracks = stream.getTracks();
+//     tracks.forEach((track: MediaStreamTrack) => track.stop());
+//     video.srcObject = null;
+//   }
+// }

@@ -9,7 +9,7 @@ import {
 
 export default function Header() {
   return (
-    <div className='fixed top-2 left-60 w-9/12 items-center justify-between bg-white px-2 py-2 rounded-md shadow hidden nb:flex z-40'>
+    <div className='fixed top-2 left-60 w-9/12 items-center justify-between bg-white px-2 py-2 rounded-md shadow hidden nb:flex z-30'>
       <main className='flex flex-col gap-0'>
         <h2 className='text-layout-bg font-bold'>Hi Username</h2>
         <p className='text-xs text-text font-normal -mt-1'>

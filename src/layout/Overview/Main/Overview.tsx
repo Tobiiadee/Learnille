@@ -8,7 +8,7 @@ import HomeAside from "@/layout/Home/Home_Aside/Event";
 
 export default function Overview() {
   return (
-    <div className='pb-10 tab:grid tab:grid-cols-2 nb:grid-cols-[28%_28%_30%] nb:gap-2 overflow-hidden tab:pr-4 nb:pr-14'>
+    <div className='pb-10 tab:grid tab:grid-cols-2 nb:grid-cols-[28%_28%_30%] nb:gap-1 overflow-hidden tab:pr-4 nb:pr-14'>
       <section className='col-span-2 flex flex-col gap-2'>
         <main className='tab:mt-0 items-start tab:grid tab:grid-cols-[30%_30%_35%] nb:grid-cols-[31%_31%_35%] gap-2'>
           <section className='text-sm col-span-2 font-semibold flex flex-col gap-2'>

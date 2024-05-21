@@ -16,7 +16,7 @@ export default function Consultation_Wishlist() {
         </div>
       </section>
       {/* <Empty_State text="There is no consultation on your wishlist"/> */}
-      <section className="bg-white flex flex-col gap-2 px-4 py-1">
+      <section className="bg-white flex flex-col gap-2 px-4 pt-1 pb-4 divide-y">
         <Consultation_Wishlist_Item/>
         <Consultation_Wishlist_Item/>
         <Consultation_Wishlist_Item/>

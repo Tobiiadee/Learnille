@@ -14,7 +14,8 @@ export default function MyCertificate() {
           <h2>My Certificate</h2>
         </div>
 
-        <section className="flex flex-col items-center nb:items-start gap-4">
+        <section className="flex flex-col items-center nb:items-start gap-4 divide-y">
+          <My_Certificate />
           <My_Certificate />
           <My_Certificate />
           <My_Certificate />

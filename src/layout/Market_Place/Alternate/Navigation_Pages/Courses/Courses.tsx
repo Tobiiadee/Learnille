@@ -2,7 +2,7 @@
 
 import Course_Item from "./Course_Item";
 // import { Courses_List } from "@/lib/Courses/Courses_Utils";
-import { courseDetails } from "@/lib/Courses/Courses_Utils";
+import { courseDetails } from "@/lib/Courses/DUMMY_Courses_Details";
 
 export default function Courses() {
   const course_item = courseDetails.map((courseInfo) => (

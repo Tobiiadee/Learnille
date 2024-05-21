@@ -22,7 +22,7 @@ export default function Consultation_Home() {
   }
 
   return (
-    <section className='nb:grid nb:grid-cols-3 gap-4 pr-2 pb-4'>
+    <section className='nb:grid nb:grid-cols-3 gap-2 pr-2 pb-4'>
       <main className='col-span-2'>
         <Header />
         <main>{consultationPages} </main>

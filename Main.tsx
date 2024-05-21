@@ -9,7 +9,7 @@ import MyCourses from "@/layout/My_Courses/Main/MyCourses";
 import PurchaseHistory from "@/layout/Purchase_History/Main/PurchaseHistory";
 import MarketPlace from "@/layout/Market_Place/Main/MarketPlace";
 import Settings from "@/layout/Settings/Main/Settings";
-import Support from "../../Support/Support";
+import Support from "./src/layout/Support/Support";
 import Wrapper from "@/components/ui/Wrapper/Wrapper";
 import WishList from "@/layout/Wishlist/Main/WishList";
 

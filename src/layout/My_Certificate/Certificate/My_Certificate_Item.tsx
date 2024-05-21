@@ -2,7 +2,7 @@
 
 export default function My_Certificate() {
   return (
-    <section className='flex flex-col tab:flex-row gap-4 justify-between tab:items-center border-b pb-4'>
+    <section className='flex flex-col tab:flex-row gap-4 justify-between tab:items-center pt-4'>
       <main className='flex flex-col gap-1 w-max'>
         <p className='self-center text-layout-bg text-xs font-semibold'>
           100% completed

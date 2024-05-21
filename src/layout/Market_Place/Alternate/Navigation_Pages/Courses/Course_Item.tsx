@@ -19,7 +19,6 @@ export default function Course_Item({ courseInfo }: CourseInfoType) {
   const courseDetailsHandler = () => {
     dispatch(course_details_actions.getCourseDetails(courseInfo));
   };
-
   
 
   return (
